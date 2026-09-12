@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export the 130 Phase 2 test cases to questions.json / questions.md.
+"""Export the 130 Phase 2 test cases to questions_phase2.json / questions_phase2.md.
 
 The dataclass definitions in eval/test_cases_multi_area.py are the source of
 truth; this script renders them into a form that's readable without opening
@@ -7,7 +7,7 @@ the code (question text, expected keywords, target area).
 
 Note: `level_name` in eval/test_cases_multi_area.py is Japanese (it labels the
 actual system-under-test's difficulty tiers). This script maps it to an
-English label locally so questions.json/questions.md read in English, without
+English label locally so questions_phase2.json/questions_phase2.md read in English, without
 touching the eval/test code itself.
 """
 import json
@@ -49,7 +49,7 @@ def to_record(tc):
 def main():
     records = [to_record(tc) for tc in ALL_MULTI_AREA_TEST_CASES]
 
-    json_path = REPO_ROOT / "questions.json"
+    json_path = REPO_ROOT / "questions_phase2.json"
     json_path.write_text(
         json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8"
     )
@@ -57,7 +57,7 @@ def main():
     md_lines = [
         "# Phase 2 Question List (130 cases)",
         "",
-        "Auto-generated from `eval/test_cases_multi_area.py`. See `questions.json` for details.",
+        "Auto-generated from `eval/test_cases_multi_area.py`. See `questions_phase2.json` for details.",
         "",
         "Questions are in Japanese, matching what was actually tested "
         "(the RAG systems answer Japanese-language questions about Tokyo POIs).",
@@ -73,7 +73,7 @@ def main():
             f"| {r['id']} | {r['level_name']} | {area} | {r['query_type']} | {prompt} | {keywords} |"
         )
 
-    md_path = REPO_ROOT / "questions.md"
+    md_path = REPO_ROOT / "questions_phase2.md"
     md_path.write_text("\n".join(md_lines) + "\n", encoding="utf-8")
 
     print(f"Wrote {len(records)} questions to {json_path} and {md_path}")

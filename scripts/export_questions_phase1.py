@@ -6,7 +6,7 @@ Source of truth: eval/test_cases_v2.py (TEST_CASES_V2) and
 eval/test_cases_graphrag.py (GRAPHRAG_TEST_CASES).
 
 Note: `level_name` for the 55 Structured-RAG-oriented cases is mapped to an
-English label locally (same approach as scripts/export_questions.py), without
+English label locally (same approach as scripts/export_questions_phase2.py), without
 touching the eval/test code. The 35 GraphRAG-oriented cases have no level
 field in the source data (they were designed to probe specific graph-relation
 categories, not the L1-L5 difficulty ladder).

@@ -1,6 +1,6 @@
 # Phase 2 Question List (130 cases)
 
-Auto-generated from `eval/test_cases_multi_area.py`. See `questions.json` for details.
+Auto-generated from `eval/test_cases_multi_area.py`. See `questions_phase2.json` for details.
 
 Questions are in Japanese, matching what was actually tested (the RAG systems answer Japanese-language questions about Tokyo POIs).
 

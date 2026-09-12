@@ -41,10 +41,10 @@ data-backed comparison before drawing conclusions from L4/L5 results across phas
 ├── eval/           # Definitions and scoring logic for both phases' test cases
 ├── data/           # OSM POI data used in the experiments (Shibuya + 3 more areas, ODbL-licensed)
 ├── results/        # Original evaluation result JSON/PNGs from the paper (baseline to compare your reproduction against)
-├── questions.json / questions.md              # Phase 2's 130-case question list, readable without opening the code
+├── questions_phase2.json / questions_phase2.md    # Phase 2's 130-case question list, readable without opening the code
 ├── questions_phase1.json / questions_phase1.md # Phase 1's 90-case question list
 ├── docs/phase1_vs_phase2_test_design.md        # How question difficulty design differs between the phases
-├── scripts/export_questions.py         # Regenerates Phase 2's questions.{json,md}
+├── scripts/export_questions_phase2.py  # Regenerates Phase 2's questions_phase2.{json,md}
 ├── scripts/export_questions_phase1.py  # Regenerates Phase 1's questions_phase1.{json,md}
 └── tests/test_smoke.py                 # GPU-free smoke tests for both phases
 ```
@@ -101,7 +101,7 @@ This verifies (all passing on a GPU-free local machine):
 To regenerate the question lists only:
 
 ```bash
-uv run python scripts/export_questions.py         # Phase 2
+uv run python scripts/export_questions_phase2.py  # Phase 2
 uv run python scripts/export_questions_phase1.py  # Phase 1
 ```
 
