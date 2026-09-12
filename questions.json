@@ -2,7 +2,7 @@
   {
     "id": "MA-SBY-L1-01",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "basic_location",
     "prompt": "渋谷駅の場所を教えてください",
@@ -21,7 +21,7 @@
   {
     "id": "MA-SBY-L1-02",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "basic_location",
     "prompt": "渋谷駅周辺のコンビニを教えてください",
@@ -40,7 +40,7 @@
   {
     "id": "MA-SBY-L1-03",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "brand",
     "prompt": "渋谷駅周辺のスターバックスはありますか？",
@@ -57,7 +57,7 @@
   {
     "id": "MA-SBY-L1-04",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "area_detection",
     "prompt": "渋谷駅近くのカフェはありますか？",
@@ -74,7 +74,7 @@
   {
     "id": "MA-SBY-L2-01",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "proximity",
     "prompt": "渋谷駅に最も近いコンビニはどれですか？距離も推定してください",
@@ -93,7 +93,7 @@
   {
     "id": "MA-SBY-L2-02",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "aggregation",
     "prompt": "渋谷駅周辺のカフェとバー、どちらが多いですか？",
@@ -112,7 +112,7 @@
   {
     "id": "MA-SBY-L2-03",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "comparison",
     "prompt": "渋谷駅の東側と西側、どちらにカフェが多いですか？",
@@ -131,7 +131,7 @@
   {
     "id": "MA-SBY-L2-04",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "landmark_origin",
     "prompt": "渋谷ヒカリエから最も近いカフェはどこですか？",
@@ -149,7 +149,7 @@
   {
     "id": "MA-SBY-L3-01",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "constraint_single",
     "prompt": "渋谷駅周辺で24時間営業のコンビニはありますか？",
@@ -167,7 +167,7 @@
   {
     "id": "MA-SBY-L3-02",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "constraint_multi",
     "prompt": "渋谷駅から500m以内で、電話番号がわかるカフェを教えてください",
@@ -185,7 +185,7 @@
   {
     "id": "MA-SBY-L3-03",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "brand",
     "prompt": "渋谷駅周辺のドトールを全て教えてください",
@@ -202,7 +202,7 @@
   {
     "id": "MA-SBY-L3-04",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "landmark_origin",
     "prompt": "渋谷109の近くでランチができるレストランは？",
@@ -220,7 +220,7 @@
   {
     "id": "MA-SBY-L4-01",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "decision_support",
     "prompt": "渋谷駅から近い順にカフェを3つ教えてください",
@@ -239,7 +239,7 @@
   {
     "id": "MA-SBY-L4-02",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "relation",
     "prompt": "渋谷駅周辺でカフェとコンビニが両方近い場所は？",
@@ -257,7 +257,7 @@
   {
     "id": "MA-SBY-L4-03",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "landmark_origin",
     "prompt": "ハチ公像の周辺300mにある飲食店を教えてください",
@@ -275,7 +275,7 @@
   {
     "id": "MA-SBY-L4-04",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "sensitivity",
     "prompt": "渋谷駅500m圏と1km圏でカフェの件数はどう変わりますか？",
@@ -294,7 +294,7 @@
   {
     "id": "MA-SBY-L5-01",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "multi_hop",
     "prompt": "渋谷駅から最も近いカフェと、そこから300m以内の他カフェ数は？",
@@ -313,7 +313,7 @@
   {
     "id": "MA-SBY-L5-02",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "competitor",
     "prompt": "渋谷駅周辺でコンビニの競合状況を分析してください",
@@ -333,7 +333,7 @@
   {
     "id": "MA-SBY-L5-03",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "complementary",
     "prompt": "渋谷駅周辺でカフェの近くにある書店を教えてください",
@@ -351,7 +351,7 @@
   {
     "id": "MA-SBY-L5-04",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "sensitivity",
     "prompt": "渋谷駅周辺のカフェの平均距離と最寄り・最遠の距離差は？",
@@ -371,7 +371,7 @@
   {
     "id": "MA-SJK-L1-01",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "basic_location",
     "prompt": "新宿駅の場所を教えてください",
@@ -390,7 +390,7 @@
   {
     "id": "MA-SJK-L1-02",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "basic_location",
     "prompt": "新宿駅周辺のコンビニを教えてください",
@@ -408,7 +408,7 @@
   {
     "id": "MA-SJK-L1-03",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "brand",
     "prompt": "新宿駅周辺のスターバックスはありますか？",
@@ -425,7 +425,7 @@
   {
     "id": "MA-SJK-L1-04",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "area_detection",
     "prompt": "新宿駅近くのカフェはありますか？",
@@ -442,7 +442,7 @@
   {
     "id": "MA-SJK-L2-01",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "proximity",
     "prompt": "新宿駅に最も近いコンビニはどれですか？",
@@ -460,7 +460,7 @@
   {
     "id": "MA-SJK-L2-02",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "aggregation",
     "prompt": "新宿駅から500m以内にカフェは何件ありますか？",
@@ -478,7 +478,7 @@
   {
     "id": "MA-SJK-L2-03",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "comparison",
     "prompt": "新宿駅の東側と西側、どちらに飲食店が多いですか？",
@@ -497,7 +497,7 @@
   {
     "id": "MA-SJK-L2-04",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "landmark_origin",
     "prompt": "新宿御苑から最も近いカフェはどこですか？",
@@ -515,7 +515,7 @@
   {
     "id": "MA-SJK-L3-01",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "constraint_single",
     "prompt": "新宿駅周辺で24時間営業のコンビニは？",
@@ -533,7 +533,7 @@
   {
     "id": "MA-SJK-L3-02",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "constraint_multi",
     "prompt": "新宿駅から300m以内でWi-Fiが使えるカフェは？",
@@ -551,7 +551,7 @@
   {
     "id": "MA-SJK-L3-03",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "brand",
     "prompt": "新宿駅周辺のドトールを全て教えてください",
@@ -568,7 +568,7 @@
   {
     "id": "MA-SJK-L3-04",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "landmark_origin",
     "prompt": "東京都庁の近くでランチができるレストランは？",
@@ -586,7 +586,7 @@
   {
     "id": "MA-SJK-L4-01",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "decision_support",
     "prompt": "新宿駅から近い順にカフェを3つ教えてください",
@@ -605,7 +605,7 @@
   {
     "id": "MA-SJK-L4-02",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "relation",
     "prompt": "新宿駅周辺でカフェとコンビニが両方近い場所は？",
@@ -623,7 +623,7 @@
   {
     "id": "MA-SJK-L4-03",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "landmark_origin",
     "prompt": "歌舞伎町の周辺300mにある飲食店を教えてください",
@@ -641,7 +641,7 @@
   {
     "id": "MA-SJK-L4-04",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "sensitivity",
     "prompt": "新宿駅500m圏と1km圏でカフェの件数はどう変わりますか？",
@@ -660,7 +660,7 @@
   {
     "id": "MA-SJK-L5-01",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "multi_hop",
     "prompt": "新宿駅から最も近いカフェと、そこから300m以内の他カフェ数は？",
@@ -679,7 +679,7 @@
   {
     "id": "MA-SJK-L5-02",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "competitor",
     "prompt": "新宿駅周辺でコンビニの競合状況を分析してください",
@@ -698,7 +698,7 @@
   {
     "id": "MA-SJK-L5-03",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "complementary",
     "prompt": "新宿駅周辺でカフェの近くにある書店を教えてください",
@@ -717,7 +717,7 @@
   {
     "id": "MA-SJK-L5-04",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "sensitivity",
     "prompt": "新宿駅周辺のカフェの平均距離と最寄り・最遠の距離差は？",
@@ -737,7 +737,7 @@
   {
     "id": "MA-IKB-L1-01",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "basic_location",
     "prompt": "池袋駅の場所を教えてください",
@@ -756,7 +756,7 @@
   {
     "id": "MA-IKB-L1-02",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "basic_location",
     "prompt": "池袋駅周辺のコンビニを教えてください",
@@ -774,7 +774,7 @@
   {
     "id": "MA-IKB-L1-03",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "brand",
     "prompt": "池袋駅周辺のスターバックスはありますか？",
@@ -791,7 +791,7 @@
   {
     "id": "MA-IKB-L1-04",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "area_detection",
     "prompt": "池袋駅近くのカフェはありますか？",
@@ -808,7 +808,7 @@
   {
     "id": "MA-IKB-L2-01",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "proximity",
     "prompt": "池袋駅に最も近いコンビニはどれですか？",
@@ -826,7 +826,7 @@
   {
     "id": "MA-IKB-L2-02",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "aggregation",
     "prompt": "池袋駅から500m以内にカフェは何件ありますか？",
@@ -844,7 +844,7 @@
   {
     "id": "MA-IKB-L2-03",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "comparison",
     "prompt": "池袋駅の東側と西側、どちらに飲食店が多いですか？",
@@ -863,7 +863,7 @@
   {
     "id": "MA-IKB-L2-04",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "landmark_origin",
     "prompt": "サンシャインシティから最も近いカフェはどこですか？",
@@ -881,7 +881,7 @@
   {
     "id": "MA-IKB-L3-01",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "constraint_single",
     "prompt": "池袋駅周辺で24時間営業のコンビニは？",
@@ -899,7 +899,7 @@
   {
     "id": "MA-IKB-L3-02",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "constraint_multi",
     "prompt": "池袋駅から300m以内でWi-Fiが使えるカフェは？",
@@ -917,7 +917,7 @@
   {
     "id": "MA-IKB-L3-03",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "brand",
     "prompt": "池袋駅周辺のマツモトキヨシを全て教えてください",
@@ -934,7 +934,7 @@
   {
     "id": "MA-IKB-L3-04",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "landmark_origin",
     "prompt": "池袋西口公園の近くでランチができるレストランは？",
@@ -952,7 +952,7 @@
   {
     "id": "MA-IKB-L4-01",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "decision_support",
     "prompt": "池袋駅から近い順にカフェを3つ教えてください",
@@ -971,7 +971,7 @@
   {
     "id": "MA-IKB-L4-02",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "relation",
     "prompt": "池袋駅周辺でカフェとコンビニが両方近い場所は？",
@@ -989,7 +989,7 @@
   {
     "id": "MA-IKB-L4-03",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "landmark_origin",
     "prompt": "東武百貨店池袋店の周辺300mにある飲食店を教えてください",
@@ -1007,7 +1007,7 @@
   {
     "id": "MA-IKB-L4-04",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "sensitivity",
     "prompt": "池袋駅500m圏と1km圏でカフェの件数はどう変わりますか？",
@@ -1026,7 +1026,7 @@
   {
     "id": "MA-IKB-L5-01",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "multi_hop",
     "prompt": "池袋駅から最も近いカフェと、そこから300m以内の他カフェ数は？",
@@ -1045,7 +1045,7 @@
   {
     "id": "MA-IKB-L5-02",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "competitor",
     "prompt": "池袋駅周辺でコンビニの競合状況を分析してください",
@@ -1064,7 +1064,7 @@
   {
     "id": "MA-IKB-L5-03",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "complementary",
     "prompt": "池袋駅周辺でカフェの近くにある書店を教えてください",
@@ -1083,7 +1083,7 @@
   {
     "id": "MA-IKB-L5-04",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "sensitivity",
     "prompt": "池袋駅周辺のカフェの平均距離と最寄り・最遠の距離差は？",
@@ -1103,7 +1103,7 @@
   {
     "id": "MA-TKY-L1-01",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "basic_location",
     "prompt": "東京駅の場所を教えてください",
@@ -1121,7 +1121,7 @@
   {
     "id": "MA-TKY-L1-02",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "basic_location",
     "prompt": "東京駅周辺のコンビニを教えてください",
@@ -1139,7 +1139,7 @@
   {
     "id": "MA-TKY-L1-03",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "brand",
     "prompt": "東京駅周辺のスターバックスはありますか？",
@@ -1156,7 +1156,7 @@
   {
     "id": "MA-TKY-L1-04",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "basic_retrieval",
     "subcategory": "area_detection",
     "prompt": "東京駅近くのカフェはありますか？",
@@ -1173,7 +1173,7 @@
   {
     "id": "MA-TKY-L2-01",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "proximity",
     "prompt": "東京駅に最も近いコンビニはどれですか？",
@@ -1191,7 +1191,7 @@
   {
     "id": "MA-TKY-L2-02",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "aggregation",
     "prompt": "東京駅から500m以内にカフェは何件ありますか？",
@@ -1209,7 +1209,7 @@
   {
     "id": "MA-TKY-L2-03",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "comparison",
     "prompt": "東京駅の東側と西側、どちらに飲食店が多いですか？",
@@ -1228,7 +1228,7 @@
   {
     "id": "MA-TKY-L2-04",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "spatial_reasoning",
     "subcategory": "landmark_origin",
     "prompt": "KITTEから最も近いカフェはどこですか？",
@@ -1246,7 +1246,7 @@
   {
     "id": "MA-TKY-L3-01",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "constraint_single",
     "prompt": "東京駅周辺で24時間営業のコンビニは？",
@@ -1264,7 +1264,7 @@
   {
     "id": "MA-TKY-L3-02",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "constraint_multi",
     "prompt": "東京駅から300m以内でWi-Fiが使えるカフェは？",
@@ -1282,7 +1282,7 @@
   {
     "id": "MA-TKY-L3-03",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "brand",
     "prompt": "東京駅周辺のタリーズコーヒーを全て教えてください",
@@ -1299,7 +1299,7 @@
   {
     "id": "MA-TKY-L3-04",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "constraint_satisfaction",
     "subcategory": "landmark_origin",
     "prompt": "東京国際フォーラムの近くでランチができるレストランは？",
@@ -1317,7 +1317,7 @@
   {
     "id": "MA-TKY-L4-01",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "decision_support",
     "prompt": "東京駅から近い順にカフェを3つ教えてください",
@@ -1336,7 +1336,7 @@
   {
     "id": "MA-TKY-L4-02",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "relation",
     "prompt": "東京駅周辺でカフェとコンビニが両方近い場所は？",
@@ -1354,7 +1354,7 @@
   {
     "id": "MA-TKY-L4-03",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "landmark_origin",
     "prompt": "丸ビルの周辺300mにある飲食店を教えてください",
@@ -1372,7 +1372,7 @@
   {
     "id": "MA-TKY-L4-04",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "decision_support",
     "subcategory": "sensitivity",
     "prompt": "東京駅500m圏と1km圏でカフェの件数はどう変わりますか？",
@@ -1391,7 +1391,7 @@
   {
     "id": "MA-TKY-L5-01",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "multi_hop",
     "prompt": "東京駅から最も近いカフェと、そこから300m以内の他カフェ数は？",
@@ -1410,7 +1410,7 @@
   {
     "id": "MA-TKY-L5-02",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "competitor",
     "prompt": "東京駅周辺でコンビニの競合状況を分析してください",
@@ -1429,7 +1429,7 @@
   {
     "id": "MA-TKY-L5-03",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "complementary",
     "prompt": "東京駅周辺でカフェの近くにある書店を教えてください",
@@ -1448,7 +1448,7 @@
   {
     "id": "MA-TKY-L5-04",
     "level": 5,
-    "level_name": "高度推論",
+    "level_name": "L5 Advanced reasoning",
     "category": "advanced_reasoning",
     "subcategory": "sensitivity",
     "prompt": "東京駅周辺のカフェの平均距離と最寄り・最遠の距離差は？",
@@ -1468,7 +1468,7 @@
   {
     "id": "MA-CROSS-01",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "渋谷駅と新宿駅の周辺、カフェが多いのはどちらですか？",
@@ -1490,7 +1490,7 @@
   {
     "id": "MA-CROSS-02",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "池袋と渋谷で、コンビニの密度が高いのはどちらですか？",
@@ -1512,7 +1512,7 @@
   {
     "id": "MA-CROSS-03",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "東京駅と新宿駅の周辺で、飲食店の種類が豊富なのはどちらですか？",
@@ -1534,7 +1534,7 @@
   {
     "id": "MA-CROSS-04",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "4エリアの中で最もカフェが多い駅はどこですか？",
@@ -1557,7 +1557,7 @@
   {
     "id": "MA-CROSS-05",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "渋谷と池袋、24時間営業の店舗が多いのはどちらですか？",
@@ -1579,7 +1579,7 @@
   {
     "id": "MA-CROSS-06",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "スターバックスが最も多いエリアはどこですか？",
@@ -1602,7 +1602,7 @@
   {
     "id": "MA-CROSS-07",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "各エリアで最もPOI密度が高いカテゴリは同じですか？",
@@ -1625,7 +1625,7 @@
   {
     "id": "MA-CROSS-08",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "4エリアの中で駅から最も近いカフェがあるのはどこですか？",
@@ -1648,7 +1648,7 @@
   {
     "id": "MA-CROSS-09",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "渋谷駅周辺にあるスターバックスは、新宿駅周辺と比べて何店舗差がありますか？",
@@ -1670,7 +1670,7 @@
   {
     "id": "MA-CROSS-10",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "東京駅の最寄りカフェと渋谷駅の最寄りカフェ、駅からの距離が近いのはどちらですか？",
@@ -1692,7 +1692,7 @@
   {
     "id": "MA-CROSS-11",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "新宿と池袋でマクドナルドの店舗数を比較してください",
@@ -1714,7 +1714,7 @@
   {
     "id": "MA-CROSS-12",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "渋谷駅500m圏のコンビニ数と東京駅500m圏のコンビニ数、どちらが多い？",
@@ -1736,7 +1736,7 @@
   {
     "id": "MA-CROSS-13",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "各エリアの最寄りコンビニの距離を比較してください",
@@ -1760,7 +1760,7 @@
   {
     "id": "MA-CROSS-14",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "4エリア全体でコンビニは合計何件ありますか？",
@@ -1783,7 +1783,7 @@
   {
     "id": "MA-CROSS-15",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "全エリアで最も多いPOIカテゴリは何ですか？",
@@ -1805,7 +1805,7 @@
   {
     "id": "MA-CROSS-16",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "4エリアの総POI数を教えてください",
@@ -1827,7 +1827,7 @@
   {
     "id": "MA-CROSS-17",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "全エリアのカフェを合計すると何件ですか？",
@@ -1850,7 +1850,7 @@
   {
     "id": "MA-CROSS-18",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "ラーメン店が3件以上ある駅はどこですか？",
@@ -1873,7 +1873,7 @@
   {
     "id": "MA-CROSS-19",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "駅から200m以内にカフェが最も多いエリアはどこですか？",
@@ -1897,7 +1897,7 @@
   {
     "id": "MA-CROSS-20",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "cross_area",
     "subcategory": "cross_area_comparison",
     "prompt": "24時間営業のコンビニが10件以上あるエリアはどこですか？",
@@ -1921,7 +1921,7 @@
   {
     "id": "MA-LM-01",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "landmark_query",
     "subcategory": "landmark_origin",
     "prompt": "渋谷109から最も近いカフェはどこですか？",
@@ -1939,7 +1939,7 @@
   {
     "id": "MA-LM-02",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "landmark_query",
     "subcategory": "landmark_origin",
     "prompt": "サンシャインシティから500m以内にコンビニは何件ありますか？",
@@ -1958,7 +1958,7 @@
   {
     "id": "MA-LM-03",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "landmark_query",
     "subcategory": "landmark_origin",
     "prompt": "東京国際フォーラムの最寄りのレストランを教えてください",
@@ -1976,7 +1976,7 @@
   {
     "id": "MA-LM-04",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "landmark_query",
     "subcategory": "landmark_origin",
     "prompt": "新宿アルタから一番近い銀行はどこですか？",
@@ -1994,7 +1994,7 @@
   {
     "id": "MA-LM-05",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "landmark_query",
     "subcategory": "landmark_origin",
     "prompt": "KITTEから300m以内のカフェを教えてください",
@@ -2012,7 +2012,7 @@
   {
     "id": "MA-LM-06",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "landmark_query",
     "subcategory": "landmark_origin",
     "prompt": "渋谷ヒカリエの近くで24時間営業のコンビニはありますか？",
@@ -2030,7 +2030,7 @@
   {
     "id": "MA-LM-07",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "landmark_query",
     "subcategory": "landmark_origin",
     "prompt": "皇居前広場の近くで食事できるレストランは？",
@@ -2048,7 +2048,7 @@
   {
     "id": "MA-LM-08",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "landmark_query",
     "subcategory": "landmark_origin",
     "prompt": "池袋西口公園の周辺でWi-Fiが使えるカフェは？",
@@ -2066,7 +2066,7 @@
   {
     "id": "MA-LM-09",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "landmark_query",
     "subcategory": "landmark_origin",
     "prompt": "丸ビルの近くでスターバックスはありますか？",
@@ -2083,7 +2083,7 @@
   {
     "id": "MA-LM-10",
     "level": 3,
-    "level_name": "制約充足",
+    "level_name": "L3 Constraint satisfaction",
     "category": "landmark_query",
     "subcategory": "landmark_origin",
     "prompt": "歌舞伎町の近くで深夜営業しているバーは？",
@@ -2101,7 +2101,7 @@
   {
     "id": "MA-LM-11",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "landmark_query",
     "subcategory": "landmark_origin",
     "prompt": "東京都庁から最も近いカフェと、その駅からの距離は？",
@@ -2120,7 +2120,7 @@
   {
     "id": "MA-LM-12",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "landmark_query",
     "subcategory": "landmark_origin",
     "prompt": "サンシャインシティの近くにあるカフェとコンビニの数は？",
@@ -2139,7 +2139,7 @@
   {
     "id": "MA-LM-13",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "landmark_query",
     "subcategory": "landmark_origin",
     "prompt": "渋谷スクランブルスクエアの周辺で飲食店のカテゴリ別件数は？",
@@ -2158,7 +2158,7 @@
   {
     "id": "MA-LM-14",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "landmark_query",
     "subcategory": "landmark_origin",
     "prompt": "新宿御苑から最寄りのカフェまでの距離と方角は？",
@@ -2177,7 +2177,7 @@
   {
     "id": "MA-LM-15",
     "level": 4,
-    "level_name": "意思決定支援",
+    "level_name": "L4 Decision support",
     "category": "landmark_query",
     "subcategory": "landmark_origin",
     "prompt": "ハチ公像から見て東側にあるカフェを教えてください",
@@ -2195,7 +2195,7 @@
   {
     "id": "MA-DET-01",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "area_detection",
     "subcategory": "area_detection",
     "prompt": "池袋駅周辺のホテルを教えてください",
@@ -2212,7 +2212,7 @@
   {
     "id": "MA-DET-02",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "area_detection",
     "subcategory": "area_detection",
     "prompt": "東京駅近くの銀行はありますか？",
@@ -2229,7 +2229,7 @@
   {
     "id": "MA-DET-03",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "area_detection",
     "subcategory": "area_detection",
     "prompt": "渋谷109の近くのカフェを教えてください",
@@ -2246,7 +2246,7 @@
   {
     "id": "MA-DET-04",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "area_detection",
     "subcategory": "area_detection",
     "prompt": "新宿駅西口付近のコンビニはどこですか？",
@@ -2264,7 +2264,7 @@
   {
     "id": "MA-DET-05",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "area_detection",
     "subcategory": "area_detection",
     "prompt": "池袋駅から最も近い薬局は？",
@@ -2282,7 +2282,7 @@
   {
     "id": "MA-DET-06",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "area_detection",
     "subcategory": "area_detection",
     "prompt": "サンシャインシティの近くのレストランは？",
@@ -2299,7 +2299,7 @@
   {
     "id": "MA-DET-07",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "area_detection",
     "subcategory": "area_detection",
     "prompt": "歌舞伎町の近くで食事できる場所は？",
@@ -2316,7 +2316,7 @@
   {
     "id": "MA-DET-08",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "area_detection",
     "subcategory": "area_detection",
     "prompt": "丸の内で朝食が取れるカフェは？",
@@ -2334,7 +2334,7 @@
   {
     "id": "MA-DET-09",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "area_detection",
     "subcategory": "area_detection",
     "prompt": "ハチ公像の周りにコンビニはある？",
@@ -2351,7 +2351,7 @@
   {
     "id": "MA-DET-10",
     "level": 2,
-    "level_name": "空間推論",
+    "level_name": "L2 Spatial reasoning",
     "category": "area_detection",
     "subcategory": "area_detection",
     "prompt": "都庁前でランチができる場所は？",
@@ -2368,7 +2368,7 @@
   {
     "id": "MA-DET-11",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "area_detection",
     "subcategory": "area_detection",
     "prompt": "おすすめのカフェを教えてください",
@@ -2384,7 +2384,7 @@
   {
     "id": "MA-DET-12",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "area_detection",
     "subcategory": "area_detection",
     "prompt": "24時間営業のコンビニはどこにありますか？",
@@ -2401,7 +2401,7 @@
   {
     "id": "MA-DET-13",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "area_detection",
     "subcategory": "area_detection",
     "prompt": "美味しいラーメン屋を探しています",
@@ -2417,7 +2417,7 @@
   {
     "id": "MA-DET-14",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "area_detection",
     "subcategory": "area_detection",
     "prompt": "Wi-Fiが使える場所を教えてください",
@@ -2433,7 +2433,7 @@
   {
     "id": "MA-DET-15",
     "level": 1,
-    "level_name": "基礎検索",
+    "level_name": "L1 Basic retrieval",
     "category": "area_detection",
     "subcategory": "area_detection",
     "prompt": "近くに薬局はありますか？",

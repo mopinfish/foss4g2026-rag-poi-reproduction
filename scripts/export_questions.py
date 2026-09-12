@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
-"""Phase 2 の130件テストケースを questions.json / questions.md に書き出す。
+"""Export the 130 Phase 2 test cases to questions.json / questions.md.
 
-eval/test_cases_multi_area.py の dataclass 定義を正本とし、
-コードを読まなくても質問内容・期待キーワード・対象エリアが分かる形式にする。
+The dataclass definitions in eval/test_cases_multi_area.py are the source of
+truth; this script renders them into a form that's readable without opening
+the code (question text, expected keywords, target area).
+
+Note: `level_name` in eval/test_cases_multi_area.py is Japanese (it labels the
+actual system-under-test's difficulty tiers). This script maps it to an
+English label locally so questions.json/questions.md read in English, without
+touching the eval/test code itself.
 """
 import json
 import sys
@@ -14,12 +20,20 @@ sys.path.insert(0, str(REPO_ROOT / "src"))
 
 from test_cases_multi_area import ALL_MULTI_AREA_TEST_CASES  # noqa: E402
 
+LEVEL_NAMES_EN = {
+    1: "L1 Basic retrieval",
+    2: "L2 Spatial reasoning",
+    3: "L3 Constraint satisfaction",
+    4: "L4 Decision support",
+    5: "L5 Advanced reasoning",
+}
+
 
 def to_record(tc):
     return {
         "id": tc.id,
         "level": tc.level,
-        "level_name": tc.level_name,
+        "level_name": LEVEL_NAMES_EN.get(tc.level, tc.level_name),
         "category": tc.category,
         "subcategory": tc.subcategory,
         "prompt": tc.prompt,
@@ -41,9 +55,12 @@ def main():
     )
 
     md_lines = [
-        "# Phase 2 質問リスト（130件）",
+        "# Phase 2 Question List (130 cases)",
         "",
-        "`eval/test_cases_multi_area.py` から自動生成。詳細は `questions.json` を参照。",
+        "Auto-generated from `eval/test_cases_multi_area.py`. See `questions.json` for details.",
+        "",
+        "Questions are in Japanese, matching what was actually tested "
+        "(the RAG systems answer Japanese-language questions about Tokyo POIs).",
         "",
         "| ID | Level | Area | Query Type | Question | Expected Keywords |",
         "|---|---|---|---|---|---|",

@@ -1,13 +1,14 @@
-"""GPU/LLMを使わずに検証できる範囲のスモークテスト。
+"""Smoke tests covering everything that can be verified without a GPU/LLM.
 
-ノートブック本体（Qwen2.5-7B-Instructのロードと推論）はGPUが必須のため、
-ここでは「ノートブックが依存するコード・データが壊れていないこと」を検証する:
+The notebook itself (loading and running inference with Qwen2.5-7B-Instruct)
+requires a GPU, so this suite instead verifies that the code and data the
+notebook depends on are not broken:
 
-- 130件のテストケースが読み込め、想定件数と一致する
-- 4エリア分のPOI JSONがparseでき、poi_all_areas相当に結合できる
-- geo_utils / aggregator の空間計算が動く
-- GraphRAGSystem（LLM不要）がPOIグラフを構築し、実際にクエリに応答できる
-- evaluators_multi_area.MultiAreaEvaluator がダミーsystem_fnで最後まで動く
+- The 130 test cases load and match the expected count
+- The 4 per-area POI JSON files parse and concatenate to the combined set
+- geo_utils / aggregator spatial calculations work
+- GraphRAGSystem (no LLM required) builds a POI graph and answers a real query
+- evaluators_multi_area.MultiAreaEvaluator runs to completion with a dummy system_fn
 """
 import json
 import sys
@@ -70,7 +71,7 @@ def test_130_multi_area_test_cases_load():
 
 
 def test_graph_rag_system_answers_without_gpu(flat_pois):
-    """GraphRAGSystem はLLM不要のためGPUなしでも実クエリに応答できる。"""
+    """GraphRAGSystem needs no LLM, so it can answer a real query even without a GPU."""
     from geo_utils import enrich_all_areas
     from graph_rag_system import GraphRAGSystem
 
