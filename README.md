@@ -143,3 +143,17 @@ was retrieved via the Overpass API.
   labels — see [`docs/phase1_vs_phase2_test_design.md`](docs/phase1_vs_phase2_test_design.md).
 - Scoring is deterministic and rule-based (regex / keyword matching).
 - All experiments used a 7B-parameter, 4-bit quantized LLM.
+- **LLM generation is not deterministic and no random seed is set anywhere in this repository.**
+  `structured_rag_system.py`, `adaptive_rag_system.py`'s internal answer generation, and the
+  GraphRAG answer-generation cell in `phase2_multi_area_evaluation.ipynb` all call `model.generate`
+  with `do_sample=True` and a non-zero temperature. Re-running the notebooks reproduces the same
+  procedure and should give results in the same range, but individual answers and composite scores
+  will not exactly match the numbers reported in the paper.
+- **Dependency versions are not pinned.** `pyproject.toml` lists only lower bounds (`>=`), and
+  `uv.lock` is not committed. Fast-moving packages such as `transformers` and `bitsandbytes` may
+  resolve to newer versions over time with breaking API changes, so a run in the future is not
+  guaranteed to behave identically to a run today.
+- **This package does not include the paper's statistical significance tests.** It lets you
+  regenerate the raw per-question scores/answers for Phase 1 and Phase 2, but the downstream
+  McNemar / Wilcoxon / Bonferroni-correction pipeline that produced the paper's p-values
+  (`run_significance_tests.py` in the private full research repository) is out of scope here.
