@@ -1,0 +1,2824 @@
+{
+  "metadata": {
+    "timestamp": "20260130_053413",
+    "total_test_cases": 90,
+    "model": "Qwen2.5-7B-Instruct (4bit)"
+  },
+  "summary": {
+    "graphrag": {
+      "overall": 76.70899470899471,
+      "std": 24.756398904002605,
+      "avg_time": 8.68790561358134
+    },
+    "structured": {
+      "overall": 89.10846560846561,
+      "std": 20.243434126512625,
+      "avg_time": 20.575520835982427
+    },
+    "adaptive": {
+      "overall": 86.05026455026456,
+      "std": 20.410004217658386,
+      "avg_time": 17.837580551041498
+    }
+  },
+  "by_source": {
+    "graphrag": {
+      "on_structured_tests": 74.46320346320347,
+      "on_graphrag_tests": 80.23809523809523
+    },
+    "structured": {
+      "on_structured_tests": 90.51082251082252,
+      "on_graphrag_tests": 86.9047619047619
+    },
+    "adaptive": {
+      "on_structured_tests": 86.56709956709955,
+      "on_graphrag_tests": 85.23809523809523
+    }
+  },
+  "by_category": {
+    "graphrag": {
+      "basic_location": 78.0,
+      "basic_category": 65.0,
+      "spatial_proximity": 70.33333333333333,
+      "spatial_density": 73.0,
+      "spatial_comparison": 67.0,
+      "constraint_single": 75.0,
+      "constraint_multi": 77.0,
+      "decision_location": 71.0,
+      "decision_business": 93.33333333333334,
+      "advanced_sensitivity": 86.66666666666667,
+      "advanced_comparison": 76.78571428571428,
+      "advanced_uncertainty": 60.0,
+      "relation": 76.66666666666666,
+      "multi_hop": 100.0,
+      "aggregation": 80.55555555555556,
+      "comparison": 100.0,
+      "proximity": 100.0,
+      "brand": 70.0,
+      "complementary": 70.0,
+      "competitor": 88.88888888888887,
+      "cuisine": 66.66666666666666,
+      "hours": 83.33333333333333
+    },
+    "structured": {
+      "basic_location": 100.0,
+      "basic_category": 80.0,
+      "spatial_proximity": 89.33333333333333,
+      "spatial_density": 86.0,
+      "spatial_comparison": 90.0,
+      "constraint_single": 100.0,
+      "constraint_multi": 95.0,
+      "decision_location": 87.0,
+      "decision_business": 89.33333333333334,
+      "advanced_sensitivity": 100.0,
+      "advanced_comparison": 88.6904761904762,
+      "advanced_uncertainty": 80.0,
+      "relation": 80.0,
+      "multi_hop": 100.0,
+      "aggregation": 100.0,
+      "comparison": 50.0,
+      "proximity": 100.0,
+      "brand": 93.33333333333333,
+      "complementary": 75.0,
+      "competitor": 66.66666666666666,
+      "cuisine": 100.0,
+      "hours": 100.0
+    },
+    "adaptive": {
+      "basic_location": 100.0,
+      "basic_category": 80.0,
+      "spatial_proximity": 85.33333333333333,
+      "spatial_density": 77.0,
+      "spatial_comparison": 77.0,
+      "constraint_single": 93.33333333333333,
+      "constraint_multi": 91.0,
+      "decision_location": 82.0,
+      "decision_business": 93.33333333333334,
+      "advanced_sensitivity": 93.33333333333333,
+      "advanced_comparison": 81.54761904761904,
+      "advanced_uncertainty": 86.66666666666667,
+      "relation": 80.0,
+      "multi_hop": 100.0,
+      "aggregation": 91.66666666666667,
+      "comparison": 75.0,
+      "proximity": 100.0,
+      "brand": 93.33333333333333,
+      "complementary": 75.0,
+      "competitor": 66.66666666666666,
+      "cuisine": 100.0,
+      "hours": 72.22222222222221
+    }
+  },
+  "adaptive_selections": {
+    "StructuredRAG": 62,
+    "GraphRAG": 28
+  },
+  "detailed_results": {
+    "graphrag": [
+      {
+        "id": "L1-01",
+        "category": "basic_location",
+        "source": "structured",
+        "score": 50.0,
+        "response": "渋谷駅は複数の位置情報がありますが、最も一般的な位置は東13mの場所とされています。ただし、他の位置情報も存在します。\n\n- 東13m\n- 東118m\n- 北東130m\n- 北166m\n- 西231m\n\nこれらの情報から推測すると、渋谷駅は広い範囲に位置していることがわかります。具体的な一つの位置を指すためには、より詳細な地図や周辺施設の情報が必要となります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 20.420820951461792
+      },
+      {
+        "id": "L1-02",
+        "category": "basic_location",
+        "source": "structured",
+        "score": 40.0,
+        "response": "情報がありません。上記の検索結果には東宝シネマに関する情報が含まれていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 2.008358955383301
+      },
+      {
+        "id": "L1-03",
+        "category": "basic_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありません。\n\n検索結果には「ホテルメッツ渋谷」や「渋谷WAVE」に関する情報がありますが、「渋谷東武ホテル」に関する情報はありません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.738399028778076
+      },
+      {
+        "id": "L1-04",
+        "category": "basic_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありません。検索結果には「渋谷三郵便局」の位置情報がありますが、「渋谷神南郵便局」についての情報はありません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.2919740676879883
+      },
+      {
+        "id": "L1-05",
+        "category": "basic_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "三菱UFJ銀行渋谷支店の位置情報は、西方向に約140mまたは北方向に約214mの場所にあります。具体的には、西方向の約140mには横浜銀行があり、北方向の約214mにはみずほ銀行があります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.284206390380859
+      },
+      {
+        "id": "L1-06",
+        "category": "basic_category",
+        "source": "structured",
+        "score": 25.0,
+        "response": "セブン-イレブンは渋谷エリア（area:west_mid）にあります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 1.972827434539795
+      },
+      {
+        "id": "L1-07",
+        "category": "basic_category",
+        "source": "structured",
+        "score": 50.0,
+        "response": "渋谷にあるカフェを3つ紹介します。\n\n1. Urth Caffé - 北東 57m\n2. スターバックス - 東 67m\n3. Real Drip Coffee No.12 by Ueshima Coffee House - 東 76m",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 6.002231597900391
+      },
+      {
+        "id": "L1-08",
+        "category": "basic_category",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷エリアには以下のような映画館があります：\n\n1. 東宝シネマ - 北西 280m\n2. シネクイント CINE QUINTO - 北西 355m\n3. ヒューマントラストシネマ渋谷 - 北 449m\n4. Cinemarise - 北西 471m\n5. ホワイトシネクイント - 北西 495m\n\nこれらの映画館はすべて渋谷駅周辺に位置しています。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 10.628966093063354
+      },
+      {
+        "id": "L1-09",
+        "category": "basic_category",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷周辺の薬局は以下の場所があります。\n\n1. オーエスドラッグ (北西中間位置)\n2. マツモトキヨシ (北西中間位置)\n3. マツモトキヨシ (北西中間位置)\n4. マツモトキヨシ (北西中間位置)\n\nこれらの薬局はすべて同じ北西中間位置にあります。具体的な座標情報はありませんが、渋谷駅周辺の北西方向の中間に位置しています。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 9.1656494140625
+      },
+      {
+        "id": "L1-10",
+        "category": "basic_category",
+        "source": "structured",
+        "score": 50.0,
+        "response": "渋谷には以下のホテルがあります：\n\n1. 渋谷エクセルホテル東急 - 西 188m\n2. GRANDBEL HOTEL - 南 211m\n3. Tokyu Inn - 北 235m\n4. セルリアンタワー - 南西 280m\n5. ホテルメッツ渋谷 - 南東 323m",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 8.129875183105469
+      },
+      {
+        "id": "L2-01",
+        "category": "spatial_proximity",
+        "source": "structured",
+        "score": 60.0,
+        "response": "渋谷駅に最も近いコンビニはローソンです。ローソンは渋谷駅から南へ102mの位置にあります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.358240842819214
+      },
+      {
+        "id": "L2-02",
+        "category": "spatial_proximity",
+        "source": "structured",
+        "score": 50.0,
+        "response": "情報がありません。\n\n説明：\n東宝シネマの具体的な位置情報が提供されていないため、500m以内のカフェについて特定することができません。正確な座標情報を提供顶后，我将能够给出更准确的答案。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.661028623580933
+      },
+      {
+        "id": "L2-03",
+        "category": "spatial_proximity",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありません。上記のカフェ情報には渋谷駅と原宿駅の中間地点に近いカフェに関する情報はありません。 Caféの位置は北東、東、北東、南方向に分布しており、中間地点に近いカフェの具体的な位置は示されていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.3372273445129395
+      },
+      {
+        "id": "L2-04",
+        "category": "spatial_proximity",
+        "source": "structured",
+        "score": 75.0,
+        "response": "情報がありません。\n\n上記の提供された情報には渋谷神南郵便局に関する情報が含まれていません。また、200m以内の飲食店についての情報もありません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.3914427757263184
+      },
+      {
+        "id": "L2-05",
+        "category": "spatial_proximity",
+        "source": "structured",
+        "score": 66.66666666666666,
+        "response": "情報がありません。\n\n理由：提供された情報には、渋谷駅からの距離や具体的な映画館名などの詳細なデータが含まれていません。そのため、最も遠い映画館を特定することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.231167316436768
+      },
+      {
+        "id": "L2-06",
+        "category": "spatial_density",
+        "source": "structured",
+        "score": 50.0,
+        "response": "情報がありません。上記の情報には飲食店の集中地点に関する具体的なデータや場所が含まれていません。渋谷駅周辺の飲食店の集中地点を特定するためには、具体的なデータや統計が必要です。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.7245399951934814
+      },
+      {
+        "id": "L2-07",
+        "category": "spatial_density",
+        "source": "structured",
+        "score": 75.0,
+        "response": "情報がありません。\n\n上記の情報にはカフェやバーに関する具体的なデータが含まれていません。ロッテリアやマクドナルドなどのレストラン情報はありますが、カフェやバーの数や位置については記載されていません。そのため、渋谷駅周辺のカフェとバーの比較はできません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.435967445373535
+      },
+      {
+        "id": "L2-08",
+        "category": "spatial_density",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありません。\n\n理由：提供された情報には「経路上のPOI」の詳細が含まれていません。そのため、「渋谷駅周辺のPOI構成」から「商業エリア」と「住宅エリア」の特性を推定することはできません。具体的なPOIの数や種類（例えば、ショッピングセンターや飲食店の数、住宅街の広さなど）が必要です。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 10.859822511672974
+      },
+      {
+        "id": "L2-09",
+        "category": "spatial_density",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺の医療施設（病院、クリニック、薬局）の分布は以下の通りです：\n\n1. area:north_midエリアには以下の医療施設があります：\n   - 湘南美容外科\n   - ディアファーマシー\n   - 渋谷サンクスクリニック\n   - ココカラファイン（薬局）\n\n2. area:west_midエリアには以下の医療施設があります：\n   - 松岡薬局\n\nこれらの施設はそれぞれ異なるエリアに位置しています。具体的な場所については、ポーラ 渋谷ビル 駐車場（area:north_mid）の位置を基準にすると、他の施設も近隣に位置しています。ただし、具体的な座標情報は提供されていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 20.124077558517456
+      },
+      {
+        "id": "L2-10",
+        "category": "spatial_density",
+        "source": "structured",
+        "score": 40.0,
+        "response": "情報がありません。\n\n上記の情報には宿泊施設の具体的な位置や数が含まれていません。そのため、渋谷駅周辺の宿泊施設の密度を評価するためのデータが不足しています。具体的な数値や詳細な地理情報を提供していただければ、より正確な回答が可能になります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.9164416790008545
+      },
+      {
+        "id": "L2-11",
+        "category": "spatial_comparison",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありません。飲食店の数を集計した結果、渋谷駅周辺にはカフェが含まれる飲食店が0件しかないため、東側と西側どちらにカフェが多いかを比較する情報はありません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.0807883739471436
+      },
+      {
+        "id": "L2-12",
+        "category": "spatial_comparison",
+        "source": "structured",
+        "score": 50.0,
+        "response": "情報がありません。上記の情報からは、特定のエリア（area:northwest_mid）内に東宝シネマ、Cinemarise、SHIBUYA FLAG PARKING、タイムズという映画館が存在することがわかりますが、高木ビル有料駐車場は駐車場であり映画館ではありません。また、具体的な場所名や数値は提供されていません。\n\nただし、渋谷駅周辺の一般的な情報から推測すると、映画館の数を数えることで比較できる可能性があります。例えば：\n\n- 東宝シネマ（1つ）\n- Cinemarise（1つ）\n- SHIBUYA FLAG PARKING（0つ、これは駐車場）\n\nしたがって、これらの映画館を数えると2つあります。ただし、この情報は特定のエリア（area:northwest_mid）に限定されているため、渋谷駅全体の映画館の数を知るには、他のエリアの情報を必要とします。\n\n正確な数値を知るためには、より広範囲の情報を提供していただくか、直接渋谷駅周辺の観光情報サイトや地図アプリをご確認いただくことをお勧めします。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 21.51671552658081
+      },
+      {
+        "id": "L2-13",
+        "category": "spatial_comparison",
+        "source": "structured",
+        "score": 60.0,
+        "response": "情報がありません。\n\n説明：\n現在提供されている情報には、渋谷駅周辺のコンビニやスーパーの詳細な数や場所名が含まれていません。そのため、コンビニとスーパーの充実度を比較するための具体的なデータを提供することはできません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.930285930633545
+      },
+      {
+        "id": "L2-14",
+        "category": "spatial_comparison",
+        "source": "structured",
+        "score": 75.0,
+        "response": "情報がありません。質問に答えるためには、具体的な比較対象（例えば、どの銀行や郵便局）が必要です。ただし、ポーラ 渋谷ビル 駐車場の周辺には複数の金融機関があります：\n\n- 日本生活金融公庫 (area:north_mid)\n- 野村證券 (area:north_mid)\n- セブン銀行 (area:north_mid)\n- 三井住友信託銀行 (area:north_mid)\n- 東日本銀行 (area:north_mid)\n\nこれらの金融機関の詳細な位置や営業時間、サービス内容については情報がありません。そのため、具体的な評価はできません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 12.019439697265625
+      },
+      {
+        "id": "L2-15",
+        "category": "spatial_comparison",
+        "source": "structured",
+        "score": 50.0,
+        "response": "情報がありません。上記のリストにはPOIの種類は記載されていますが、それぞれのPOIの数や頻度についての具体的な数値情報はありません。そのため、渋谷駅周辺で最も多いPOIカテゴリを判定することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.554911375045776
+      },
+      {
+        "id": "L3-01",
+        "category": "constraint_single",
+        "source": "structured",
+        "score": 75.0,
+        "response": "情報がありません。\n\n理由：提供された経路上のPOI情報には、渋谷駅から徒歩5分以内にあるカフェに関する情報が含まれていません。具体的な場所名や座標情報が存在しないため、正確な回答を提供することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.550058603286743
+      },
+      {
+        "id": "L3-02",
+        "category": "constraint_single",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありません。上記の椋谷の映画館の一覧には電話番号が掲載されていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 2.3750126361846924
+      },
+      {
+        "id": "L3-03",
+        "category": "constraint_single",
+        "source": "structured",
+        "score": 0.0,
+        "response": "情報がありません。提供的的信息中没有包含任何有关餐厅网站的数据。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 1.4151771068572998
+      },
+      {
+        "id": "L3-04",
+        "category": "constraint_single",
+        "source": "structured",
+        "score": 100.0,
+        "response": "「渋谷」という名前が含まれるホテルはありません。最寄りのホテルは「渋谷エクセルホテル東急」で、その位置は西 188mです。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.23528528213501
+      },
+      {
+        "id": "L3-05",
+        "category": "constraint_single",
+        "source": "structured",
+        "score": 100.0,
+        "response": "セブン-イレブンは渋谷エリア（area:west_mid）にあり、24時間営業のコンビニです。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 2.8568999767303467
+      },
+      {
+        "id": "L3-06",
+        "category": "constraint_multi",
+        "source": "structured",
+        "score": 75.0,
+        "response": "情報がありません。\n\n理由：提供された経路上のPOI情報には、電話番号やウェブサイトが記載されているカフェの情報が含まれていないため、適切な回答を提供することができません。具体的な場所名や座標情報も提供されていないため、より詳細な検索を行うこともできません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.37026047706604
+      },
+      {
+        "id": "L3-07",
+        "category": "constraint_multi",
+        "source": "structured",
+        "score": 60.0,
+        "response": "情報がありません。\n\n理由：提供された経路上のPOI情報には、渋谷駅周辺のカフェや映画館の位置情報が含まれていないため、正確な回答を提供することができません。具体的なカフェ名や距離情報が存在しない場合、そのような情報は提供できません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 6.1107871532440186
+      },
+      {
+        "id": "L3-08",
+        "category": "constraint_multi",
+        "source": "structured",
+        "score": 75.0,
+        "response": "情報がありません。\n\n理由：上記の情報では、薬局が近いクリニックについての具体的な情報がありません。指定された条件（200m以内）の薬局が近いクリニックについては記載されていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.049952507019043
+      },
+      {
+        "id": "L3-09",
+        "category": "constraint_multi",
+        "source": "structured",
+        "score": 100.0,
+        "response": "セブン-イレブンと渋谷は同じエリア（area:west_mid）にあります。しかし、質問で求められているのはコンビニが3軒以上集まっているエリアです。上記の情報から、特定のエリアで3軒以上のコンビニが集まっているエリアは見つかりません。\n\nしたがって、「情報がありません」と回答します。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 7.330027103424072
+      },
+      {
+        "id": "L3-10",
+        "category": "constraint_multi",
+        "source": "structured",
+        "score": 75.0,
+        "response": "情報がありません。上記の情報にはカフェやサロンの位置が記載されていますが、バーに関する情報はありません。そのため、渋谷駅から500m以内のバーの候補を提案することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.784743547439575
+      },
+      {
+        "id": "L4-01",
+        "category": "decision_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありません。\n\n理由：渋谷駅周辺の具体的な保育園の位置情報や、各施設の周辺環境（公園の距離や交番の有無）についてのデータが提供されていません。そのため、最適な場所を特定することはできません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.855685710906982
+      },
+      {
+        "id": "L4-02",
+        "category": "decision_location",
+        "source": "structured",
+        "score": 80.0,
+        "response": "渋谷駅周辺で高齢者向けデイサービスを開設する場合、医療施設へのアクセスを重視すると、以下のようなエリアが適しています：\n\n**渋谷（west_mid）**\n\n理由：\n1. **渋谷駅（west_mid）**: 渋谷駅は主要な交通結節点であり、多くの医療施設が近接しています。特に渋谷駅周辺には以下の医療施設があります：\n   - **渋谷病院（約500m）**: 24時間救急医療を提供しており、緊急時の対応が可能です。\n   - **渋谷総合医療センター（約600m）**: 病院と連携し、患者の受け入れや転送が容易です。\n\n2. **渋谷（north_near）**: このエリアも医療施設が密集しています：\n   - **渋谷区立渋谷病院（約300m）**: 24時間救急医療を提供しており、緊急時の対応が可能です。\n   - **渋谷区立渋谷保健センター（約400m）**: 診療や健康管理などの医療サービスが提供されています。\n\nこれらのエリアは、医療施設へのアクセスが良好であり、高齢者向けデイサービスの運営において重要な要素を満たしています。また、これらのエリアは公共交通機関の利用も容易で、地域住民にとって利便性が高いです。\n\n座標情報：渋谷（west_mid）の座標は緯度35.6789, 経度139.7135です。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 30.200005769729614
+      },
+      {
+        "id": "L4-03",
+        "category": "decision_location",
+        "source": "structured",
+        "score": 20.0,
+        "response": "情報がありません。具体的な座標や場所名、コンビニの名称や距離などの詳細情報が提供されていないため、適切な提案が出来ません。詳細な情報を提供いただければと思います。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.5001220703125
+      },
+      {
+        "id": "L4-04",
+        "category": "decision_location",
+        "source": "structured",
+        "score": 75.0,
+        "response": "渋谷駅周辺で待ち合わせスポットとして最適な場所は「SHIBUYA FLAG PARKING」（北西方向中間位置）です。この場所は、わかりやすく、周囲に飲食店も多数あります。また、渋谷駅から徒歩約5分の距離に位置しています。周辺にはカフェやレストランが多く、待ち合わせ後もゆっくりと食事を楽しむことができます。座標情報は北西方向中間位置となります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 8.723889350891113
+      },
+      {
+        "id": "L4-05",
+        "category": "decision_location",
+        "source": "structured",
+        "score": 80.0,
+        "response": "渋谷駅周辺で観光客向けの案内所を設置するなら、渋谷スクランブル交差点にある東京都渋谷区役所前の広場が効果的です。この場所は、渋谷駅から徒歩約1分の距離にあり、多くの観光客が通り過ぎる地点です。また、周辺には複数の観光スポットがあり、例えば原宿・表参道、渋谷ヒカリエ、SHIBUYA 109などがあります。\n\n座標情報：35.67824, 139.74972\n\nただし、具体的な設置場所については、都市計画や交通状況などの要因により最適な場所が変わる可能性があります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 14.338719367980957
+      },
+      {
+        "id": "L4-06",
+        "category": "decision_business",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺での新規カフェ出店について、競合と集客可能なPOIを考慮すると以下のように判断できます。\n\n1. 競合（既存カフェ）の数：\n   - 渋谷駅周辺にはロッテリア（カフェ機能あり）、モスバーガー（カフェ機能あり）があります。\n   - ただし、これらは主にファストフード店であり、完全なカフェとは異なります。\n   - 競合する真正のカフェは情報がありません。\n\n2. 集客可能なPOI：\n   - 渋谷駅（area:west_mid）\n   - 渋古スクエア（area:west_mid）\n   - 渋谷109（area:west_mid）\n   - 渋谷ヒカリエ（area:west_mid）\n\n3. 判断：\n   - 競合としては、真正のカフェが存在しないため、競争は少ない可能性があります。\n   - 渋谷駅を中心に多くの商業施設があり、多くの人々が通過するため、集客には有利な条件があります。\n\n総合的に見て、渋谷駅周辺に出店する場合、競合が少なく、集客環境は良好であるため、出店は向きと考えられます。ただし、具体的な場所選定では、周辺の競合状況やターゲット顧客の特性などをさらに調査することをお勧めします。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 24.782602071762085
+      },
+      {
+        "id": "L4-07",
+        "category": "decision_business",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありません。\n\n理由：提供された情報には渋谷駅周辺のコンビニエンスストアの分布や密度に関する具体的なデータが含まれていません。また、新規コンビニの出店余地を判断するためには、現在のコンビニエンスストアの数や配置、また周辺の人口密度なども考慮する必要がありますが、これらの詳細な情報が提供されていないため、正確な回答を提供することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 8.072970867156982
+      },
+      {
+        "id": "L4-08",
+        "category": "decision_business",
+        "source": "structured",
+        "score": 83.33333333333334,
+        "response": "渋谷駅周辺で新規ベーカリーを出店する際の戦略を提案します。\n\n1. **競合分析**:\n   - **ロッテリア**: 同一エリア（area:west_mid）にあるロッテリアは、主にファストフードを提供しています。競争はありますが、異なる顧客層をターゲットにすることで差別化できます。\n   - **モスバーガー**: 同一エリア（area:west_mid）にあるモスバーガーも競合となります。同様に、異なる顧客層やサービス内容で差別化を図ります。\n\n2. **協業可能性**:\n   - **SHIBUYA FLAG PARKING**: 同一エリア（area:northwest_mid）にあるSHIBUYA FLAG PARKINGは駐車場ですが、カフェとの協業が可能です。例えば、駐車料金の割引やカフェでの休憩スペースの提供など、互いに利益を生む取り組みを検討できます。\n   - **タイムズ**: 同一エリア（area:northwest_mid）にあるタイムズは書籍販売や飲食スペースがあります。カフェとの協業により、読書や仕事のためのスペースを提供し、新たな顧客層を開拓できます。\n   - **高木ビル有料駐車場**: 同一エリア（area:northwest_mid）にある高木ビル有料駐車場も協業の可能性があります。駐車料金の割引やカフェでの休憩スペースの提供など、駐車客向けのサービスを展開できます。\n\n3. **出店場所**:\n   - **渋谷駅周辺**: 渋谷駅周辺は人流量が非常に多いエリアであり、多くの人々が立ち寄る可能性があります。特に、渋谷駅の南口や北口付近が候補として考えられます。\n   - **SHIBUYA FLAG PARKING周辺**: SHIBUYA FLAG PARKING周辺は駐車場を利用する人々が多く、カフェとの協業により駐車料金の割引や休憩スペースの提供が可能となります。\n\n4. **戦略的提案**:\n   - **多様な商品ラインナップ**: パンだけでなく、コーヒー、スイーツ、",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 39.70537209510803
+      },
+      {
+        "id": "L4-09",
+        "category": "decision_business",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺で深夜営業のバーを出店する場合、適切なエリアは「渋谷スクランブル交差点」周辺と「代々木上原」周辺です。これらのエリアは、以下のような特徴があります：\n\n1. **渋谷スクランブル交差点周辺（35.67802, 139.65472）**\n   - **競合状況:** このエリアには多くのバー・カフェがあり、競合が存在します。しかし、渋谷駅から徒歩約5分とアクセスが良好です。\n   - **客層:** 主に若年層から中高年層まで幅広い客層が訪れる傾向があります。\n   - **深夜営業:** 多くのバーが深夜まで営業しています。\n\n2. **代々木上原周辺（35.67713, 139.65635）**\n   - **競合状況:** このエリアもバーが多く、競合が存在しますが、渋谷駅からは少し離れており、徒歩約15分です。\n   - **客層:** 若年層を中心に、文化的な雰囲気を求める客層が多いです。\n   - **深夜営業:** 多くのバーが深夜まで営業しています。\n\n**総合的な評価:**\n- **アクセス:** 渋谷駅からのアクセスが最も良いのは「渋谷スクランブル交差点」周辺です。\n- **競合:** 「代々木上原」周辺は競合が若干少ないですが、アクセスは遅くなります。\n- **客層:** 両エリアとも幅広い客層が見込めますが、「渋谷スクランブル交差点」周辺はより多様な客層が訪れる傾向があります。\n\nしたがって、渋谷駅周辺で深夜営業のバーを出店する場合、**渋谷スクランブル交差点周辺**が最適なエリアと言えるでしょう。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 36.7859103679657
+      },
+      {
+        "id": "L4-10",
+        "category": "decision_business",
+        "source": "structured",
+        "score": 83.33333333333334,
+        "response": "渋谷駅周辺で薬局を出店する場合、以下の点を考慮すると出店の可否を判断できます。\n\n1. **競合分析**：\n   - **松岡薬局**：松岡薬局は「area:west_mid」に位置しています。渋谷駅周辺の他の薬局と比較して、松岡薬局との距離は約500mです。これは競合が存在するため、新規出店には注意が必要です。\n\n2. **医療施設との近接性**：\n   - **湘南美容外科**：ポーラ 渋谷ビル 駐車場と同じエリア（area:north_mid）に位置しています。距離は約300mです。\n   - **ディアファーマシー**：ポーラ 渋谷ビル 駐車場と同じエリア（area:north_mid）に位置しています。距離は約400mです。\n   - **渋谷サンクスクリニック**：ポーラ 渋谷ビル 駐車場と同じエリア（area:north_mid）に位置しています。距離は約500mです。\n   - **ココカラファイン**：ポーラ 渋谷ビル 駐車場と同じエリア（area:north_mid）に位置しています。距離は約600mです。\n\nこれらの医療施設は、薬局の主要顧客層である患者やその家族にとって重要な存在です。特に、湘南美容外科や渋谷サンクスクリニックのような専門医療施設は、定期的な診察や治療を受けている患者が多いため、薬局の需要も高まります。\n\n**総合評価**：\n- **競合**：松岡薬局との距離が近いため、競合が存在します。ただし、他の薬局との距離は適度に広がっています。\n- **医療施設との近接性**：湘南美容外科や渋谷サンクスクリニックなど、医療施設との距離は比較的近いですが、これらは専門的な医療サービスを提供しているため、一般的な薬局の競争とは異なる特性があります。\n\n**結論**：\n出店の可否を判断する上で、以下のような�",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 39.92144966125488
+      },
+      {
+        "id": "L5-01",
+        "category": "advanced_sensitivity",
+        "source": "structured",
+        "score": 80.0,
+        "response": "情報がありません。具体的なカフェ数や位置情報を提供していませんので、500mと300mの検索範囲でのカフェ数を比較することはできません。具体的なデータを提供いただければ、より正確な回答ができるかと思います。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.556303024291992
+      },
+      {
+        "id": "L5-02",
+        "category": "advanced_sensitivity",
+        "source": "structured",
+        "score": 80.0,
+        "response": "情報がありません。上記の情報にはカフェに関するデータが含まれていませんので、「渋谷駅周辺は飲食店が充実している」という評価を Café を除外した場合の具体性を判断するための情報がありません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.073835849761963
+      },
+      {
+        "id": "L5-03",
+        "category": "advanced_sensitivity",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありません。上記の情報からは、渋谷駅周辺のコンビニの位置情報は得られますが、コンビニの密度やその密度が「十分に多い」とされる最小半径については記載されていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.406909704208374
+      },
+      {
+        "id": "L5-04",
+        "category": "advanced_comparison",
+        "source": "structured",
+        "score": 85.71428571428571,
+        "response": "情報がありません。\n\n上記の提供情報には、渋谷駅周辺や恵比寿駅周辺の医療施設の数、薬局の数、公共施設（郵便局、交番）の有無についての具体的な情報が含まれていません。したがって、これらの要素に基づいて渋谷駅周辺と恵比寿駅周辺を比較することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 8.27181077003479
+      },
+      {
+        "id": "L5-05",
+        "category": "advanced_comparison",
+        "source": "structured",
+        "score": 71.42857142857143,
+        "response": "情報がありません。\n\n現在の情報では、渋谷駅周辺の公園、保育施設、医療施設、スーパーの詳細な位置や数についての具体的なデータが提供されていません。そのため、総合的な評価を行うことができません。\n\nただし、一般的な情報として、渋谷駅周辺には以下のような施設があります：\n\n1. 公園：\n   - 渋谷公園（約0.5km）\n   - 代々木公園（約1km）\n\n2. 保育施設：\n   - 渋谷区立子供の家（渋谷駅南口から約300m）\n   - 他にもいくつかの私立保育園があります\n\n3. 医療施設：\n   - 渋谷病院（渋谷駅北口から約500m）\n   - 東京女子医大渋谷病院（渋谷駅西口から約800m）\n\n4. 超市：\n   - マルイミヤ（渋谷駅東口から約200m）\n   - ショッピングプラザ渋谷（渋谷駅南口から約300m）\n\nこれらの施設の詳細な数や具体的な位置については、より詳細な情報を提供していただければ、より具体的な評価が可能となります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 23.905158281326294
+      },
+      {
+        "id": "L5-06",
+        "category": "advanced_comparison",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺はビジネスパーソンにとって理想的な立地と言えるでしょう。以下、各観点での評価を示します。\n\n1. **カフェ（作業場所）**\n   - 渋谷駅周辺には多くのカフェが点在しています。例えば、渋谷スクランブル交差点周辺には「スターバックス コーヒー 渋谷スクランブルスクエア」（34.67925, 139.64805）があります。また、「カフェデルフィーノ 渋谷店」（34.67895, 139.64823）も人気です。これらのカフェは、ビジネスパーソンが作業を行うのに適した環境を提供しています。\n\n2. **コンビニ（利便性）**\n   - 渋谷駅周辺には複数のコンビニエンスストアがあります。例えば、「セブンイレブン 渋谷駅前店」（34.67867, 139.64785）や「ローソン 渋谷駅前店」（34.67875, 139.64795）などがあります。これらは24時間営業で、ビジネスパーソンが必要な物資を手に入れられる利便性が高いです。\n\n3. **金融機関（銀行、ATM）**\n   - 渋谷駅周辺には多くの金融機関が存在します。例えば、「三菱UFJ銀行 渋谷支店」（34.67885, 139.64815）や「三井住友銀行 渋谷支店」（34.67895, 139.64825）があります。また、ATMも多数設置されており、例えば「セブン銀行 渋谷駅前ATM」（34.67865, 139.64785）などがあります。これらの金融機関はビジネスパーソンの金融活動をサポートしています。\n\n以上の情報から、渋谷駅周辺はカフェ、コンビニ、金融機関の",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 40.37620759010315
+      },
+      {
+        "id": "L5-07",
+        "category": "advanced_comparison",
+        "source": "structured",
+        "score": 50.0,
+        "response": "情報がありません。\n\n理由：提供された情報には観光客向けのエリアとしての渋谷駅周辺の具体的なデータや詳細情報が含まれていません。そのため、観光スポット、飲食店、宿泊施設の数や種類、位置情報などを踏まえた評価はできません。\n\nただし、一般的な観点から評価すると、渋谷駅周辺は以下のような特徴があります：\n\n1. 観光スポット：\n- 渋谷スクランブル交差点（約30万人/日）\n- 渋谷ヒカリエ（年間約2,500万人の来場者）\n- 代々木公園（約1,000万人/年）\n- 渋谷109（約4,000万人/年）\n\n2. 飲食店：\n- 約100店舗以上の飲食店が集積しています\n- 多様な国際色豊かな料理が楽しめます\n\n3. 宿泊施設：\n- 約100軒以上のホテルや旅館が存在します\n- ビジネスホテルから高級ホテルまで幅広く揃っています\n\nこれらの情報は一般的なものであり、正確な数値や詳細な位置情報は提供されていません。具体的な評価を行うためには、より詳細なデータが必要となります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 23.61172080039978
+      },
+      {
+        "id": "L5-08",
+        "category": "advanced_uncertainty",
+        "source": "structured",
+        "score": 40.0,
+        "response": "情報がありません。\n\n理由：提供された情報には「雰囲気の良い」カフェに関する具体的なデータや座標情報が含まれていません。渋谷駅周辺には多くのカフェがありますが、その中でも特に「雰囲気の良い」カフェを特定するための詳細な情報が必要です。例えば、評価点数、レビュー数、カフェの種類（インテリアデザイン、音楽、照明など）などの情報があれば、より具体的な推奨が可能になります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 8.820530891418457
+      },
+      {
+        "id": "L5-09",
+        "category": "advanced_uncertainty",
+        "source": "structured",
+        "score": 60.0,
+        "response": "情報がありません。\n\n理由：\n1. 渋谷駅周辺のレストランの雰囲気（静かかどうか）についての具体的な情報が提供されていません。\n2. 「静かな」レストランの定義も明確ではありません。例えば、客席間隔が広いことや音楽の音量が低いことを指すのか、それとも店内が完全に静寂であることを指すのか等、詳細が不明です。\n\nしたがって、これらの欠落した情報に基づいて推測することは不可能です。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 9.401165008544922
+      },
+      {
+        "id": "L5-10",
+        "category": "advanced_uncertainty",
+        "source": "structured",
+        "score": 80.0,
+        "response": "情報がありません。\n\n理由：提供された情報には「経路上のPOI（ポイント・オブ・インタレスト）」のデータが含まれていません。そのため、具体的な「治安」に関する推測や交番の有無についての評価を行うことができません。具体的なPOIデータが存在すれば、その中から交番の位置や数を確認し、治安の推測を行うことができます。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 6.7186057567596436
+      },
+      {
+        "id": "GR-01",
+        "category": "relation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。\n\n上記の情報からは、チャングミが所在するエリアは「area:northwest_far」ですが、そのエリア内にカフェは存在しないことが確認できます。また、同じエリア内には複数のコンビニがありますが、質問では「渋谷駅の東側にあるカフェ」を探しているため、具体的な場所名やカフェ名が提供されていないため回答できません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 8.646660327911377
+      },
+      {
+        "id": "GR-02",
+        "category": "relation",
+        "source": "graphrag",
+        "score": 33.33333333333333,
+        "response": "情報がありません。 PROVIDED INFORMATION 中には銀行に関する情報が含まれていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 1.4666335582733154
+      },
+      {
+        "id": "GR-03",
+        "category": "relation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "チャングミの近くにはロッテリアがあります。また、lyf Shibuya Tokyoの近くにもロッテリアがあります。これらのレストランはどちらも「area:northwest_far」エリアに位置しています。\n\n具体的な座標情報はありませんが、これらのレストランは指定されたエリア内にあるホテルの近くに存在します。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 6.223428726196289
+      },
+      {
+        "id": "GR-04",
+        "category": "relation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。\n\n理由：提供された情報では、駅周辺のコンビニと薬局の関連性についての情報がありません。セブン-イレブンは渋谷エリアにありますが、薬局については具体的な情報が見つかりませんでした。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.998039722442627
+      },
+      {
+        "id": "GR-05",
+        "category": "relation",
+        "source": "graphrag",
+        "score": 50.0,
+        "response": "東宝シネマの近くにあるカフェはマクドナルドです。マクドナルドと東宝シネマは同じエリア（area:northwest_mid）にあります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.5437798500061035
+      },
+      {
+        "id": "GR-06",
+        "category": "multi_hop",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。\n\n説明：\n質問にはカフェの具体的な位置情報（座標）が提供されていません。また、50m以内に書店があるかの確認もできていません。そのため、正確な回答を提供することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.1240458488464355
+      },
+      {
+        "id": "GR-07",
+        "category": "multi_hop",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。上記の情報には渋谷駅から100m以内のコンビニやカフェに関する具体的な位置情報はありません。ただし、近隣の情報を提供できます。\n\n- カフェ・ベローチェから25mの位置にローソンがあります。\n- ドトールコーヒーショップから22mの位置にローソンがあります。\n- 上島珈琲店から35mの位置にファミリーマートがあります。\n\nこれらの情報から推測すると、これらのコンビニのうちのいずれかが渋谷駅から100m以内にある可能性がありますが、具体的な位置は不明です。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 11.87781286239624
+      },
+      {
+        "id": "GR-08",
+        "category": "multi_hop",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "回答：ホテルから徒歩で行ける範囲にあるレストランとカフェは以下の通りです。\n\n1. つけ麺大臣渋谷店 - ホテルから約94mの距離にあります。\n2. サイゼリヤ - ホテルから約96mの距離にあります。\n3. TRATTORIA PIZZERIA - スターバックスから88mの位置にあり、ホテルから約176mの距離にあります。\n4. My Hamburger Watanabe - カフェ・ド・クリエから45mの位置にあり、ホテルから約96mの距離にあります。\n5. Shinpachi Shokudō Shibuya Meijidōri - カフェ・ド・クリエから51mの位置にあり、ホテルから約96mの距離にあります。\n\nこれらの施設は全てホテルから徒歩で約10分以内の距離にあります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 16.26399803161621
+      },
+      {
+        "id": "GR-09",
+        "category": "aggregation",
+        "source": "graphrag",
+        "score": 66.66666666666666,
+        "response": "情報がありません。上記の集計結果からは、飲食店の総数は830件ですが、各飲食店が配置されている具体的なエリアについては記載されていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.3993701934814453
+      },
+      {
+        "id": "GR-10",
+        "category": "aggregation",
+        "source": "graphrag",
+        "score": 75.0,
+        "response": "情報がありません。北側と南側のPOI（興味地点）の数についての具体的な数値や詳細な位置情報が提供されていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 2.910735845565796
+      },
+      {
+        "id": "GR-11",
+        "category": "aggregation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷で最も多いカテゴリのPOIは飲食店です。上位3つのカテゴリは以下の通りです：\n\n1. 飲食店 (830件)\n2. 商店 (82件)\n3. 医療 (36件)",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.348820209503174
+      },
+      {
+        "id": "GR-12",
+        "category": "comparison",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。比較結果には飲食店のカテゴリ多様性に関する情報が含まれていません。東側と西側の飲食店の数は示されていますが、カテゴリ多様性については具体的な数字や詳細が提供されていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.115894794464111
+      },
+      {
+        "id": "GR-13",
+        "category": "comparison",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "駅の近く（200m以内）と遠く（500m以上）で比較すると、駅の近くには3つのホテルがあります。一方、遠く（500m以上）には2つのホテルがあります。\n\n駅の近く（200m以内）：\n1. 渋谷エクセルホテル東急 (200m)\n2. GRANDBEL HOTEL (211m)\n3. Tokyu Inn (235m)\n\n遠く（500m以上）：\n1. セルリアンタワー (280m)\n2. ホテルメッツ渋谷 (323m)\n\nしたがって、駅の近く（200m以内）の方がホテルが多いです。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 13.344033002853394
+      },
+      {
+        "id": "GR-14",
+        "category": "proximity",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅に最も近いホテルは渋谷エクセルホテル東急です。これは渋谷駅から西へ188mの場所に位置しています。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.471210241317749
+      },
+      {
+        "id": "GR-15",
+        "category": "proximity",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。\n\n説明：提供された情報には、渋谷駅から300m以内にある映画館の具体的な位置情報や距離が含まれていません。そのため、正確な回答を提供することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.781522989273071
+      },
+      {
+        "id": "GR-16",
+        "category": "brand",
+        "source": "graphrag",
+        "score": 33.33333333333333,
+        "response": "情報がありません。上記の検索結果にはスターバックスに関する情報が含まれていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 1.9467573165893555
+      },
+      {
+        "id": "GR-17",
+        "category": "brand",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。\n\n上記の集計結果という文言だけあり、具体的なファミリーマートとローソンの店舗数や場所に関する情報が提供されていません。そのため、どちらのチェーンストアが多いかを比較することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.6892876625061035
+      },
+      {
+        "id": "GR-18",
+        "category": "brand",
+        "source": "graphrag",
+        "score": 50.0,
+        "response": "情報がありません。ドトールコーヒーに関する情報は提供された検索結果には含まれていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 1.935210943222046
+      },
+      {
+        "id": "GR-19",
+        "category": "brand",
+        "source": "graphrag",
+        "score": 66.66666666666666,
+        "response": "情報がありません。同一エリア内の具体的なマクドナルドとスターバックスの位置情報が提供されていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 2.8172662258148193
+      },
+      {
+        "id": "GR-20",
+        "category": "brand",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。上記の集計結果にはコンビニチェーンの情報が含まれていません。そのため、渋谷で最も店舗数が多いコンビニチェーンを特定することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.671712875366211
+      },
+      {
+        "id": "GR-21",
+        "category": "complementary",
+        "source": "graphrag",
+        "score": 33.33333333333333,
+        "response": "渋谷駅から最も近いレストランはMatsue (レストラン)です。これは渋谷駅から北東方向へ49mの場所にあります。他の選択肢としては、wagyu&steak TEPPANYAKI 10 SHIBUYA (51m)、UP Noodle TOKYO (54m)、天ぷら　天寅 (55m)、半笑 (59m)もおすすめです。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 8.325204133987427
+      },
+      {
+        "id": "GR-22",
+        "category": "complementary",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "最寄りのカフェはUrth Cafféです。北東方向に57m先にあります。次に近いカフェはスターバックスで、東方向に67m先にあります。Real Drip Coffee No.12 by Ueshima Coffee Houseも東方向ですが、少し遠くに位置し76m先です。最後に5 CROSSTIES COFFEEは北東方向に86m先にあり、タリーズコーヒーは南方向に89m先にあります。映画を見た後であれば、これらのカフェのいずれかを利用できます。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 10.034408807754517
+      },
+      {
+        "id": "GR-23",
+        "category": "complementary",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。検索結果からは、渋谷駅周辺の位置情報を得られますが、どの場所が軽食を提供しているかpecificな情報は見つかりませんでした。近くのカフェやレストランがある可能性はありますが、具体的な場所名や距離は確認できませんでした。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 6.022128343582153
+      },
+      {
+        "id": "GR-24",
+        "category": "complementary",
+        "source": "graphrag",
+        "score": 50.0,
+        "response": "情報がありません。\n\n上記のPOI情報にはカフェがいくつかありますが、本屋に関する情報はありません。近くに本屋があるかどうかの情報が提供されていないため、そのようなカフェが近くにあるかを判断することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.959775447845459
+      },
+      {
+        "id": "GR-25",
+        "category": "complementary",
+        "source": "graphrag",
+        "score": 66.66666666666666,
+        "response": "情報がありません。提供された情報には観光名所の近くの具体的な場所が含まれていません。ただし、渋谷駅から近いレストランやカフェがいくつかあります。例えば、Matsue（49m）、wagyu&steak TEPPANYAKI 10 SHIBUYA（51m）、UP Noodle TOKYO（54m）などが近い場所にあります。これらの場所は観光客にとって便利な場所と言えるでしょう。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 9.08489990234375
+      },
+      {
+        "id": "GR-26",
+        "category": "competitor",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "はい、混んでいるカフェの近くにはいくつかの代わりのカフェがあります。\n\n1. Urth Caffé - 渋谷駅から北東へ57mにあるため、直近の選択肢となります。\n2. スターバックス - 渋谷駅から東へ67mに位置しています。\n3. Real Drip Coffee No.12 by Ueshima Coffee House - 渋谷駅から東へ76mにあります。\n4. 5 CROSSTIES COFFEE - 渋谷駅から北東へ86mにあります。\n\nこれらのカフェはすべて徒歩10分圏内にあり、混んでいる場合の代替として利用可能です。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 12.341275691986084
+      },
+      {
+        "id": "GR-27",
+        "category": "competitor",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。\n\n上記の提供された情報にはラーメン屋に関するデータが含まれていません。高木ビル有料駐車場、SHIBUYA FLAG PARKING、タイムズ、および渋谷駅の位置情報のみが示されています。ラーメン屋が密集しているエリアについての具体的な情報は含まれておりません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.783231019973755
+      },
+      {
+        "id": "GR-28",
+        "category": "competitor",
+        "source": "graphrag",
+        "score": 66.66666666666666,
+        "response": "IZAKAYA VIN以外の同じエリアでの選択肢として、以下の店舗があります：\n\n1. 吉そば (west_mid)\n2. かつや (west_mid)\n3. ケンタッキーフライドチキン (west_mid)\n4. びんちょうや (west_mid)",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.979617595672607
+      },
+      {
+        "id": "GR-29",
+        "category": "cuisine",
+        "source": "graphrag",
+        "score": 66.66666666666666,
+        "response": "情報がありません。上記の検索結果にはイタリアン料理を提供しているレストランは含まれておりません。近くのイタリアンレストランを探したい場合は、より広範囲の検索が必要かもしれません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.0628509521484375
+      },
+      {
+        "id": "GR-30",
+        "category": "cuisine",
+        "source": "graphrag",
+        "score": 66.66666666666666,
+        "response": "情報がありません。\n\n上記の集計結果という文言だけあり、実際のデータや統計情報が提供されていないため、和食と洋食の店舗数を比較することができません。具体的な数字や場所名を含む回答を提供することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.900352954864502
+      },
+      {
+        "id": "GR-31",
+        "category": "cuisine",
+        "source": "graphrag",
+        "score": 33.33333333333333,
+        "response": "情報がありません。検索結果からはラーメン屋に関する情報が見つかりません。近くにはレストランがありますが、その種類は wagyu&steak TEPPANYAKI 10 SHIBUYA と FRUCTUS のみで、ラーメン屋ではありません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.764729261398315
+      },
+      {
+        "id": "GR-32",
+        "category": "cuisine",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。寿司屋の近くにある別の和食店について具体的な情報が提供されていません。座標情報も含まれていませんので、正確な場所を特定することができません。具体的な情報を提供顶后，我将能够给出准确的回答。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.246626615524292
+      },
+      {
+        "id": "GR-33",
+        "category": "hours",
+        "source": "graphrag",
+        "score": 50.0,
+        "response": "情報がありません。上記の検索結果からは、どのお店も営業時間に関する情報が示されていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 2.308825731277466
+      },
+      {
+        "id": "GR-34",
+        "category": "hours",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "深夜でも食事ができるレストランについては情報がありません。ただし、周辺には以下のレストランがあります：\n1. Matsue (北東 49m)\n2. wagyu&steak TEPPANYAKI 10 SHIBUYA (北東 51m)\n3. UP Noodle TOKYO (北東 54m)\n4. 天ぷら　天寅 (東 55m)\n5. 半笑 (北東 59m)\n\nこれらのレストランの営業時間については情報がありませんので、深夜まで営業しているかどうかは確認が必要です。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 10.390302419662476
+      },
+      {
+        "id": "GR-35",
+        "category": "hours",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。\n\n説明：早朝から営業しているカフェの具体的な場所や座標情報が提供されていないため、適切な回答を提供することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.2384696006774902
+      }
+    ],
+    "structured": [
+      {
+        "id": "L1-01",
+        "category": "basic_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅は以下の座標に位置しています：緯度 35.658080, 経度 139.701765。これは渋谷区渋谷にあります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.714773178100586
+      },
+      {
+        "id": "L1-02",
+        "category": "basic_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "東宝シネマの座標は、緯度 35.659186, 経度 139.698883 です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.00193977355957
+      },
+      {
+        "id": "L1-03",
+        "category": "basic_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷東武ホテル (Tobu Hotel)は、緯度 35.663186, 経度 139.698986 の座標に位置しています。これは渋谷駅周辺にあります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.525409936904907
+      },
+      {
+        "id": "L1-04",
+        "category": "basic_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷神南郵便局の位置は、緯度 35.661994, 経度 139.700574 です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.748573064804077
+      },
+      {
+        "id": "L1-05",
+        "category": "basic_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "三菱UFJ銀行渋谷支店の位置情報は、緯度 35.659866, 経度 139.700901 の地点にあります。ただし、具体的な住所情報はありません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.9659810066223145
+      },
+      {
+        "id": "L1-06",
+        "category": "basic_category",
+        "source": "structured",
+        "score": 50.0,
+        "response": "渋谷駅周辺のコンビニについて、以下の情報を提供します。\n\n1. **セブン-イレブン**\n   - **座標**: 緯度 35.661400, 経度 139.709589\n   - **住所**: 東京都渋谷区25\n   - **営業時間**: 情報がありません\n   - **電話番号**: 03-3409-4401\n   - **Wi-Fi**: unknown\n   - **バリアフリー**: no\n\n2. **セブン-イレブン**\n   - **座標**: 緯度 35.657374, 経度 139.699010\n   - **営業時間**: 情報がありません\n   - **電話番号**: 電話番号情報なし\n   - **Wi-Fi**: unknown\n   - **バリアフリー**: unknown\n\n3. **セブン-イレブン**\n   - **座標**: 緯度 35.663629, 経度 139.698819\n   - **営業時間**: 24/7\n   - **電話番号**: +81 3 3463 1557\n   - **Wi-Fi**: wlan\n   - **バリアフリー**: unknown\n\n4. **セブン-イレブン**\n   - **座標**: 緯度 35.656396, 経度 139.699092\n   - **住所**: 東京都渋谷区1\n   - **営業時間**: 24/7\n   - **電話番号**: +81 3 3463 1557\n   - **Wi-Fi**: wlan\n   - **バリアフリー**: unknown\n\nこれらの情報から、渋谷駅周辺には複数のセブン-イレブンが存在します。特に、住所が東京都渋谷区1にある店舗は24時間営業しており、Wi-Fiも利用可能となっています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 40.3627827167511
+      },
+      {
+        "id": "L1-07",
+        "category": "basic_category",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷にあるカフェを3つ紹介します。\n\n1. **青山壹番館**\n   - **住所**: 渋谷区東1-4-27\n   - **営業時間**: 平日は8時から19時まで、土曜日は10時から18時まで\n   - **料理ジャンル**: coffee_shop\n   - **特徴**: 730円の日替わりのトーストはトーストのほかにコーヒーまたは紅茶とポテトチップ、フルーツ、ゼリーがついてきます。\n\n2. **The local coffee stand**\n   - **住所**: 2-10-15 (詳細な住所は不明)\n   - **営業時間**: 平日は8時9分から19時まで、土曜日は11時から19時まで\n   - **料理ジャンル**: coffee\n   - **特徴**: バリアフリーサポートが限定的ですが、Wi-Fiが利用可能。\n\n3. **Kitasando Coffee Lab**\n   - **住所**: 住所情報なし\n   - **営業時間**: 営業時間情報なし\n   - **料理ジャンル**: coffee_shop\n   - **特徴**: 情報が不足していますが、カフェとしての雰囲気がありそうです。\n\nこれらのカフェはすべて渋谷駅周辺に位置しています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 25.29707670211792
+      },
+      {
+        "id": "L1-08",
+        "category": "basic_category",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷エリアには以下の映画館があります。\n\n1. **ヒューマントラストシネマ渋谷**\n   - **英語名**: Human Trust Cinema Shibuya\n   - **座標**: 緯度 35.661973, 経度 139.702723\n   - **ブランド**: ヒューマントラストシネマ\n   - **バリアフリー**: yes\n\n2. **ホワイトシネクイント**\n   - **英語名**: White Cine Quinto\n   - **座標**: 緯度 35.661982, 経度 139.699099\n   - **電話番号**: +81-3-6712-7225\n   - **バリアフリー**: unknown\n\n3. **東宝シネマ**\n   - **英語名**: Toho Cinemas\n   - **座標**: 緯度 35.659186, 経度 139.698883\n   - **ブランド**: TOHOシネマズ\n   - **バリアフリー**: yes\n\n4. **シネクイント CINE QUINTO**\n   - **英語名**: CINE QUINTO\n   - **座標**: 緯度 35.660874, 経度 139.699849\n   - **住所**: 東京都渋谷区11\n   - **電話番号**: +81-3-3477-5905\n   - **バリアフリー**: limited\n\n5. **Cinema Vera Shibuya**\n   - **座標**: 緯度 35.659351, 経度 139.695385\n   - **電話番号**: 03-3461-7703\n\nこれらの映画館はすべて渋谷駅周辺に位置しています。ただし、営業時間や料理ジャンルなどの詳細情報は提供されていません。また、一部の映画館についてはWi-Fiやバリアフリーサービスの",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 40.25134253501892
+      },
+      {
+        "id": "L1-09",
+        "category": "basic_category",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷周辺の薬局は以下の場所があります。\n\n1. 渋谷みどり薬局\n   - 座標：緯度 35.655506, 経度 139.703862\n\n2. 渋谷友好薬局\n   - 座標：緯度 35.658352, 経度 139.696699\n\n3. サンドラッグ\n   - 座標：緯度 35.659117, 経度 139.699884\n   - 住所：文化村通り渋谷区道玄坂２－３－１\n   - 特徴：バリアフリー対応\n\n4. けやき薬局\n   - 座標：緯度 35.663412, 経度 139.695836\n   - 営業時間：Mo-Fr 09:30-18:30; Sa 09:30-12:00\n   - 特徴：バリアフリー対応\n\nこれらの薬局はすべて渋谷駅周辺に位置しています。ただし、営業時間や電話番号などの詳細情報は提供されていません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 26.163883209228516
+      },
+      {
+        "id": "L1-10",
+        "category": "basic_category",
+        "source": "structured",
+        "score": 50.0,
+        "response": "渋谷エリアには以下のホテルがあります。\n\n1. 渋谷シティホテル (Shibuya City hotel)\n   - 座標: 緯度 35.659838, 経度 139.695402\n   - ブランド: なし\n   - バリアフリー: unknown\n\n2. 渋谷東武ホテル (Tobu Hotel)\n   - 座標: 緯度 35.663186, 経度 139.698986\n   - ブランド: なし\n   - バリアフリー: unknown\n\n3. GRANDBEL HOTEL\n   - 座標: 緯度 35.656160, 経度 139.702022\n   - ブランド: なし\n   - バリアフリー: yes\n\n4. ホテルインディゴ東京渋谷\n   - 座標: 緯度 35.659874, 経度 139.697105\n   - 住所: 東京都渋谷区12\n   - ブランド: なし\n\n5. capsule hotel et sauna\n   - 座標: 緯度 35.657281, 経度 139.696210\n   - ブランド: なし\n\nこれらのホテルはすべて渋谷駅周辺に位置しています。ただし、営業時間や料理ジャンルなどの詳細情報は提供されていません。また、Wi-Fiやバリアフリーサービスについては不明な場合が多いです。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 31.95934271812439
+      },
+      {
+        "id": "L2-01",
+        "category": "spatial_proximity",
+        "source": "structured",
+        "score": 80.0,
+        "response": "渋谷駅に最も近いコンビニはローソンです。距離は約101.94m南方向にあります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 2.9344120025634766
+      },
+      {
+        "id": "L2-02",
+        "category": "spatial_proximity",
+        "source": "structured",
+        "score": 100.0,
+        "response": "東宝シネマから徒歩圏内（500m以内）にあるカフェは以下の通りです：\n\n1. Café Kitsuné Shibuya\n   - 座標：緯度 35.662335, 経度 139.701830\n   - 距離：約353m（东南方向）\n   - 营业时间：周一至周日 11:00-21:00\n   - 是否无障碍设施：是\n   - 是否提供Wi-Fi：未知\n\n2. Kitasando Coffee Lab\n   - 座標：緯度 35.661328, 絏度 139.700081\n   - 距离：约353m（东南方向）\n   - 是否无障碍设施：否\n\n3. Gran cyber cafe bagua (private theatre)\n   - 座標：緯度 35.660045, 絏度 139.695925\n   - 距离：约353m（东南方向）\n   - 是否提供Wi-Fi：未知\n\n以上三家咖啡馆均位于东宝电影院附近，距离在353米左右，您可以根据需要选择合适的地点。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 23.991500854492188
+      },
+      {
+        "id": "L2-03",
+        "category": "spatial_proximity",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅と原宿駅の中間地点に近いカフェは以下の通りです：\n\n1. **SUZU CAFE**\n   - 座標：緯度 35.662514, 経度 139.698740\n   - 距離：約300m (推定)\n\n2. **347 cafe**\n   - 座標：緯度 35.661998, 経度 139.702837\n   - 距離：約400m (推定)\n\nこれらのカフェは、渋谷駅と原宿駅のほぼ中間地点に位置しています。ただし、具体的な距離は正確な地図データを使用して計算する必要があります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 15.024008750915527
+      },
+      {
+        "id": "L2-04",
+        "category": "spatial_proximity",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありません。渋谷神南郵便局の周辺200m以内の飲食店に関する情報が提供されていません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 2.7452313899993896
+      },
+      {
+        "id": "L2-05",
+        "category": "spatial_proximity",
+        "source": "structured",
+        "score": 66.66666666666666,
+        "response": "渋谷駅から最も遠い映画館は「ホワイトシネクイント」です。渋谷駅の座標が緯度35.660874, 経度139.699849であると仮定すると、ホワイトシネクイントの座標が緯度35.661982, 経度139.699099であるため、両地点間の距離を計算します。\n\n直線距離では、約0.11km（約110m）離れた場所にあります。ただし、実際の移動距離は道路状況により異なる可能性があります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 13.599100351333618
+      },
+      {
+        "id": "L2-06",
+        "category": "spatial_density",
+        "source": "structured",
+        "score": 75.0,
+        "response": "渋谷駅周辺で飲食店が集中しているエリアは、特に「牛かつ もとむら 渋谷店」（緯度 35.656978, 経度 139.704018）と「Bistro 渋谷」（緯度 35.657692, 経度 139.704814）の両方の位置が近接しています。これらの飲食店はどちらも渋谷駅から比較的近く、また同じ程度の緯度と経度を持っています。\n\nしたがって、渋谷駅周辺で飲食店が最も集中しているエリアは、緯度 35.6570 度北、経度 139.7040 度東付近と推定できます。この地域には「牛かつ もとむら 渋谷店」、「Bistro 渋谷」の他にもいくつかの飲食店が存在することがわかります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 20.05252480506897
+      },
+      {
+        "id": "L2-07",
+        "category": "spatial_density",
+        "source": "structured",
+        "score": 75.0,
+        "response": "渋谷駅周辺のカフェとバーを比較すると、カフェが2件多いです。具体的には、カフェが149件、バーが147件あります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.348313331604004
+      },
+      {
+        "id": "L2-08",
+        "category": "spatial_density",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありませんので、直接的な結論を出すのは難しいですが、POI（ポイント・オブ・インタレスト）の種類と分布から推定すると、渋谷駅周辺は「商業エリア」の特性が強い可能性が高いです。\n\n理由は以下の通りです：\n\n1. **飲食店の存在**：\n   - WHO'S FOOD'S（緯度 35.661290, 経度 139.701032）は飲食店としてリストされています。これは商業エリアの特徴的要素です。\n\n2. **案内所の存在**：\n   - 渋谷区公共施設案内（緯度 35.661735, 経度 139.708127）と周辺案内（緯度 35.655136, 経度 139.706160）は観光地や商業施設の周辺でよく見られる要素です。\n\n3. **駅の存在**：\n   - 渋谷駅 A0（緯度 35.659367, 経度 139.698506）は交通の要所であり、多くの商業施設や飲食店が集まる場所を示しています。\n\nこれらの要素から、渋谷駅周辺は多くの飲食店や観光案内所が存在し、交通の中心地であることを示すため、「商業エリア」の特性が強いと考えられます。ただし、より詳細な情報（例えば、住宅施設の存在や住宅区域の広さなど）が得られれば、より正確な判断ができるでしょう。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 31.871729373931885
+      },
+      {
+        "id": "L2-09",
+        "category": "spatial_density",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺では、以下のような医療施設（病院、クリニック、薬局）が分布しています。\n\n1. **渋谷みどり薬局**\n   - **座標**: 緯度 35.655506, 経度 139.703862\n   - **カテゴリ**: 薬局\n   - **バリアフリー**: unknown\n\n2. **YOKOTA**\n   - **座標**: 緯度 35.660569, 経度 139.699535\n   - **カテゴリ**: 薬局\n   - **バリアフリー**: unknown\n\n3. **けやき薬局 (Keyaki Yakkyoku)**\n   - **座標**: 緯度 35.663412, 経度 139.695836\n   - **営業時間**: Mo-Fr 09:30-18:30; Sa 09:30-12:00\n   - **バリアフリー**: yes\n\n4. **渋谷友好薬局**\n   - **座標**: 緯度 35.658352, 経度 139.696699\n   - **カテゴリ**: 薬局\n   - **バリアフリー**: unknown\n\n5. **アイシークリニック渋谷院**\n   - **座標**: 緯度 35.656282, 経度 139.705023\n   - **カテゴリ**: 病院\n   - **バリアフリー**: unknown\n\nこれらの施設はすべて渋谷駅周辺に位置しています。ただし、具体的な住所や営業時間などの詳細情報は提供されていません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 34.01709866523743
+      },
+      {
+        "id": "L2-10",
+        "category": "spatial_density",
+        "source": "structured",
+        "score": 80.0,
+        "response": "渋谷駅周辺の宿泊施設の密度は比較的高いと言えます。理由としては以下の点があります：\n\n1. 座標情報から、渋谷駅周辺には少なくとも5つの宿泊施設が存在します：\n   - 渋谷シティホテル (35.659838, 139.695402)\n   - sequence Miyashita Park (35.663459, 139.701897)\n   - 渋谷WAVE (SHIBUYA WAVE) (35.656547, 139.706345)\n   - GRANDBEL HOTEL (35.656160, 139.702022)\n   - capsule hotel et sauna (35.657281, 139.696210)\n\n2. 渋谷は東京の中心部に位置し、多くの観光客やビジネスパーソンが訪れる人気エリアです。そのため、宿泊施設の需要が高いことが推測できます。\n\n3. これらの宿泊施設は主に渋谷駅周辺に密集していますが、他の地域にも散在しているため、全体的な密度は高いと言えるでしょう。\n\nただし、具体的な宿泊施設の数や詳細な地図情報が提供されていないため、より正確な密度の評価は難しいです。また、営業時間や料理ジャンルなどの情報が不足しているため、その施設が常に利用可能であるとは限りません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 29.207438707351685
+      },
+      {
+        "id": "L2-11",
+        "category": "spatial_comparison",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺のカフェの分布を分析すると、西側に58件、東側に51件のカフェがあります。したがって、渋谷駅の西側にカフェが多いです。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.469636917114258
+      },
+      {
+        "id": "L2-12",
+        "category": "spatial_comparison",
+        "source": "structured",
+        "score": 75.0,
+        "response": "渋谷駅周辺には映画館が7件あります。ただし、劇場の情報は提供されていませんので、劇場の数は確認できません。\n\n具体的な映画館の数は以下の通りです：\n1. 東宝シネマ (Toho Cinemas) - 座標: 緯度 35.659186, 経度 139.698883\n2. Cinema Vera Shibuya - 座標: 緯度 35.659351, 経度 139.695385\n3. シアター・イメージフォーラム - 座標: 緯度 35.660303, 経度 139.707022\n4. シネクイント CINE QUINTO - 座標: 緯度 35.660874, 経度 139.699849\n5. ヒューマントラストシネマ渋谷 - 座標: 緯度 35.661973, 経度 139.702723\n\n劇場の情報が提供されていないため、劇場の数は確認できません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 24.977992057800293
+      },
+      {
+        "id": "L2-13",
+        "category": "spatial_comparison",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺のコンビニとスーパーについて、生活利便性の観点から分析します。\n\nまず、コンビニについては以下の情報があります：\n- セブン-イレブンが4件（座標：35.663629, 139.698819, 35.659138, 139.707824, 35.657374, 139.699010, 35.657638, 139.696080）\n- 全て24時間営業で、バリアフリーアクセスも完備しています。\n- Wi-Fiが利用可能。\n\n次に、スーパーについては以下の情報があります：\n- 東急ストアが1件（座標：35.657104, 139.702014）\n\nコンビニとスーパーの比較では、コンビニの数が圧倒的に多く、24時間営業でバリアフリーアクセスも完備しているため、生活利便性において非常に充実しています。一方、スーパーは1件のみで営業時間も通常のスーパーマーケットの営業時間となっています。\n\nしたがって、渋谷駅周辺の生活利便性の観点から、コンビニの方がより充実しています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 27.074920892715454
+      },
+      {
+        "id": "L2-14",
+        "category": "spatial_comparison",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺の銀行と郵便局、金融サービスのアクセスについては、提供された情報では詳細な比較は難しいです。ただし、以下のような観点から推測できます。\n\n1. **数量**: 提供された情報によると、銀行は20件あり、郵便局は5件です。銀行の数が圧倒的に多いことから、金融サービスへのアクセスはより便利であると言えるでしょう。\n\n2. **位置**: 提供された銀行の座標情報を見ると、多くの銀行が渋谷駅周辺に密集しています。特に八千代銀行渋谷支店、東日本銀行、横浜銀行、きらぼし銀行は比較的近接しています。一方、郵便局の情報は提供されていないため、具体的な位置関係は不明です。\n\n3. **営業時間**: 提供された情報の中で、きらぼし銀行だけが営業時間を持っていることがわかります。平日9時から15時まで営業しているため、この時間帯に金融サービスが必要な場合、きらぼし銀行を利用すると便利です。\n\n4. **バリアフリーサービス**: 提供された情報では、バリアフリーサービスについての情報は不明です。そのため、身体障がいのある方にとってどの金融機関が最適かは特定できません。\n\n5. **Wi-Fi**: Wi-Fiの利用状況についての情報は提供されていません。\n\n結論として、渋谷駅周辺の金融サービスへのアクセスは銀行が圧倒的に多く、特にきらぼし銀行は比較的近接しています。しかし、具体的な郵便局の位置や営業時間、バリアフリーサービスなどの情報が提供されれば、より詳細な比較ができるでしょう。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 31.219149589538574
+      },
+      {
+        "id": "L2-15",
+        "category": "spatial_comparison",
+        "source": "structured",
+        "score": 75.0,
+        "response": "渋谷駅周辺で最も多いPOIカテゴリは飲食店/レストランです。次に多い上位3つのカテゴリは以下の通りです。\n\n1. 飲食店/レストラン (367件)\n2. 飲食店/カフェ (149件)\n3. 飲食店/バー (147件)",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 7.261686086654663
+      },
+      {
+        "id": "L3-01",
+        "category": "constraint_single",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅から徒歩5分以内（約400m）にあるカフェは見つかりませんでした。最寄りのカフェは以下の通りですが、全て400m以上離れています。\n\n1. **カフェ・ベローチェ**\n   - 青山壹番館から約353m（南東方向）\n   - 営業時間：月曜日から日曜日 07:00-22:00\n   - 電話番号：+81 3-5468-8074\n   - ウェブサイト：[カフェ・ベローチェ](https://chatnoir-company.com/chatnoir/html/brand/brand_veloce.html)\n\n2. **ドトールコーヒーショップ**\n   - 青山壹番館から約347m（南東方向）\n\n3. **カフェ・ド・クリエ**\n   - 青山壹番館から約386m（西南方向）\n\n4. **スターバックス**\n   - 青山壹番館から約334m（東方向）\n\nこれらのカフェはいずれも400m以内にありますが、指定の範囲内にはカフェは存在しません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 22.148008108139038
+      },
+      {
+        "id": "L3-02",
+        "category": "constraint_single",
+        "source": "structured",
+        "score": 100.0,
+        "response": "電話番号がわかっている渋谷の映画館は以下の2つです。\n\n1. **ホワイトシネクイント**\n   - 電話番号: +81-3-6712-7225\n   - 座標: 緯度 35.661982, 経度 139.699099\n\n2. **シネクイント CINE QUINTO**\n   - 電話番号: +81-3-3477-5905\n   - 座標: 緯度 35.660874, 経度 139.699849",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 13.759229183197021
+      },
+      {
+        "id": "L3-03",
+        "category": "constraint_single",
+        "source": "structured",
+        "score": 100.0,
+        "response": "ウェブサイトを持っている渋谷のレストランは見つかりませんでした。提供された情報にはウェブサイトの情報が含まれていません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.374394178390503
+      },
+      {
+        "id": "L3-04",
+        "category": "constraint_single",
+        "source": "structured",
+        "score": 100.0,
+        "response": "「渋谷」という名前が含まれるホテルはありません。提供的的信息中，所有酒店的名称都不包含“渋谷”这个词。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.1365561485290527
+      },
+      {
+        "id": "L3-05",
+        "category": "constraint_single",
+        "source": "structured",
+        "score": 100.0,
+        "response": "はい、渋谷駅周辺で24時間営業のコンビニはあります。\n\n1つ目の店舗（座標：緯度 35.657682, 経度 139.702727）と2つ目の店舗（座標：緯度 35.658611, 経度 139.708310）は24時間営業しています。\n\nまた、3つ目の店舗（座標：緯度 35.656396, 経度 139.699092）も24時間営業しています。\n\nこれらの店舗はすべて「セブン-イレブン」（7-Eleven）で、渋谷駅周辺に位置しています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 16.302708864212036
+      },
+      {
+        "id": "L3-06",
+        "category": "constraint_multi",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅から500m以内で、電話番号とウェブサイトの両方がわかるカフェは「The local coffee stand」です。\n\n【詳細情報】\n- 名称: The local coffee stand\n- 座標: 緯度 35.660389, 経度 139.706744\n- 住所: 2-10-15\n- 営業時間: Mo-Fr 08:09-19:00, Sa-Su 11:00-19:00\n- 料理ジャンル: coffee\n- 電話番号: 03-3409-1158\n- ファンサイト: https://thelocal2016.com/\n\nこのカフェはバリアフリーサイトが限定的ですが、Wi-Fiは利用可能です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 17.326996326446533
+      },
+      {
+        "id": "L3-07",
+        "category": "constraint_multi",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありません。上記の検索結果からは、渋谷駅周辺のカフェについて詳細な情報を得ることができません。特に、駅から300m以内にあり、かつ映画館の近く（200m以内）にあるカフェについては具体的な情報が見つかりませんでした。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 6.175952196121216
+      },
+      {
+        "id": "L3-08",
+        "category": "constraint_multi",
+        "source": "structured",
+        "score": 75.0,
+        "response": "渋谷駅周辺で薬局が近く（200m以内）にあるのは以下の4箇所です：\n\n1. **渋谷みどり薬局**\n   - 座標: 緯度 35.655506, 経度 139.703862\n   - 距離: 13m (東)\n\n2. **渋谷友好薬局**\n   - 座標: 緯度 35.658352, 経度 139.696699\n   - 距離: 130m (東北)\n\n3. **ことぶき薬局**\n   - 座標: 緯度 35.663723, 経度 139.709954\n   - 距離: 118m (東)\n\n4. **けやき薬局**\n   - 座標: 緯度 35.663412, 経度 139.695836\n   - 距離: 166m (北)\n\nこれらの薬局はすべて200m以内に位置しています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 23.891342639923096
+      },
+      {
+        "id": "L3-09",
+        "category": "constraint_multi",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺で、コンビニが3軒以上集まっているエリアは渋谷駅周辺です。具体的には以下の座標付近にコンビニがあります：\n\n1. 緯度 35.659138, 経度 139.707824 (バリアフリー情報: unknown, Wi-Fi: unknown)\n2. 緯度 35.663629, 経度 139.698819 (バリアフリー情報: unknown, Wi-Fi: unknown)\n3. 緯度 35.662647, 経度 139.700997 (バリアフリー情報: limited, Wi-Fi: unknown)\n4. 緯度 35.661400, 経度 139.709589 (バリアフリー情報: no, Wi-Fi: unknown)\n\nこれらのコンビニはすべて渋谷駅周辺に位置しています。ただし、営業時間や料理ジャンルなどの詳細情報は提供されていません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 20.964532375335693
+      },
+      {
+        "id": "L3-10",
+        "category": "constraint_multi",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅から500m以内でカフェではなくバーを探すと、以下の候補があります：\n\n1. **渋谷 bar FIVE**\n   - 座標：緯度 35.657713, 経度 139.699543\n   - 距離：約400m（北西方向）\n\n2. **Under Bar**\n   - 座標：緯度 35.663586, 経度 139.699325\n   - 距離：約450m（南東方向）\n\nこれらのバーは、すべて渋谷駅から500m以内に位置しています。ただし、営業時間や電話番号などの詳細情報はありません。また、バリアフリーやWi-Fiの情報も不明です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 16.519245624542236
+      },
+      {
+        "id": "L4-01",
+        "category": "decision_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありませんので、具体的な場所を推奨することは難しいです。しかし、渋谷駅周辺の地理情報を考慮すると、以下のようなポイントが重要となります：\n\n1. **公園の近さ**：保育園は公園の近くに配置することで、子供たちが遊ぶ場所が近い利点があります。特に宮下公園（緯度 35.662086, 経度 139.701686）は渋谷駅から比較的近いため、この公園周辺が候補の一つとなります。\n\n2. **交番の有無**：安全面を考慮すると、保育園の近くに交番があることが望ましいです。渋谷駅周辺にはいくつかの交番がありますが、具体的な位置情報が提供されていないため、詳細な判断はできません。\n\n総合的に考えると、宮下公園周辺が最適な候補の一つとなります。ただし、最終的な決定には地元の行政機関や専門家からのアドバイスが必要です。また、具体的な場所を選定する際には、交通アクセス、周辺の施設、用地の利用可能面積なども考慮する必要があります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 22.00484561920166
+      },
+      {
+        "id": "L4-02",
+        "category": "decision_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺で高齢者向けデイサービスを開設する場合、医療施設へのアクセスを重視すると、以下のエリアが適していると考えられます：\n\n1. **渋谷駅周辺**：\n   - **座標：緯度 35.660852, 経度 139.702107**\n   - **近隣の医療施設**：ディアファーマシー（Dear Pharmacy）があります。これは薬局ですが、緊急時や医療相談に便利です。\n\n2. **渋谷道玄坂通**：\n   - **座標：緯度 35.660244, 経度 139.697352**\n   - **近隣の医療施設**：ウイング薬局渋谷道玄坂店があります。これは薬局ですが、緊急時や医療相談に便利です。\n\n3. **渋谷駅周辺の他のコンビニ**：\n   - **座標：緯度 35.664604, 経度 139.699373**\n   - **座標：緯度 35.661442, 経度 139.698414**\n   - **これらのコンビニにはバリアフリーアクセスがあり、緊急時の連絡先が近くにあるため便利です。**\n\nこれらのエリアは、医療施設や薬局が近くにあるため、高齢者向けデイサービスの開設に適しています。特に、医療相談や緊急時の対応が必要な場合、これらの場所は理想的です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 32.55715775489807
+      },
+      {
+        "id": "L4-03",
+        "category": "decision_location",
+        "source": "structured",
+        "score": 80.0,
+        "response": "渋谷駅周辺で学習塾を開設する場合、以下のような場所が適しています：\n\n1. **渋谷駅（東京地下鉄）**\n   - 座標：緯度 35.658999, 経度 139.702445\n   - アクセス：徒歩約1分\n   - コンビニ：セブンイレブン渋谷駅前店（徒歩約1分）\n\n2. **渋谷駅（東急電鉄）**\n   - 座標：緯度 35.658450, 経度 139.702843\n   - アクセス：徒歩約1分\n   - コンビニ：ファミリーマート渋谷駅前店（徒歩約1分）\n\n3. **渋谷駅（東日本旅客鉄道）**\n   - 座標：緯度 35.658080, 経度 139.701765\n   - アクセス：徒歩約1分\n   - コンビニ：ローソン渋谷駅前店（徒歩約1分）\n\nこれらの場所はすべて、主要な鉄道駅から非常に近く、コンビニも近接しているため、学生や保護者の利便性が高いです。また、バリアフリーアクセスも完備されており、広い駐車場も利用可能であれば、さらに魅力的になります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 29.174044609069824
+      },
+      {
+        "id": "L4-04",
+        "category": "decision_location",
+        "source": "structured",
+        "score": 75.0,
+        "response": "渋谷駅周辺で待ち合わせスポットとして最適な場所はTASUICHI（タスチ）です。TASUICHIは渋谷駅から近い位置にあり、活気のある立ち飲みバーとして知られています。観光客にも人気があり、賑やかな雰囲気の中で地元の人々や他の旅行者と交流することができます。また、手頃な価格のドリンクを楽しむことができます。\n\nTASUICHIの座標は緯度35.660952、経度139.697018です。営業時間は平日（Su-Th）17:00-02:00、土曜日（Fr-Sa）17:00-03:00となっています。\n\nただし、TASUICHI以外にもいくつかの飲食店がありますが、具体的な営業時間や詳細な情報が提供されていないため、TASUICHIを選択することをお勧めします。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 19.831483364105225
+      },
+      {
+        "id": "L4-05",
+        "category": "decision_location",
+        "source": "structured",
+        "score": 80.0,
+        "response": "渋谷駅周辺で観光客向けの案内所を設置するなら、以下の場所が効果的です：\n\n1. **周辺案内 (緯度 35.655136, 経度 139.706160)**\n   - この場所は渋谷駅の近くに位置しています。渋谷駅から徒歩約5分の距離にあり、多くの観光客が利用する可能性が高い場所です。\n\n2. **のりば案内 (緯度 35.658784, 経度 139.702966)**\n   - この場所も渋谷駅から徒歩約5分の距離にあり、観光客にとって便利な場所です。特に渋谷駅の南口から近いため、多くの観光客が通過する可能性があります。\n\n3. **渋谷区公共施設案内 (緯度 35.661735, 経度 139.708127)**\n   - この場所は渋谷駅から少し離れており、渋谷区内の他の公共施設の案内も行えるため、より広範囲の観光客に利用される可能性があります。ただし、この場所は他の案内所よりも少し遠い位置にあります。\n\n4. **渋谷区立宮下公園 (緯度 35.662086, 経度 139.701686)**\n   - 宮下公園は渋谷駅から徒歩約10分の距離にあり、特に公園を利用する観光客や散策している人々にとって便利な場所です。ただし、公園内に設置すると、交通量が少ない時間帯に利用されてしまう可能性もあります。\n\nこれらの場所はすべて渋谷駅周辺に位置しており、観光客が渋谷駅から容易にアクセスできる場所です。ただし、具体的な場所選択には、観光客の動向や交通量を考慮した上で決定することが推奨されます。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 40.0480694770813
+      },
+      {
+        "id": "L4-06",
+        "category": "decision_business",
+        "source": "structured",
+        "score": 80.0,
+        "response": "渋谷駅周辺にはカフェが149件存在します。新規カフェの出店を検討する際には、競合の数が多いことを考慮に入れる必要があります。ただし、具体的な競合カフェの名前や詳細な位置情報が提供されていないため、詳細な競合分析はできません。\n\n集客が見込めるPOIとしては、以下のような場所があります：\n\n1. 渋谷駅：緯度 35.661998, 経度 139.702837\n2. 渋谷スクランブル交差点：緯度 35.664929, 経度 139.700354\n3. 渋谷109：緯度 35.659864, 経度 139.703386\n4. UPLIGHT COFFEE：緯度 35.659206, 経度 139.702005\n5. TAILORED CAFE：緯度 35.661071, 経度 139.699779\n\nこれらの場所は、渋谷駅周辺の主要な交通拠点や商業施設であり、多くの人々が通過する場所です。そのため、これらの場所に新規カフェを出店することで、一定の集客を見込むことができます。\n\nただし、新規出店の向き不向きについては、以下の点を考慮する必要があります：\n\n1. **競合の強さ**：周辺のカフェの数とその人気度を調査し、競合が強い場合、新規出店は難しいかもしれません。\n2. **場所の特徴**：特定の場所（例えば、渋谷駅内や外、スクランブル交差点など）の特徴や人流量を評価し、適切な場所を選択することが重要です。\n3. **ターゲット顧客**：新規カフェのコンセプトやターゲット顧客を明確にし、その層が密集している場所に出店すると効果的です。\n4. **",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 40.151002645492554
+      },
+      {
+        "id": "L4-07",
+        "category": "decision_business",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺の既存コンビニの分布と密度を分析すると、新規コンビニの出店余地について以下のような推測ができます。\n\n現在、提供された情報では、具体的な既存コンビニの位置情報は存在しません。したがって、既存コンビニの分布と密度を詳細に評価することはできません。\n\nただし、一般的な観点から見ると、渋谷駅周辺は非常に商業的なエリアであり、多くの人々が日常的に移動しています。そのため、コンビニエンスストアの需要は高いと考えられます。\n\nまた、提供された情報によれば、デイリーヤマザキの座標は35.664604, 139.699373です。この位置は渋谷駅から約300メートル北西に位置しています。周辺には他のコンビニが存在する可能性がありますが、具体的な情報はありません。\n\n新規コンビニの出店余地については、以下の点を考慮すると、出店余地がある可能性が高いと考えられます：\n\n1. **密集度**：渋谷駅周辺は既存のコンビニが密集している可能性が高いですが、特定の地域ではまだ空いている可能性があります。\n\n2. **交通量**：渋谷駅周辺は常に多くの人々が移動しています。特に通勤時間帯や休日には大量の人々が集まります。これらの時間帯に新たなコンビニが開設されれば、需要は十分に確保できる可能性があります。\n\n3. **土地利用**：周辺地域にはまだコンビニが配置されていない可能性のある土地が存在するかもしれません。例えば、商業施設やビルの間にあるスペースなど。\n\n4. **バリアフリーやWi-Fiの利用**：既存のコンビニがこれらのサービスを提供している場合、新規出店者はこれらを追加または改善することで競争力を高められる可能性があります。\n\n結論として、具体的な既存コンビニの位置情報がないため、確実な出店余地の有無を断言することはできません。しかし、渋谷駅周辺の商業的な特性から、新規コンビニの出店余地は存在する可能性が高いと考えられます。詳細",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 39.91441774368286
+      },
+      {
+        "id": "L4-08",
+        "category": "decision_business",
+        "source": "structured",
+        "score": 83.33333333333334,
+        "response": "渋谷駅周辺で新規ベーカリー（パン屋）を出店する際の戦略を提案します。\n\n1. **マルヤマベーグルLOOP渋谷店**:\n   - **位置**: 緯度 35.658349, 経度 139.703380 (渋谷駅周辺)\n   - **営業時間**: Mo-Su 11:00-17:00\n   - **料理ジャンル**: bagel\n   - **競合点**: マルヤマベーグルLOOP渋谷店は既存のベーカリーとして位置づけられており、主にベーグルを提供しています。新規出店者は、異なる製品ラインナムやサービスを提供することで差別化を図るべきです。例えば、クロワッサンやパンケーキなどの他の製品を追加することで、マルヤマベーグルLOOPとの差別化を図ることができます。\n\n2. **青山壹番館**:\n   - **位置**: 緯度 35.657113, 経度 139.707798 (渋谷駅周辺)\n   - **営業時間**: 平日は8時から19時まで 土曜日は10時から18時まで\n   - **料理ジャンル**: coffee_shop\n   - **競合点**: 青山壹番館は主にトーストとコーヒーを提供しています。新規出店者は、ベーグルとコーヒーの組み合わせを提供することで、既存の競合と差別化を図ることができます。また、朝食メニューの提供も検討すると良いでしょう。\n\n3. **The local coffee stand**:\n   - **位置**: 緯度 35.660389, 経度 139.706744 (渋谷駅周辺)\n   - **営業時間**: Mo-Fr 08:09-19:00, Sa-Su 11:00-19:00\n   - **料理ジャンル**: coffee\n   -",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 40.23262405395508
+      },
+      {
+        "id": "L4-09",
+        "category": "decision_business",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺で深夜営業のバーを出店する場合、既存のバーとの競合を避けるためには、異なるエリアや特定のニッチ市場に焦点を当てることが有効です。また、渋谷駅からのアクセス性も重要となります。以下に適切なエリアを提案します。\n\n### 推奨エリア：渋谷スクランブル交差点周辺\n- **座標**: 緯度 35.660952, 経度 139.697018 (TASUICHIの座標を参考にしました)\n- **理由**:\n  - **競合回避**: このエリアはすでに多くのバーが存在していますが、TASUICHIのような活気ある立ち飲みバーはまだ少ないです。TASUICHIは渋谷駅周辺で観光客に人気がありますが、スクランブル交差点周辺はより地元の住民や学生向けのバーが多い傾向があります。\n  - **アクセス性**: 渋谷駅から徒歩約5分の距離にあり、多くのバス路線も利用可能で、便利な立地です。\n  - **客層**: スクランブル交差点周辺は学生や若者、地元の住民が多く、深夜まで営業できるバーは人気があります。\n\n### 推奨エリア：原宿駅周辺\n- **座標**: 緯度 35.662291, 経度 139.695575 (One night standの座標を参考にしました)\n- **理由**:\n  - **競合回避**: 原宿駅周辺はすでに多くのバーが存在していますが、深夜営業のバーはまだ限られています。また、TASUICHIのような立ち飲みバーはまだ少ないです。\n  - **アクセス性**: 原宿駅からは徒歩約5分の距離にあり、多くのバス路線も利用可能です。\n  - **客層**: 原宿は若者や観光客が多いため、深夜まで営業できるバーは人気があります。\n\n### 推奨エリア：代々木公園周辺",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 40.68064284324646
+      },
+      {
+        "id": "L4-10",
+        "category": "decision_business",
+        "source": "structured",
+        "score": 83.33333333333334,
+        "response": "渋谷駅周辺の薬局出店を検討する際、既存の薬局との競合と医療施設との近接性を考慮すると、以下の点が重要となります：\n\n1. **競合薬局の位置**:\n   - 渋谷友好薬局: 座標 (35.658352, 139.696699)\n   - 渋谷みどり薬局: 座標 (35.655506, 139.703862)\n   - ディアファーマシー: 座標 (35.660852, 139.702107)\n   - けやき薬局: 座標 (35.663412, 139.695836)\n   - ウイング薬局渋谷道玄坂店: 座標 (35.659973, 139.695680)\n\n   渋谷駅周辺には既存の薬局が複数存在しています。特に、渋谷駅から北西方向に位置するけやき薬局と、駅から南東方向に位置するウイング薬局渋谷道玄坂店は比較的近接しています。\n\n2. **医療施設との近接性**:\n   - 渋谷駅周辺には多くの病院やクリニックがあります。例えば、渋谷病院（座標: 35.657352, 139.700167）、渋谷中央病院（座標: 35.657283, 139.700288）などが近接しています。\n\n3. **競合と近接性の評価**:\n   - 薬局の出店地点が既存薬局の近くにある場合、競合が生じる可能性が高いです。特に、渋谷駅周辺の密集した地域では、新たな薬局の設置は既存薬局との競合を避けることが難しいかもしれません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 40.183067321777344
+      },
+      {
+        "id": "L5-01",
+        "category": "advanced_sensitivity",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺のカフェ数を300mと500mの半径で比較すると、以下のようになります：\n\n- 半径300m: 37件\n- 半径500m: 86件\n\nこの結果から、半径300mの場合、渋谷駅周辺には37件のカフェがあります。一方、半径500mの場合には86件のカフェがあります。つまり、半径500mの範囲では、半径300mの範囲よりも約2.3倍のカフェ数があります。\n\nしたがって、「渋谷駅周辺はカフェが多い」という結論は、検索半径を500mから300mに変えても成立します。ただし、半径が狭くなることでカフェの数が減少し、その結果、カフェの密度が高くなる地域と低くなる地域が分かれることになります。具体的には、半径300mの範囲ではカフェの密度が高くなりますが、半径500mの範囲ではカフェの密度が低くなります。\n\n座標情報：\n- 渋谷駅: 緯度 35.655483, 経度 139.703804\n\n以上のように、半径300mと500mの範囲で比較すると、カフェの数は大きく異なりますが、「渋谷駅周辺はカフェが多い」という結論は依然として成り立ちます。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 28.34170436859131
+      },
+      {
+        "id": "L5-02",
+        "category": "advanced_sensitivity",
+        "source": "structured",
+        "score": 100.0,
+        "response": "「渋谷駅周辺は飲食店が充実している」という評価は、カフェを除外した場合でも成立する可能性がありますが、具体的な数値や種類の飲食店についての情報がないため、確定的な結論を出すことはできません。\n\nカフェの件数については、半径300mで37件、半径500mで86件と示されていますが、これはカフェ専門のデータであり、他の飲食店の分布状況を反映していないため、 Cafe以外の飲食店の数を推定することは難しいです。\n\nしかし、カフェの分布が駅周辺より郊外に多く存在することから、他の飲食店も同様に駅周辺よりも郊外に分散している可能性が高いと考えられます。また、カフェの数が半径500mで2.3倍に増加していることから、飲食店全体の数も同様に増加している可能性があります。\n\nしたがって、「渋谷駅周辺は飲食店が充実している」という評価は、カフェを除くとしても、一定の程度の飲食店の充実度は維持されている可能性がありますが、具体的な数値や種類の飲食店についての情報がないため、確実な結論を出すことはできません。\n\n座標情報から推測すると、渋谷駅周辺の範囲は緯度35.661998, 経度139.702837を中心に半径500mの範囲内に広がっています。この範囲内で他の飲食店の数を調査し、カフェの数と比較することで、より具体的な結論を得られるでしょう。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 31.348164558410645
+      },
+      {
+        "id": "L5-03",
+        "category": "advanced_sensitivity",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありませんので、正確な半径を推定することは難しいです。しかし、一般的な目安として、渋谷駅周辺のコンビニ密度を評価する場合、十分に多いと感じる最小半径は大体1km程度と考えられます。\n\n具体的には、渋谷駅周辺でコンビニが65件ある場合、半径1kmの円形区域内に平均して約1.6件のコンビニが存在することになります。これは比較的多くのコンビニを確保している区域と言えるでしょう。\n\nただし、実際のコンビニ密度は地域によって異なるため、より正確な評価を行うには、実際に該当区域を確認し、コンビニの分布を把握することが必要です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 13.502339839935303
+      },
+      {
+        "id": "L5-04",
+        "category": "advanced_comparison",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありませんので、直接的な比較は難しいですが、渋谷駅周辺と恵比寿駅周辺の特徴を踏まえた推測を述べさせていただきます。\n\n### 渋谷駅周辺\n- **医療施設の数**: 情報がありません。\n- **薬局の数**: \n  - 日本調剤宮益坂薬局 (1件)\n  - 渋谷友好薬局 (1件)\n  - 合計: 2件\n- **公共施設（郵便局、交番）の有無**:\n  - 渋谷郵便局 (1件)\n  - 渋谷道玄坂郵便局 (1件)\n  - 合計: 2件\n\n### 恵比寿駅周辺\n- **医療施設の数**: 情報がありません。\n- **薬局の数**: \n  - 情報がありません。\n- **公共施設（郵便局、交番）の有無**:\n  - 情報がありません。\n\n### 評価軸の比較\n- **医療施設の数**: 情報が両方ともありません。\n- **薬局の数**: 渋谷駅周辺は2件、恵比寿駅周辺は情報がありません。\n- **公共施設（郵便局、交番）の有無**: 渋谷駅周辺は2件の公共施設がありますが、恵比寿駅周辺は情報がありません。\n\n### 結論\n- **薬局の数**: 渋谷駅周辺の方が2件あり、恵比寿駅周辺は情報がありません。\n- **公共施設**: 渋谷駅周辺には2件の公共施設（郵便局）がありますが、恵比寿駅周辺は情報がありません。\n\nこれらの点から、高齢者向け住宅の候補地として、渋谷駅周辺の方が医療施設や公共施設の数が多少多い可能性があります。ただし、具体的な数値や詳細な情報がないため、より詳細な評価を行うには追加の調",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 40.39243960380554
+      },
+      {
+        "id": "L5-05",
+        "category": "advanced_comparison",
+        "source": "structured",
+        "score": 71.42857142857143,
+        "response": "情報がありません。\n\n具体的には、公園、保育施設、医療施設、スーパーなどの詳細情報が提供されていないため、総合的な評価はできません。例えば、近くにある公園や保育園、病院、スーパーマーケットの名前や距離などがあれば、より具体的な評価ができるでしょう。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.6701788902282715
+      },
+      {
+        "id": "L5-06",
+        "category": "advanced_comparison",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺はビジネスパーソンにとって理想的な立地と言えるでしょう。以下、カフェ（作業場所）、コンビニ（利便性）、金融機関（銀行、ATM）の観点から評価します。\n\n### カフェ（作業場所）\n- **CAFE &LOUNGE RYUKODO**: 緯度 35.660590, 経度 139.705230\n- **Kitasando Coffee Lab**: 緯度 35.661328, 経度 139.700081\n- **The local coffee stand**: 緯度 35.660389, 経度 139.706744\n- **347 cafe**: 緯度 35.661998, 経度 139.702837\n\nこれらのカフェはすべて渋谷駅周辺に位置しており、ビジネスパーソンが作業を行うのに適した場所として利用できます。特に「The local coffee stand」は営業時間が長い（月曜日から土曜日まで朝8時から夜9時まで、日曜日と祝日は朝11時から夜9時まで）ため、長時間作業が必要な場合にも便利です。\n\n### コンビニ（利便性）\nコンビニの情報はありませんが、渋谷駅周辺には多くのコンビニエンスストアがあります。例えば、セブンイレブン渋谷駅前店（緯度 35.658910, 経度 139.697110）やローソン渋谷駅前店（緯度 35.658920, 経度 139.697120）などがあります。これらは徒歩数分の距離にあり、ビジネスパーソンの利便性を高めます。\n\n### 金融機関（銀行、ATM）\n- **八千代銀行渋谷支店**: 緯度 35.6586",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 40.204904079437256
+      },
+      {
+        "id": "L5-07",
+        "category": "advanced_comparison",
+        "source": "structured",
+        "score": 83.33333333333334,
+        "response": "渋谷駅周辺は東京の中心部に位置し、多くの観光客にとって魅力的なエリアです。以下に強みと弱みを評価します。\n\n### 強み\n1. **観光スポット**:\n   - **渋谷スクランブル交差点**: 日本最大のスクランブル交差点で、多くの観光客が訪れる人気スポットです。\n   - **渋谷ヒカリエ**: 美術館やショップが入る複合施設で、文化的な観光地としても人気があります。\n   - **原宿・表参道**: ファッションやカルチャーの中心地として知られており、多くのショップやカフェが集まっています。\n\n2. **飲食店**:\n   - 多様な飲食店が存在し、国際色豊かな料理が楽しめます。特にカフェやバーが多く、夜遅くまで営業しているところもあります。\n\n3. **交通アクセス**:\n   - 渋谷駅はJR山手線や副都心線、東京メトロ丸ノ内線などの主要な鉄道路線が乗り入れており、東京の他の地域への移動が容易です。\n\n### 弱み\n1. **観光スポット**:\n   - 観光客が多いことで、混雑が避けられないため、滞在の快適性が低下する可能性があります。\n   - 一部の観光地では、観光客の多さによって本来の雰囲気が損なわれている場合もあります。\n\n2. **飲食店**:\n   - 飲食店の数が多い反面、高価格帯のレストランも多く、予算制約のある観光客には負担が大きいかもしれません。\n   - また、混雑した時間帯には待ち時間が長くなることがあります。\n\n3. **宿泊施設**:\n   - 宿泊施設の選択肢は豊富ですが、価格帯が幅広く、予算に応じて選べる余裕があります。\n   - ただし、人気エリアであるため、宿泊施設の利用状況によっては予約が困難になることもあります。\n\n### 座標情報\n- **渋谷駅**: 緯度 3",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 40.26381778717041
+      },
+      {
+        "id": "L5-08",
+        "category": "advanced_uncertainty",
+        "source": "structured",
+        "score": 80.0,
+        "response": "渋谷駅周辺で「雰囲気の良い」カフェを探している場合、以下の情報を基に推奨します：\n\n1. **SUZU CAFE**\n   - 座標：緯度 35.662514, 経度 139.698740\n   - 雰囲気：情報がありませんが、一般的なカフェとして評価される可能性があります。\n\n2. **347 cafe**\n   - 座標：緯度 35.661998, 経度 139.702837\n   - 雰囲気：情報がありませんが、カフェとしての雰囲気を期待できる可能性があります。\n\n3. **渋谷珈琲研究所**\n   - 座標：緯度 35.655483, 経度 139.703804\n   - 雰囲気：情報がありませんが、コーヒー専門店としての雰囲気を期待できる可能性があります。\n\n4. **Kitasando Coffee Lab**\n   - 座標：緯度 35.661328, 経度 139.700081\n   - 雰囲気：情報がありませんが、カフェとしての雰囲気を期待できる可能性があります。\n\n5. **FRIEND**\n   - 座標：緯度 35.659045, 経度 139.696265\n   - 雰囲気：情報がありませんが、一般的なカフェとして評価される可能性があります。\n\n**判断の限界：**\n- 上記のカフェの詳細な情報（営業時間、料理ジャンル、バリアフリーサービス等）が提供されていないため、具体的な評価は難しいです。\n- 雰囲気については、個々の訪問者の感想やレビューが必要となります。\n- 住所情報が提供されていないため、直接的なアクセス情報は提供できません。\n\nこれらのカフェはすべて渋谷駅周辺に位置しており、それぞれが異なる雰囲気を持つ可能性があります。実際に訪問",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 40.24267101287842
+      },
+      {
+        "id": "L5-09",
+        "category": "advanced_uncertainty",
+        "source": "structured",
+        "score": 80.0,
+        "response": "推測できる情報：\n- WHO'S FOOD'S（緯度 35.661290, 経度 139.701032）は渋谷駅周辺にある飲食店ですが、料理ジャンルやバリアフリーサービスの情報がありません。静かな雰囲気を持つ可能性はありますが、確実性はありません。\n- カツ吉（緯度 35.657120, 経度 139.704589）はとんかつ専門店で、バリアフリーサービスが提供されていないことが示されています。この店舗は静かではない可能性が高いです。\n- nikuyano daidokoro（緯度 35.659704, 経度 139.701500）の料理ジャンルが示されていませんが、バリアフリーサービスが未知の状態です。静かな雰囲気を持つ可能性がありますが、確実性はありません。\n\n推測できない情報：\n- 各店舗の営業時間や電話番号、ウェブサイト、Wi-Fiの利用可能状況などの詳細情報がありません。\n- 各店舗の具体的な住所が示されていないため、周辺環境や雰囲気についての推測は難しいです。\n- バリアフリーサービスの有無も不明なため、高齢者や障害のある方が利用しやすい環境である可能性についても推測できません。\n\n以上のように、情報が限られているため、どの店舗が最も静かであるかを確定することは難しいです。より詳細な情報を得るためには、ウェブサイトや電話での問い合わせが必要となるでしょう。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 31.648534059524536
+      },
+      {
+        "id": "L5-10",
+        "category": "advanced_uncertainty",
+        "source": "structured",
+        "score": 80.0,
+        "response": "渋谷駅周辺には3つの警察関連施設があります：\n1. 道玄坂上交番（緯度 35.657380, 経度 139.695894）\n2. 宇田川交番（緯度 35.661051, 経度 139.698103）\n3. 渋谷警察署渋谷駅前交番（緯度 35.659316, 経度 139.701036）\n\nこれらの交番の存在は、この地域が治安上の重要性が高いことを示しています。特に、渋谷駅周辺は多くの観光客や通勤者が集まる場所であり、治安管理が必要とされる可能性が高い地域です。\n\n推測としては、これらの交番の設置は治安維持と犯罪防止のための重要な役割を果たしていると考えられます。また、道玄坂上交番と宇田川交番はそれぞれ約400メートル離れていることから、広範囲の治安監視が可能であると推測できます。\n\nただし、以下のような情報が不足しているため、完全な推測には至りません：\n- 各交番の営業時間\n- バリアフリーアクセスの詳細\n- Wi-Fiの利用可能性\n- 警察署の詳細な機能や役割\n\nさらに、これらの交番の数と位置は、地域の犯罪率や犯罪の種類、警察の配置戦略など、より詳細なデータを考慮に入れる必要があるかもしれません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 29.6951265335083
+      },
+      {
+        "id": "GR-01",
+        "category": "relation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。上記の検索結果からは、具体的なコンビニの情報が提供されていません。また、カフェの位置情報も限定的であり、全てのカフェが渋谷駅の東側にあるわけではありません。そのため、特定のカフェとコンビニがある場所を指定することは不可能です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 6.926004648208618
+      },
+      {
+        "id": "GR-02",
+        "category": "relation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅周辺には銀行とカフェが両方存在するエリアがあります。\n\n1. **横浜銀行**（座標: 緯度 35.658110, 経度 139.700210）\n2. **atari CAFE&DINING**（座標: 緯度 35.661714, 経度 139.700600）\n\nこれらの施設は渋谷駅周辺に位置しています。ただし、営業時間や料理ジャンルなどの詳細情報は提供されていません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 12.077139854431152
+      },
+      {
+        "id": "GR-03",
+        "category": "relation",
+        "source": "graphrag",
+        "score": 0.0,
+        "response": "情報がありません。提供的的地点信息中，没有酒店附近的餐厅。所有列出的餐厅都没有提供酒店位置的具体信息，且大部分餐厅没有营业时间和联系方式等详细信息。如果您能提供具体酒店的名字或位置，我可以更准确地为您查找附近的餐厅。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.165992498397827
+      },
+      {
+        "id": "GR-04",
+        "category": "relation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。提供された情報には、渋谷駅周辺の薬局の位置情報やコンビニの情報はありません。そのため、駅周辺で薬局とコンビニが同じ場所にある場所について確認することができません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.714042663574219
+      },
+      {
+        "id": "GR-05",
+        "category": "relation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。検索結果には映画館の近くにあるカフェに関する情報が含まれていません。 Caféやコーヒー関連の情報は提供されていますが、映画館の近くという特定の条件に合致するカフェについては記載されていません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.970945358276367
+      },
+      {
+        "id": "GR-06",
+        "category": "multi_hop",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。検索結果に含まれるカフェの近くには、書店の情報が記載されていません。また、カフェの詳細な位置情報も全て不明または未提供のため、50m以内の書店を特定することができません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 5.016991853713989
+      },
+      {
+        "id": "GR-07",
+        "category": "multi_hop",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。上記の検索結果には、渋谷駅から100m以内のコンビニやカフェに関する情報が含まれていません。最寄りのコンビニやカフェについては、より詳細な地図情報や近隣の施設情報を提供していただければと思います。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 6.916064023971558
+      },
+      {
+        "id": "GR-08",
+        "category": "multi_hop",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "ホテルから徒歩で行ける範囲にあるレストランとカフェは以下の通りです：\n\n1. **青山壹番館**\n   - **座標**: 緯度 35.657113, 経度 139.707798\n   - **住所**: 渋谷区東1-4-27\n   - **営業時間**: 平日は8時から19時まで、土曜日は10時から18時まで\n   - **料理ジャンル**: coffee_shop\n   - **バリアフリー**: unknown\n   - **Wi-Fi**: unknown\n\n2. **カフェ・ベローチェ (CAFE VELOCE)**\n   - **座標**: 緯度 35.659921, 経度 139.706066\n   - **住所**: 東京都渋谷区18\n   - **営業時間**: Mo-Su 07:00-22:00\n   - **料理ジャンル**: coffee_shop\n   - **バリアフリー**: no\n   - **Wi-Fi**: unknown\n   - **ウェブサイト**: [公式ウェブサイト](https://chatnoir-company.com/chatnoir/html/brand/brand_veloce.html)\n\n3. **atari CAFE&DINING**\n   - **座標**: 緯度 35.661714, 経度 139.700600\n   - **住所**: 東京都渋谷区3\n   - **バリアフリー**: yes\n   - **Wi-Fi**: unknown\n\nこれらのカフェは渋谷駅周辺に位置しており、徒歩でアクセス可能範囲内にあります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 31.34268569946289
+      },
+      {
+        "id": "GR-09",
+        "category": "aggregation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "飲食店/レストランのカテゴリーが最も多く表示されています。具体的には、椂島寿司の緑本店（umegaoka sushi no midori sohonten shibuya）は35.658484, 139.699078の座標に位置しています。ただし、他の飲食店も渋谷駅周辺に多数存在し、飲食店が最も多いエリアは渋谷駅周辺と推測できます。ただし、正確な数値は提供されていないため、絶対的な最も多いエリアとは言えません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 11.971601009368896
+      },
+      {
+        "id": "GR-10",
+        "category": "aggregation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "北側と南側でPOIの数が多いのは西側です。ただし、質問で NORTH（北）と SOUTH（南）を求めるべきだった場合と混同しないように注意が必要です。情報から直接北側と南側の数値は提供されていませんが、東西比較から西側が268件多いことが示されています。つまり、東側は287件、西側は555件のPOIがあるということです。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 9.384217977523804
+      },
+      {
+        "id": "GR-11",
+        "category": "aggregation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷で最も多いカテゴリのPOIは「飲食店/レストラン」です。上位3つのカテゴリは以下の通りです：\n\n1. 飲食店/レストラン (367件)\n2. 飲食店/カフェ (149件)\n3. 飲食店/バー (147件)",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 6.57489013671875
+      },
+      {
+        "id": "GR-12",
+        "category": "comparison",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "東側と西側で飲食店のカテゴリ多様性が高いのは西側です。理由は、提供された情報によると、西側には555件の飲食店のPOIが存在し、東側には287件のみ存在するからです。これは西側が268件多いことを示しています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 7.0240466594696045
+      },
+      {
+        "id": "GR-13",
+        "category": "comparison",
+        "source": "graphrag",
+        "score": 0.0,
+        "response": "情報がありませんので、具体的な数値や場所名を含む回答はできません。提供的的信息中没有关于酒店距离车站的具体位置数据，因此无法确定200米以内和500米以上范围内酒店的数量分布情况。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.7363481521606445
+      },
+      {
+        "id": "GR-14",
+        "category": "proximity",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅に最も近いホテルは「渋谷エクセルホテル東急」で、距離は187.63m（西方向）です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.800691843032837
+      },
+      {
+        "id": "GR-15",
+        "category": "proximity",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅から300m以内にある映画館を距離順に並べると以下の通りです：\n\n1. **Cinema Vera Shibuya**\n   - 距離: 280m (北西方向)\n   - 座標: 緯度 35.659351, 経度 139.695385\n\n2. **ヒューマントラストシネマ渋谷**\n   - 距離: 約300m (北西方向)\n   - 座標: 緯度 35.661973, 経度 139.702723\n\n3. **Cinemarise**\n   - 距離: 約320m (北西方向)\n   - 座標: 緯度 35.661570, 経度 139.698772\n\n4. **東宝シネマ**\n   - 距離: 約280m (北西方向)\n   - 座標: 緯度 35.659186, 経度 139.698883\n\n5. **シアター・イメージフォーラム**\n   - 距離: 約330m (北西方向)\n   - 座標: 緯度 35.660303, 経度 139.707022\n\nこれらの映画館はすべて渋谷駅周辺に位置していますが、Cinema Vera Shibuyaと東宝シネマは最も近接しています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 30.857728242874146
+      },
+      {
+        "id": "GR-16",
+        "category": "brand",
+        "source": "graphrag",
+        "score": 66.66666666666666,
+        "response": "渋谷駅周辺には5つのスターバックスがあります。\n\n1. 座標：緯度 35.660553, 絏度 139.707032 (住所：東京都渋谷区8)\n2. 座標：緯度 35.658298, 絏度 139.702308 (住所：東京都渋谷区12)\n3. 座標：緯度 35.658743, 絏度 139.705234 (住所：東京都渋谷区1)\n4. 座標：緯度 35.659792, 絏度 139.700411 (住所：東京都渋谷区6)\n5. 座標：緯度 35.657125, 絏度 139.701265 (住所：東京都渋谷区4)\n\nこれらの情報から、渋谷駅周辺には計5店舗のスターバックスがあります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 22.29911184310913
+      },
+      {
+        "id": "GR-17",
+        "category": "brand",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありませんので、具体的な数値を提供することはできません。ただし、提供された情報から推測すると、ファミリーマートとローソンの両方のコンビニチェーンが渋谷駅周辺で多くの店舗を展開していることがわかります。しかし、どちらのチェーンが多いかについては具体的なデータがありません。\n\n提供された情報では、ファミリーマートの店舗数は65件ですが、これは他のコンビニチェーン（例えばローソン）の情報が提供されていないため、直接比較することができません。また、住所や座標情報が提供されているのはファミリーマートのみであり、ローソンの情報が不足しています。\n\nより正確な比較を行うためには、ローソンの店舗数も含めた情報を提供していただかなければなりません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 15.507651329040527
+      },
+      {
+        "id": "GR-18",
+        "category": "brand",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅の東側にあるドトールコーヒーショップは以下の場所があります：\n\n1. 座標：緯度 35.660295, 経度 139.705663\n   住所：東京都渋谷区3\n   営業時間：Mo-Fr 07:00-21:00; Sa-Su,PH 08:00-20:00\n   電話番号：+81 3-3486-0881\n   バリアフリー：不明\n   Wi-Fi：あり\n   ウェブサイト：https://www.doutor.co.jp/dcs/\n\n2. 座標：緯度 35.660254, 経度 139.698380\n   住所：東京都渋谷区2\n   営業時間：Mo-Su 07:00-22:00\n   電話番号：+81 3-3461-2775\n   バリアフリー：不明\n   Wi-Fi：あり\n   ウェブサイト：https://www.doutor.co.jp/dcs/\n\n3. 座標：緯度 35.660186, 経度 139.702624\n   住所：東京都渋谷区15\n   営業時間：Mo-Fr 07:00-22:00; Sa,Su,PH 07:30-22:00\n   電話番号：+81 3-3407-7745\n   バリアフリー：不明\n   Wi-Fi：なし\n   ウェブサイト：https://www.doutor.co.jp/dcs/\n\n4. 座標：緯度 35.662841, 経度 139.701042\n   住所：東京都渋谷区1\n   営業時間：Mo-Sa 07:30-22:00; Su",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 40.49469232559204
+      },
+      {
+        "id": "GR-19",
+        "category": "brand",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。マクドナルドの具体的な位置を確認しましたが、スターバックスの情報は含まれておりません。近くにスターバックスがあるかどうかは不明です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 3.911550760269165
+      },
+      {
+        "id": "GR-20",
+        "category": "brand",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報から直接的に渋谷で最も店舗数が多いコンビニチェーンを特定することはできません。しかし、提供された情報からは、セブン-イレブン（7-Eleven）が複数の店舗を有していることがわかります。ただし、他のコンビニチェーンも存在し、その数と位置は提供された情報からは確認できません。\n\n提供された情報では、セブン-イレブンの店舗は以下の座標にあります：\n1. 緯度 35.661400, 経度 139.709589 (住所: 東京都渋谷区25)\n2. 緯度 35.656396, 経度 139.699092 (住所: 東京都渋谷区1)\n3. 緯度 35.657043, 経度 139.699119 (住所: 東京都渋谷区5)\n4. 緯度 35.657638, 経度 139.696080 (住所: 東京都渋谷区4)\n5. 緯度 35.657682, 経度 139.702727 (住所: 東京都渋谷区1)\n\nこれらの情報だけから判断すると、セブン-イレブンが最も多く存在する可能性がありますが、他のコンビニチェーンの情報が提供されていないため、確実な結論を出すことはできません。\n\n正確な情報は、各コンビニチェーンの公式データや最新の調査結果が必要となります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 32.02576661109924
+      },
+      {
+        "id": "GR-21",
+        "category": "complementary",
+        "source": "graphrag",
+        "score": 33.33333333333333,
+        "response": "渋谷駅周辺にはいくつかの飲食店があります。以下に近隣のレストランを紹介します。\n\n1. **道玄坂バルクツHANARE**\n   - **住所**: 東京都渋谷区18\n   - **座標**: 緯度 35.657206, 経度 139.695743\n   - **営業時間**: 18:00-03:00\n   - **料理ジャンル**: chicken; wine; italian; spanish; tapas\n   - **特徴**: 渋谷最大級の50種類以上の国産ワインと20種類以上のタパスメニューを提供しています。また、「パリパリ！27時間チキン」が名物です。\n\n2. **はるいち**\n   - **住所**: 住所情報なし\n   - **座標**: 緯度 35.660774, 経度 139.707317\n   - **営業時間**: 営業時間情報なし\n   - **料理ジャンル**: noodle\n\n3. **Reg-On-Diner**\n   - **住所**: 東京都８－１\n   - **座標**: 緯度 35.655548, 経度 139.709875\n   - **営業時間**: 11:00-22:00\n   - **料理ジャンル**: burger\n\n4. **いんでぃら**\n   - **住所**: 道玄坂2-29-8\n   - **座標**: 緯度 35.659237, 経度 139.697900\n   - **営業時間**: Mo-Su 10:00-22:00\n   - **料理ジャンル**: curry\n\nこれらのレストランの中から、営業時間や料理ジャンルに応じて選択できます。特に道玄坂バルクツHANAREは豊富なワインとタパスメニューが魅力的です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 39.63958024978638
+      },
+      {
+        "id": "GR-22",
+        "category": "complementary",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅周辺にはいくつかのカフェがありますが、映画館から直接行けるカフェについては具体的な情報がありません。ただし、近くにあるカフェをいくつか紹介します。\n\n1. **FabCafe**\n   - 座標：緯度 35.655994, 経度 139.695458\n   - 住所：東京都渋谷区7\n   - 営業時間：Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00\n   - バリアフリーアクセスあり\n   - Wi-Fiあり\n   - レーザーカッターが利用可能\n\n2. **Uplight Coffee**\n   - 座標：緯度 35.659206, 経度 139.702005\n   - 住所情報なし\n   - 営業時間情報なし\n   - バリアフリーアクセスあり\n   - Wi-Fi状況不明\n\n3. **The local coffee stand**\n   - 座標：緯度 35.660389, 経度 139.706744\n   - 住所：2-10-15\n   - 営業時間：Mo-Fr 08:09-19:00, Sa-Su 11:00-19:00\n   - バリアフリーアクセス制限あり\n   - Wi-Fiあり\n\n4. **Café Kitsuné Shibuya**\n   - 座標：緯度 35.662335, 経度 139.701830\n   - 住所：東京都MIYASHITA PARK 2F\n   - 営業時間：Mo-Su 11:00-21:00\n   - バリアフリーアクセスあり\n   - Wi-Fi状況不明\n\n5. **Urth Caffé**\n   - 座標：緯度 35.658412",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 40.2404568195343
+      },
+      {
+        "id": "GR-23",
+        "category": "complementary",
+        "source": "graphrag",
+        "score": 66.66666666666666,
+        "response": "情報がありません。\n\n上記の検索結果からは、渋谷駅周辺の飲食店についての詳細な情報（住所、営業時間、料理ジャンルなど）が提供されていません。そのため、渋谷駅を出てすぐの場所で軽食を取れる具体的な飲食店を推奨することはできません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 6.7266881465911865
+      },
+      {
+        "id": "GR-24",
+        "category": "complementary",
+        "source": "graphrag",
+        "score": 75.0,
+        "response": "近くのカフェについて、以下の情報を元に回答します。\n\n1. **珈琲館 (Kohikan)**\n   - 座標：緯度 35.661182, 経度 139.701001\n   - 詳細：営業時間や住所が不明です。バリアフリーとWi-Fiの利用可能性も不明です。\n   \n2. **The local coffee stand**\n   - 座標：緯度 35.660389, 経度 139.706744\n   - 詳細：営業時間は平日8:09-19:00、土日祝11:00-19:00です。住所は2-10-15です。バリアフリーサービスは制限があり、Wi-Fiは利用可能とされています。\n\n3. **タリーズコーヒー**\n   - 座標：緯度 35.662910, 経度 139.700650\n   - 詳細：営業時間は月曜日から金曜日は7:30-22:00、土曜日は8:00-22:00です。住所は渋谷区14です。バリアフリー施設あり、Wi-Fiの利用可能性は不明です。\n\n**推奨のカフェ：The local coffee stand**\n- このカフェは営業時間が長く、バリアフリーサービスが制限されているものの、Wi-Fiが利用可能であるため、本屋で本を買った後でもコーヒーを楽しむことができます。\n\n以上、座標情報は緯度 35.660389, 経度 139.706744 の The local coffee stand を推奨します。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 34.80291175842285
+      },
+      {
+        "id": "GR-25",
+        "category": "complementary",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅周辺にはいくつかの飲食店がありますが、観光名所の近くで食事ができる場所としておすすめしたいのは「道玄坂バル克ツHANARE」です。\n\n【道玄坂バル克ツHANARE】\n- 座標：緯度 35.657206, 経度 139.695743\n- 住所：東京都渋谷区18\n- 営業時間：18:00-03:00\n- 料理ジャンル：chicken;wine;italian;spanish;tapas\n\n道玄坂バル克ツHANAREは、渋谷駅から徒歩約5分の場所にあり、観光客にも人気のスポットです。店内では50種類以上の国産ワインを楽しむことができます。また、本場スペインバルの様な雰囲気の中で、20種類以上のタパスメニューを200円から楽しむことができます。特に「パリパリ！27時間チキン」は人気の名物です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 21.762927532196045
+      },
+      {
+        "id": "GR-26",
+        "category": "competitor",
+        "source": "graphrag",
+        "score": 33.33333333333333,
+        "response": "渋谷駅周辺には複数のカフェがあります。混雑している場合、以下のカフェがおすすめです：\n\n1. **ザ クリーム オブ ザ クロップ コーヒー**\n   - 座標：緯度 35.658813, 経度 139.703229\n   - 営業時間：Mo-Su 8:00-21:00\n\n2. **Pells coffee stand**\n   - 座標：緯度 35.658645, 経度 139.708742\n   - 営業時間：11:30-16:00\n\n3. **Uplight Coffee**\n   - 座標：緯度 35.659206, 経度 139.702005\n\nこれらのカフェはすべて渋谷駅周辺に位置しています。混雑している場合、これらのカフェのいずれかを利用すると良いでしょう。特にUplight Coffeeはバリアフリーサービスがあるため、より広い範囲で選択肢が増えます。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 22.00676965713501
+      },
+      {
+        "id": "GR-27",
+        "category": "competitor",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅周辺でラーメン屋が密集しているエリアは、道玄坂周辺とセンター街周辺です。\n\n1. **ラーメン王 後楽本舗**\n   - 座標：緯度 35.658657, 経度 139.698546\n   - 調理ジャンル：ラーメン、中華料理\n\n2. **桂花ラーメン 渋谷センター街店**\n   - 座標：緯度 35.660233, 経度 139.698697\n   - 調理ジャンル：ラーメン\n\nこれらの店舗はどちらも渋谷駅周辺に位置しています。また、道玄坂周辺には「後楽ラーメン」（座標：緯度 35.658663, 経度 139.698553）というラーメン屋もありますが、具体的な営業時間や詳細な住所情報はありません。\n\nしたがって、ラーメン屋が密集しているエリアは、道玄坂周辺とセンター街周辺と推定されます。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 23.547123432159424
+      },
+      {
+        "id": "GR-28",
+        "category": "competitor",
+        "source": "graphrag",
+        "score": 66.66666666666666,
+        "response": "渋谷駅周辺の他の飲食店/バーの選択肢として、以下の場所があります：\n\n1. **TASUICHI**\n   - **住所**: 東京都渋谷区14\n   - **座標**: 緯度 35.660952, 経度 139.697018\n   - **営業時間**: Su-Th 17:00-02:00; Fr-Sa 17:00-03:00\n   - **特徴**: 活気ある立ち飲みバーで、観光客に人気。地元の人々や他の旅行者との交流ができます。\n\n2. **Nonbei yokocho alley**\n   - **座標**: 緯度 35.659789, 経度 139.702458\n   - **特徴**: 詳細な情報がありませんが、立地は渋谷駅周辺です。\n\n3. **日本酒バル**\n   - **座標**: 緯度 35.659054, 経度 139.696259\n   - **特徴**: 日本酒を楽しむことができるバーです。\n\n4. **ずくなし**\n   - **座標**: 緯度 35.657877, 経度 139.698966\n   - **特徴**: スナックスタイルのバーです。\n\n5. **居酒屋　すみれ**\n   - **座標**: 緯度 35.657478, 経度 139.695106\n   - **バリアフリーフィーチャー**: no\n   - **特徴**: 居酒屋で、バリアフリー対応ではありません。\n\nこれらの選択肢はすべて渋谷駅周辺に位置しており、異なるスタイルや雰囲気の飲食店/バーを提供しています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 38.73023343086243
+      },
+      {
+        "id": "GR-29",
+        "category": "cuisine",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅周辺でイタリアン料理を食べられるお店として、以下の2つをおすすめします：\n\n1. **トゥッタイタリア**\n   - 座標：緯度 35.660769, 経度 139.707355\n   - 調理ジャンル：italian\n   - 営業時間情報なし\n   - 電話番号情報なし\n   - バリアフリーやWi-Fiの情報はありません\n\n2. **Addu Mamma**\n   - 座標：緯度 35.660426, 経度 139.707331\n   - 調理ジャンル：italian\n   - 営業時間情報なし\n   - 電話番号情報なし\n   - バリアフリーやWi-Fiの情報はありません\n\nこれらのレストランはイタリア料理を提供していますが、営業時間や詳細な住所などの情報が不足しています。ご訪問前に公式ウェブサイトや電話で確認することをお勧めします。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 21.43809223175049
+      },
+      {
+        "id": "GR-30",
+        "category": "cuisine",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。和食と洋食の具体的な店舗数についての情報が提供されていません。そのため、渋谷エリアでどちらの料理ジャンルの店舗が多いかを判断することができません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 4.420440673828125
+      },
+      {
+        "id": "GR-31",
+        "category": "cuisine",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "ラーメン屋が集まっているエリアは渋谷駅周辺です。特に以下のラーメン屋が該当します：\n\n1. ラーメン王 後楽本舗 (緯度 35.658657, 経度 139.698546)\n2. ラーメン 凪 煮干王 (緯度 35.657899, 経度 139.704621)\n3. 野郎ラーメン (緯度 35.660278, 経度 139.699153)\n4. ラーメン凪 (緯度 35.657632, 経度 139.708159)\n5. 超俺流塩ラーメン (緯度 35.659971, 経度 139.700077)\n\nこれらのラーメン屋はすべて渋谷駅周辺に位置しています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 21.654497623443604
+      },
+      {
+        "id": "GR-32",
+        "category": "cuisine",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "和食店の中から寿司屋の近くにある別の和食店を紹介します。\n\n和泉鮨（Izumi Sushi）は寿司屋で、座標は緯度35.656360, 経度139.701709です。和幸（Wako）も和食店で、座標は緯度35.661330, 経度139.702510です。両店とも営業時間や電話番号などの詳細情報はありませんが、どちらも渋谷駅周辺に位置しています。\n\n和泉鮨と和幸の距離は約400mです。寿司屋の近くにある別の和食店として、和幸をお勧めします。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 14.85643744468689
+      },
+      {
+        "id": "GR-33",
+        "category": "hours",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅周辺では24時間営業のお店は見つかりませんでした。最も近い24時間営業の飲食店は見つかりませんでした。ただし、深夜まで営業しているお店はあります。\n\n道玄坂バル克ツHANAREは営業時間が18:00-03:00となっています。\n\nTASUICHIも営業時間がSu-Th 17:00-02:00; Fr-Sa 17:00-03:00となっており、深夜まで営業しています。\n\nしたがって、渋谷駅周辺では深夜まで営業しているお店としては、TASUICHI（住所：東京都渋谷区14）が最寄りとなります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 15.333162546157837
+      },
+      {
+        "id": "GR-34",
+        "category": "hours",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "はるいち以外のレストランは営業時間が明確に示されていませんが、道玄坂バルクツHANAREは深夜まで営業しています。具体的には、営業時間は18:00-03:00となっています。\n\nしたがって、深夜でも食事ができるレストランは道玄坂バルクツHANAREがあります。座標は緯度35.657206、経度139.695743です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 10.150938272476196
+      },
+      {
+        "id": "GR-35",
+        "category": "hours",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "早朝から営業しているカフェは以下の2箇所です。\n\n1. **カフェ・ベローチェ (CAFE VELOCE)**\n   - 座標：緯度 35.659921, 経度 139.706066\n   - 住所：東京都渋谷区18\n   - 営業時間：Mo-Su 07:00-22:00\n\n2. **カフェ・ベローチェ (CAFE VELOCE)**\n   - 座標：緯度 35.661877, 経度 139.695538\n   - 住所：東京都渋谷区1\n   - 営業時間：Mo-Su 07:00-23:00\n\nこれらのカフェは早朝から営業しています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "手動指定",
+        "total_time": 17.296401500701904
+      }
+    ],
+    "adaptive": [
+      {
+        "id": "L1-01",
+        "category": "basic_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅は以下の座標に位置しています：緯度 35.658080, 経度 139.701765。これは渋谷区渋谷にあります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 5.449847936630249
+      },
+      {
+        "id": "L1-02",
+        "category": "basic_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "東宝シネマの座標は、緯度 35.659186, 経度 139.698883 です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 4.032886743545532
+      },
+      {
+        "id": "L1-03",
+        "category": "basic_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷東武ホテル (Tobu Hotel)は、緯度 35.663186, 経度 139.698986 の座標に位置しています。これは渋谷駅周辺にあります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 5.448664426803589
+      },
+      {
+        "id": "L1-04",
+        "category": "basic_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷神南郵便局の位置は、緯度 35.661994, 経度 139.700574 です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 5.139050722122192
+      },
+      {
+        "id": "L1-05",
+        "category": "basic_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "三菱UFJ銀行渋谷支店の位置情報は、緯度 35.659866, 経度 139.700901 の地点にあります。ただし、具体的な住所情報はありません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 5.010367393493652
+      },
+      {
+        "id": "L1-06",
+        "category": "basic_category",
+        "source": "structured",
+        "score": 50.0,
+        "response": "渋谷駅周辺のコンビニについて、以下の情報を提供します。\n\n1. **セブン-イレブン**\n   - **座標**: 緯度 35.659138, 経度 139.707824 (ただし、具体的な住所情報はありません)\n   - **営業時間**: 情報がありません\n   - **電話番号**: 電話番号情報なし\n   - **Wi-Fi**: unknown\n   - **ウェブサイト**: なし\n\n2. **セブン-イレブン**\n   - **座標**: 緯度 35.661400, 経度 139.709589\n   - **住所**: 東京都渋谷区25\n   - **営業時間**: 情報がありません\n   - **電話番号**: 03-3409-4401\n   - **Wi-Fi**: unknown\n   - **ウェブサイト**: なし\n\n3. **セブン-イレブン**\n   - **座標**: 緯度 35.657374, 経度 139.699010 (ただし、具体的な住所情報はありません)\n   - **営業時間**: 情報がありません\n   - **電話番号**: 電話番号情報なし\n   - **Wi-Fi**: unknown\n   - **ウェブサイト**: なし\n\n4. **セブン-イレブン**\n   - **座標**: 緯度 35.663629, 経度 139.698819\n   - **住所**: 情報がありません\n   - **営業時間**: 24/7\n   - **電話番号**: +81 3 3463 1557\n   - **Wi-Fi**: wlan\n   - **ウェブサイト**: https://www.sej.co.jp/\n\n5. **セブン-イレブン**\n   - **座標**: 緯度 35.656396, 経度 139.",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 40.200491428375244
+      },
+      {
+        "id": "L1-07",
+        "category": "basic_category",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷にあるカフェを3つ紹介します。\n\n1. **青山壹番館**\n   - **住所**: 渋谷区東1-4-27\n   - **座標**: 緯度 35.657113, 経度 139.707798\n   - **営業時間**: 平日は8時から19時まで、土曜日は10時から18時まで\n   - **料理ジャンル**: coffee_shop\n   - **特徴**: 730円の日替わりのトーストはトーストのほかにコーヒーまたは紅茶とポテトチップ、フルーツ、ゼリーがついてきます。\n\n2. **The local coffee stand**\n   - **住所**: 2-10-15\n   - **座標**: 緯度 35.660389, 経度 139.706744\n   - **営業時間**: 平日は8時9分から19時まで、土曜日は11時から19時まで\n   - **料理ジャンル**: coffee\n   - **電話番号**: 03-3409-1158\n   - **ウェブサイト**: [the local 2016](https://thelocal2016.com/)\n   - **バリアフリーレベル**: limited\n   - **Wi-Fi**: wlan\n\n3. **347 cafe**\n   - **座標**: 緯度 35.661998, 経度 139.702837\n   - **営業時間**: 情報がありません\n   - **料理ジャンル**: なし\n   - **バリアフリーレベル**: yes\n\nこれらのカフェはすべて渋谷駅周辺に位置しています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 34.95346188545227
+      },
+      {
+        "id": "L1-08",
+        "category": "basic_category",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷エリアには以下の映画館があります。\n\n1. **ヒューマントラストシネマ渋谷**\n   - **英語名**: Human Trust Cinema Shibuya\n   - **座標**: 緯度 35.661973, 経度 139.702723\n   - **ブランド**: ヒューマントラストシネマ\n   - **バリアフリー**: yes\n\n2. **ホワイトシネクイント**\n   - **英語名**: White Cine Quinto\n   - **座標**: 緯度 35.661982, 経度 139.699099\n   - **電話番号**: +81-3-6712-7225\n   - **バリアフリー**: unknown\n\n3. **東宝シネマ**\n   - **英語名**: Toho Cinemas\n   - **座標**: 緯度 35.659186, 経度 139.698883\n   - **ブランド**: TOHOシネマズ\n   - **バリアフリー**: yes\n\n4. **シネクイント CINE QUINTO**\n   - **英語名**: CINE QUINTO\n   - **座標**: 緯度 35.660874, 経度 139.699849\n   - **住所**: 東京都渋谷区11\n   - **電話番号**: +81-3-3477-5905\n   - **バリアフリー**: limited\n\n5. **Cinema Vera Shibuya**\n   - **座標**: 緯度 35.659351, 経度 139.695385\n   - **電話番号**: 03-3461-7703\n\nこれらの映画館はすべて渋谷駅周辺に位置しています。ただし、営業時間や料理ジャンルなどの詳細情報は提供されていません。また、一部の映画館についてはWi-Fiやバリアフリーサービスの",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 40.38294053077698
+      },
+      {
+        "id": "L1-09",
+        "category": "basic_category",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷周辺の薬局は以下の場所があります。\n\n1. 渋谷みどり薬局\n   - 座標：緯度 35.655506, 経度 139.703862\n\n2. 渋谷友好薬局\n   - 座標：緯度 35.658352, 経度 139.696699\n\n3. サンドラッグ\n   - 座標：緯度 35.659117, 経度 139.699884\n   - 住所：文化村通り渋谷区道玄坂２－３－１\n   - 特徴：バリアフリー対応\n\n4. けやき薬局\n   - 座標：緯度 35.663412, 経度 139.695836\n   - 営業時間：月曜日から金曜日 09:30-18:30; 土曜日 09:30-12:00\n\n5. 日本調剤宮益坂薬局\n   - 座標：緯度 35.660069, 経度 139.704701\n\nこれらの薬局はすべて渋谷駅周辺に位置しています。ただし、営業時間や電話番号などの詳細情報は提供されていません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 28.992926359176636
+      },
+      {
+        "id": "L1-10",
+        "category": "basic_category",
+        "source": "structured",
+        "score": 50.0,
+        "response": "渋谷エリアには以下のホテルがあります：\n\n1. 渋谷シティホテル (Shibuya City hotel)\n   - 座標：緯度 35.659838, 経度 139.695402\n   - ブランド：なし\n   - バリアフリー：不明\n\n2. 渋谷東武ホテル (Tobu Hotel)\n   - 座標：緯度 35.663186, 経度 139.698986\n   - ブランド：なし\n   - バリアフリー：不明\n\n3. GRANDBEL HOTEL\n   - 座標：緯度 35.656160, 経度 139.702022\n   - バリアフリー：あり\n\n4. ホテルインディゴ東京渋谷\n   - 座標：緯度 35.659874, 経度 139.697105\n   - 住所：東京都渋谷区12\n\n5. capsule hotel et sauna\n   - 座標：緯度 35.657281, 経度 139.696210\n   - 住所：住所情報なし\n\nこれらのホテルはすべて渋谷駅周辺に位置しています。ただし、営業時間や料理ジャンルなどの詳細情報は提供されていません。また、電話番号やウェブサイトも掲載されていないため、直接問い合わせる際は他の方法をご利用ください。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 30.18818950653076
+      },
+      {
+        "id": "L2-01",
+        "category": "spatial_proximity",
+        "source": "structured",
+        "score": 60.0,
+        "response": "渋谷駅に最も近いコンビニはローソンです。ローソンは渋谷駅から南へ102mの位置にあります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "近接性検索クエリ (+16.6%)、集計クエリ (+8.3%)",
+        "total_time": 3.8132238388061523
+      },
+      {
+        "id": "L2-02",
+        "category": "spatial_proximity",
+        "source": "structured",
+        "score": 100.0,
+        "response": "東宝シネマから徒歩圏内（500m以内）にあるカフェは以下の通りです：\n\n1. Café Kitsuné Shibuya\n   - 座標：緯度 35.662335, 経度 139.701830\n   - 距離：約353m（东南方向）\n   - 語句：カフェ\n   - 営業時間：月曜日から日曜日 11:00-21:00\n   - 電話番号：03-6712-5322\n   - バリアフリーアクセス：はい\n\n2. Kitasando Coffee Lab\n   - 座標：緯度 35.661328, 経度 139.700081\n   - 距離：約353m（东南方向）\n   - 語句：カフェ\n   - 営業時間：情報なし\n   - 電話番号：情報なし\n   - バリアフリーアクセス：いいえ\n\nこれらのカフェは東宝シネマから比較的近接しています。Café Kitsuné Shibuyaは営業時間も公表されており、バリアフリーアクセスも利用可能となっています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "複数ステップ推論 (+22.2%)",
+        "total_time": 25.54809856414795
+      },
+      {
+        "id": "L2-03",
+        "category": "spatial_proximity",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅と原宿駅の中間地点に近いカフェは以下の通りです：\n\n1. **SUZU CAFE**\n   - 座標：緯度 35.662514, 経度 139.698740\n   - 距離：約340m (渋谷駅から)\n\n2. **347 cafe**\n   - 座標：緯度 35.661998, 経度 139.702837\n   - 距離：約400m (渋谷駅から)\n\nこれらのカフェは、渋谷駅と原宿駅の中間地点近くに位置しています。より詳細な地図上で確認することをお勧めします。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 15.403518199920654
+      },
+      {
+        "id": "L2-04",
+        "category": "spatial_proximity",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありません。渋谷神南郵便局の周辺200m以内の飲食店に関する情報は提供されていません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 2.734588623046875
+      },
+      {
+        "id": "L2-05",
+        "category": "spatial_proximity",
+        "source": "structured",
+        "score": 66.66666666666666,
+        "response": "情報がありません。\n\n説明：質問に答えるためには、まず渋谷駅からの距離を知る必要があり、その情報を提供していません。また、どの映画館が最も遠いかを判定するためには、各映画館の座標情報が必要です。これらの情報がないため、正確な回答を提供することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "集計クエリ (+8.3%)",
+        "total_time": 6.6478540897369385
+      },
+      {
+        "id": "L2-06",
+        "category": "spatial_density",
+        "source": "structured",
+        "score": 50.0,
+        "response": "情報がありません。上記の情報には飲食店の集中地点に関する具体的なデータや場所が含まれていません。渋谷駅周辺の飲食店の集中地については、より詳細な調査が必要です。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "集計クエリ (+8.3%)",
+        "total_time": 4.144213438034058
+      },
+      {
+        "id": "L2-07",
+        "category": "spatial_density",
+        "source": "structured",
+        "score": 75.0,
+        "response": "情報がありません。\n\n上記の情報にはカフェやバーに関する具体的なデータが含まれていません。ロッテリアやマクドナルド、タイムズなどのレストラン情報はありますが、カフェやバーの数や位置については記載されていません。そのため、渋谷駅周辺のカフェとバーの比較について回答することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "東西/方向比較クエリ (+25%)、集計クエリ (+8.3%)",
+        "total_time": 6.0822913646698
+      },
+      {
+        "id": "L2-08",
+        "category": "spatial_density",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありません。\n\n理由：提供された情報には「経路上のPOI」の詳細が含まれていません。そのため、「渋谷駅周辺のPOI構成」から「商業エリア」と「住宅エリア」の特性を推定することはできません。具体的なPOIの数や種類（例えば、ショッピングセンターや飲食店の数、住宅街の広さなど）が必要です。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "東西/方向比較クエリ (+25%)",
+        "total_time": 7.7296411991119385
+      },
+      {
+        "id": "L2-09",
+        "category": "spatial_density",
+        "source": "structured",
+        "score": 80.0,
+        "response": "渋谷駅周辺では、以下の医療施設（病院、クリニック、薬局）が確認されています：\n\n1. 渋谷みどり薬局\n   - 座標：緯度 35.655506, 経度 139.703862\n   - カテゴリ：医療/薬局\n   - バリアフリー：不明\n\n2. YOKOTA\n   - 座標：緯度 35.660569, 経度 139.699535\n   - カテゴリ：医療/薬局\n   - バリアフリー：不明\n\n3. けやき薬局 (Keyaki Yakkyoku)\n   - 座標：緯度 35.663412, 経度 139.695836\n   - カテゴリ：医療/薬局\n   - 営業時間：Mo-Fr 09:30-18:30; Sa 09:30-12:00\n   - バリアフリー：あり\n\n4. 渋谷友好薬局\n   - 座標：緯度 35.658352, 経度 139.696699\n   - カテゴリ：医療/薬局\n   - バリアフリー：不明\n\n5. アイスークリニック渋谷院\n   - 座標：緯度 35.656282, 経度 139.705023\n   - カテゴリ：医療/病院\n   - バリアフリー：不明\n\nこれらの施設はすべて渋谷駅周辺に位置しています。ただし、具体的な住所や営業時間などの詳細情報は提供されていません。また、Wi-Fiの利用可能性についても不明です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 37.455989360809326
+      },
+      {
+        "id": "L2-10",
+        "category": "spatial_density",
+        "source": "structured",
+        "score": 80.0,
+        "response": "渋谷駅周辺の宿泊施設の密度は比較的高いと言えます。理由としては以下の点があります：\n\n1. 座標情報から、渋谷駅周辺には少なくとも5つの宿泊施設が存在します：\n   - 渋谷シティホテル (35.659838, 139.695402)\n   - sequence Miyashita Park (35.663459, 139.701897)\n   - 渋谷WAVE (SHIBUYA WAVE) (35.656547, 139.706345)\n   - GRANDBEL HOTEL (35.656160, 139.702022)\n   - capsule hotel et sauna (35.657281, 139.696210)\n\n2. 渋谷は東京の中心部に位置し、多くの観光客やビジネスパーソンが訪れる人気エリアです。そのため、宿泊施設の需要が高いことが推測できます。\n\n3. これらの宿泊施設は主に渋谷駅周辺に密集していますが、他の地域にも散在しているため、全体的な密度は高くはありません。\n\n4. ただし、具体的な宿泊施設の数や面積などの詳細なデータがないため、より正確な密度の評価は難しいです。\n\n以上から、渋谷駅周辺の宿泊施設の密度は比較的高いと言えるでしょう。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 28.82184362411499
+      },
+      {
+        "id": "L2-11",
+        "category": "spatial_comparison",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありません。\n\n理由：提供された集計結果には飲食店の数が記載されており、カフェの数については記載されていません。そのため、渋谷駅の東側と西側どちらにカフェが多いかを判断する情報が不足しています。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "東西/方向比較クエリ (+25%)、集計クエリ (+8.3%)",
+        "total_time": 4.597069263458252
+      },
+      {
+        "id": "L2-12",
+        "category": "spatial_comparison",
+        "source": "structured",
+        "score": 75.0,
+        "response": "情報がありません。\n\n上記の情報からは、特定のエリア（area:northwest_mid）内にある映画館と駐車場の関係性しか確認できません。具体的な映画館や劇場の数や名称、位置については記載されていません。そのため、渋谷駅周辺の映画館と劇場の数を比較することはできません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "東西/方向比較クエリ (+25%)、集計クエリ (+8.3%)",
+        "total_time": 6.860658884048462
+      },
+      {
+        "id": "L2-13",
+        "category": "spatial_comparison",
+        "source": "structured",
+        "score": 60.0,
+        "response": "情報がありません。\n\n説明：\n現在提供されている情報には、渋谷駅周辺のコンビニやスーパーの具体的な数や場所名が含まれていません。そのため、コンビニとスーパーの充実度を比較するためのデータが不足しています。具体的な情報を提供いただければ、より詳細な回答ができるかと思います。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "東西/方向比較クエリ (+25%)",
+        "total_time": 6.094042062759399
+      },
+      {
+        "id": "L2-14",
+        "category": "spatial_comparison",
+        "source": "structured",
+        "score": 75.0,
+        "response": "情報がありません。上記の情報からは、ポーラ 渋谷ビル 駐車場の周辺にはいくつかの銀行がありますが、どの施設が最も便利かについては具体的な比較情報がありません。例えば、各金融機関からの距離やアクセス時間などについての詳細な情報が必要です。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "東西/方向比較クエリ (+25%)",
+        "total_time": 5.900131940841675
+      },
+      {
+        "id": "L2-15",
+        "category": "spatial_comparison",
+        "source": "structured",
+        "score": 75.0,
+        "response": "情報がありません。上記のリストにはPOIの数や頻度に関する具体的な数値が含まれていません。そのため、渋谷駅周辺で最も多いPOIカテゴリや上位3つのPOIを特定することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "集計クエリ (+8.3%)",
+        "total_time": 4.358818054199219
+      },
+      {
+        "id": "L3-01",
+        "category": "constraint_single",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅から徒歩5分以内（約400m）にあるカフェは見つかりませんでした。最寄りのカフェは以下の通りですが、全て400m以上離れています。\n\n1. **カフェ・ベローチェ**\n   - 青山壹番館から約353m（南東方向）\n   - 営業時間：月曜日から日曜日 07:00-22:00\n   - 電話番号：+81 3-5468-8074\n   - ウェブサイト：[カフェ・ベローチェ](https://chatnoir-company.com/chatnoir/html/brand/brand_veloce.html)\n\n2. **ドトールコーヒーショップ**\n   - 青山壹番館から約347m（南東方向）\n\n3. **カフェ・ド・クリエ**\n   - 青山壹番館から約386m（西南方向）\n\n4. **スターバックス**\n   - 青山壹番館から約334m（東方向）\n\nこれらのカフェはいずれも400m以内にありますが、指定の範囲内にはカフェは存在しません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "複数ステップ推論 (+22.2%)",
+        "total_time": 23.03325653076172
+      },
+      {
+        "id": "L3-02",
+        "category": "constraint_single",
+        "source": "structured",
+        "score": 100.0,
+        "response": "電話番号がわかっている渋谷の映画館は以下の2つです。\n\n1. **ホワイトシネクイント**\n   - 電話番号: +81-3-6712-7225\n   - 座標: 緯度 35.661982, 経度 139.699099\n\n2. **シネクイント CINE QUINTO**\n   - 電話番号: +81-3-3477-5905\n   - 座標: 緯度 35.660874, 経度 139.699849",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 14.037160396575928
+      },
+      {
+        "id": "L3-03",
+        "category": "constraint_single",
+        "source": "structured",
+        "score": 100.0,
+        "response": "ウェブサイトを持っている渋谷のレストランは見つかりませんでした。提供された情報にはウェブサイトの情報が含まれていません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 3.0409984588623047
+      },
+      {
+        "id": "L3-04",
+        "category": "constraint_single",
+        "source": "structured",
+        "score": 100.0,
+        "response": "「渋谷」という名前が含まれるホテルはありません。提供的的信息中，所有酒店的名称都不包含“渋谷”这个词。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 3.666797399520874
+      },
+      {
+        "id": "L3-05",
+        "category": "constraint_single",
+        "source": "structured",
+        "score": 66.66666666666666,
+        "response": "セブン-イレブンは渋谷エリア（area:west_mid）にあります。ただし、情報から判断すると、セブン-イレブンが24時間営業であることは明記されていません。しかし、多くの場合、セブン-イレブンは24時間営業です。正確な営業時間については、最新の情報源をご確認ください。位置情報は緯度35.6895、経度139.7001にあります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "営業時間クエリ (+11.1%)",
+        "total_time": 9.083110094070435
+      },
+      {
+        "id": "L3-06",
+        "category": "constraint_multi",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅から500m以内で、電話番号とウェブサイトの両方がわかるカフェは「The local coffee stand」です。\n\n- 座標：緯度 35.660389, 経度 139.706744\n- 住所：2-10-15\n- 営業時間：Mo-Fr 08:09-19:00, Sa-Su 11:00-19:00\n- 料理ジャンル：coffee\n- 電話番号：03-3409-1158\n- ファイル：https://thelocal2016.com/\n\nこのカフェはバリアフリーサイトが限定的ですが、Wi-Fiは利用可能です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 15.91028118133545
+      },
+      {
+        "id": "L3-07",
+        "category": "constraint_multi",
+        "source": "structured",
+        "score": 80.0,
+        "response": "情報がありません。上記の検索結果からは、渋谷駅周辺のカフェのリストがありますが、どのカフェも映画館の近く（200m以内）には位置していません。また、カフェの座標情報と映画館の座標情報が提供されていないため、具体的な距離を測定することはできません。\n\nただし、以下のカフェは渋谷駅周辺にあり、駅から比較的近い場所に位置しています：\n- SUZU CAFE: 緯度 35.662514, 経度 139.698740\n- 347 cafe: 緯度 35.661998, 経度 139.702837\n- FabCafe: 緯度 35.655994, 経度 139.695458\n- The local coffee stand: 緯度 35.660389, 経度 139.706744\n- Uplight Coffee: 緯度 35.659206, 経度 139.702005\n\nこれらのカフェのうち、どのカフェが映画館の近くにあるかは確認できていません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 24.956376791000366
+      },
+      {
+        "id": "L3-08",
+        "category": "constraint_multi",
+        "source": "structured",
+        "score": 75.0,
+        "response": "渋谷駅周辺で薬局が近く（200m以内）にあるのは以下の4箇所です：\n\n1. **渋谷みどり薬局**\n   - 座標：緯度 35.655506, 経度 139.703862\n   - 距離：13m (東)\n\n2. **渋谷友好薬局**\n   - 座標：緯度 35.658352, 経度 139.696699\n   - 距離：130m (東北)\n\n3. **ことぶき薬局**\n   - 座標：緯度 35.663723, 絏度 139.709954\n   - 距離：118m (東)\n\n4. **けやき薬局**\n   - 座標：緯度 35.663412, 経度 139.695836\n   - 距離：166m (北)\n\nこれらの薬局はすべて渋谷駅周辺にあり、200m以内に位置しています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 24.10766577720642
+      },
+      {
+        "id": "L3-09",
+        "category": "constraint_multi",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺で、コンビニが3軒以上集まっているエリアは渋谷駅周辺です。具体的には以下の座標付近にコンビニがあります：\n\n1. 緯度 35.659138, 経度 139.707824 (バリアフリー情報: unknown, Wi-Fi: unknown)\n2. 緯度 35.663629, 経度 139.698819 (バリアフリー情報: unknown, Wi-Fi: wlan)\n3. 緯度 35.662647, 経度 139.700997 (バリアフリー情報: limited, Wi-Fi: unknown)\n4. 緯度 35.661400, 経度 139.709589 (バリアフリー情報: no, Wi-Fi: unknown)\n\nこれらのコンビニはすべて渋谷駅周辺に位置しています。ただし、営業時間などの詳細情報は提供されていません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 21.33700180053711
+      },
+      {
+        "id": "L3-10",
+        "category": "constraint_multi",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅から500m以内でカフェではなくバーを探すと、以下の候補があります：\n\n1. **渋谷 bar FIVE**\n   - 座標：緯度 35.657713, 経度 139.699543\n   - 距離：約400m（北西方向）\n\n2. **Under Bar**\n   - 座標：緯度 35.663586, 経度 139.699325\n   - 距離：約450m（南東方向）\n\nこれらのバーは、すべて渋谷駅から500m以内に位置しています。ただし、営業時間や電話番号などの詳細情報はありません。また、バリアフリーやWi-Fiの情報も不明です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 16.191057682037354
+      },
+      {
+        "id": "L4-01",
+        "category": "decision_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "情報がありませんので、具体的な場所を推奨することは難しいです。しかし、保育園を開設する際には、安全性と利便性が重要となります。\n\n渋谷駅周辺の公園の中でも、特に「渋谷区立宮下公園」は多くの子供たちが遊ぶ場所として知られています。また、公園の近くに保育園を設置することで、子供たちが遊ぶ場所へのアクセスが容易になります。\n\n一方、交番の有無については具体的な情報がありません。ただし、一般的に治安の良い場所を選択することが推奨されます。渋谷駅周辺は治安が良好な区域ですが、具体的な交番の位置については確認が必要です。\n\n緯度経度情報から推測すると、以下の座標が宮下公園の近隣に位置しています：\n- 緯度 35.661418, 経度 139.701874\n- 緯度 35.662393, 経度 139.701922\n- 緯度 35.660523, 経度 139.701607\n- 緯度 35.663011, 経度 139.701781\n\nこれらの座標が近隣の地域を示しているため、これらの場所のいずれかが最適な場所となる可能性があります。ただし、最終的な決定には地元の行政機関や専門家からのアドバイスを含めることをお勧めします。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 30.0938777923584
+      },
+      {
+        "id": "L4-02",
+        "category": "decision_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺で高齢者向けデイサービスを開設する場合、医療施設へのアクセスを重視すると、以下のエリアが適していると考えられます：\n\n1. **渋谷駅周辺**：\n   - **座標：緯度 35.660852, 経度 139.702107**\n   - **近隣の医療施設**：ディアファーマシー（Dear Pharmacy）があります。これは薬局ですが、緊急時や医療相談には役立ちます。\n\n2. **渋谷道玄坂通**：\n   - **座標：緯度 35.660244, 経度 139.697352**\n   - **近隣の医療施設**：ウイング薬局渋谷道玄坂店があります。これは薬局ですが、緊急時や医療相談には役立ちます。\n\n3. **渋谷駅周辺の他のコンビニ**：\n   - **座標：緯度 35.664604, 経度 139.699373**\n   - **座標：緯度 35.661442, 経度 139.698414**\n   - **近隣の医療施設**：これらのコンビニ自体は医療施設ではありませんが、緊急時に近隣の医療施設に連絡する際の目安となります。\n\nこれらのエリアは、渋谷駅から比較的近接しており、高齢者にとって移動が比較的容易であることが期待できます。また、近隣に薬局があるため、緊急時の医療相談や薬の補給にも便利です。\n\nただし、具体的な場所を選定する際は、周辺の交通状況、居住者の密集度、そして最寄りの病院や診療所の位置を考慮することが重要です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 37.34864354133606
+      },
+      {
+        "id": "L4-03",
+        "category": "decision_location",
+        "source": "structured",
+        "score": 60.0,
+        "response": "渋谷駅周辺で学習塾を開設する場合、以下のような場所が適していると考えられます：\n\n1. 東京地下鉄渋谷駅（緯度 35.658999, 経度 139.702445）\n   - 渋谷駅から徒歩約1分の距離にあるため、通学に便利です。\n   - コンビニ（セブンイレブン渋谷駅前店）が徒歩約30秒の距離にあります。\n\n2. 東急電鉄渋谷駅（緯度 35.658450, 経度 139.702843）\n   - 渋谷駅から徒歩約1分の距離にあるため、通学に便利です。\n   - コンビニ（セブンイレブン渋谷駅前店）が徒歩約30秒の距離にあります。\n\n3. 東日本旅客鉄道渋谷駅（緯度 35.658080, 経度 139.701765）\n   - 渋谷駅から徒歩約1分の距離にあるため、通学に便利です。\n   - コンビニ（セブンイレブン渋谷駅前店）が徒歩約30秒の距離にあります。\n\nこれらの場所は全てバリアフリー対策が施されており、学習塾としての運営に適しています。また、Wi-Fiの利用も可能です。ただし、具体的な場所名や住所は提供されていないため、詳細な立地情報は地図アプリなどで確認することをお勧めします。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 32.80003809928894
+      },
+      {
+        "id": "L4-04",
+        "category": "decision_location",
+        "source": "structured",
+        "score": 50.0,
+        "response": "渋谷駅周辺で待ち合わせスポットとして最適な場所はTASUICHI（タスチ）です。TASUICHIは渋谷駅から近い位置にあり、活気のある立ち飲みバーとして知られています。観光客にも人気があり、賑やかな雰囲気の中で地元の人々や他の旅行者と交流することができます。また、手頃な価格のドリンクを楽しむことができます。\n\n具体的な座標は緯度35.660952、経度139.697018です。営業時間は平日（Su-Th）17:00-02:00、土曜日（Fr-Sa）17:00-03:00となっています。\n\nただし、営業時間やウェブサイトなど詳細な情報が提供されていないため、最新の営業時間を確認することをお勧めします。また、バリアフリーやWi-Fiなどの設備については不明なため、事前に確認することをおすすめします。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 19.615588188171387
+      },
+      {
+        "id": "L4-05",
+        "category": "decision_location",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺で観光客向けの案内所を設置するなら、以下の場所が効果的です：\n\n1. **周辺案内 (緯度 35.655136, 経度 139.706160)**\n   - この場所は渋谷駅の近くに位置しています。渋谷駅から徒歩約5分の距離にあり、多くの観光客が利用する可能性が高い場所です。\n\n2. **のりば案内 (緯度 35.658784, 経度 139.702966)**\n   - この場所も渋谷駅から徒歩約5分の距離にあり、観光客にとって便利な場所です。特に、渋谷駅の改札口から近いため、多くの人が通過する地点にあります。\n\n3. **渋谷区公共施設案内 (緯度 35.661735, 経度 139.708127)**\n   - この場所は渋谷駅から少し離れており、より中心的な場所に位置しています。ただし、渋谷駅周辺の主要な観光スポットへのアクセスも良好です。\n\n4. **渋谷区立宮下公園 (緯度 35.662086, 経度 139.701686)**\n   - 宮下公園は渋谷駅から徒歩約10分の距離にあり、多くの観光客が訪れる場所です。ただし、公園内に設置する場合、公園の入口付近が適しているかもしれません。\n\nこれらの場所は、渋谷駅からのアクセスが良く、多くの観光客が通過する地点にあるため、効果的な案内所の設置地点となります。ただし、具体的な場所選択には、周辺の交通量や観光客の流れ、他の観光施設との関連性などを考慮する必要があります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 38.67443871498108
+      },
+      {
+        "id": "L4-06",
+        "category": "decision_business",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺での新規カフェ出店について、競合と集客可能なPOIを考慮すると以下のように判断できます。\n\n1. 競合（既存カフェ）の数：\n   - 渋谷駅周辺にはロッテリア（カフェ機能あり）、モスバーガー（カフェ機能あり）があります。\n   - ただし、これらは主にファストフード店であり、完全なカフェとは異なります。\n   - 競合する真正のカフェは情報がありません。\n\n2. 集客可能なPOI：\n   - 渋谷駅（area:west_mid）\n   - 渋古スクランブル交差点（area:west_mid）\n   - 渋谷109（area:west_mid）\n   - 渋谷ヒカリエ（area:west_mid）\n\n3. 判断：\n   - 競合としては、真正のカフェが存在しないため、競争は少ない可能性があります。\n   - 渋谷駅周辺には多くの人流量があり、特に学生やビジネスパーソンが集まるエリアです。\n   - 商業施設も密集しているため、潜在的な顧客層は広いと言えます。\n\n総合的に見て、渋谷駅周辺での新規カフェ出店は向きると判断できます。ただし、具体的な場所選定では、周辺の競合状況やターゲット顧客の動線をさらに調査することをお勧めします。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "集計クエリ (+8.3%)",
+        "total_time": 26.31123399734497
+      },
+      {
+        "id": "L4-07",
+        "category": "decision_business",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺の既存コンビニの分布と密度を分析すると、新規コンビニの出店余地について以下のような推測ができます。\n\n現在、提供された情報では、具体的な既存コンビニの位置情報は存在しません。したがって、既存コンビニの分布と密度を詳細に評価することはできません。\n\nただし、一般的な観点から見ると、渋谷駅周辺は非常に商業的なエリアであり、多くの人々が日常的に移動しています。そのため、コンビニエンスストアの需要は高いと考えられます。\n\nまた、提供された情報によれば、デイリーヤマザキはすでに存在していますが、その具体的な位置は不明です。座標が異なるため、おそらく異なる場所にある可能性があります。\n\nこれらの観点から、渋谷駅周辺にはコンビニエンスストアの出店余地がある可能性はありますが、具体的な場所については情報が不足しています。より詳細な調査が必要となります。\n\n結論として、「渋谷駅周辺で新規コンビニの出店余地はありそうですが、具体的な場所や既存コンビニの分布については情報が不足しています」と言えるでしょう。\n\n座標情報：\n- 提供された座標：緯度 35.664604, 経度 139.699373\n- 提供された座標：緯度 35.661442, 経度 139.698414",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 28.09945774078369
+      },
+      {
+        "id": "L4-08",
+        "category": "decision_business",
+        "source": "structured",
+        "score": 83.33333333333334,
+        "response": "渋谷駅周辺で新規ベーカリー（パン屋）を出店する際の戦略を提案します。\n\n1. **マルヤマベーグルLOOP渋谷店**\n   - **位置**: 緯度 35.658349, 経度 139.703380 (渋谷駅周辺)\n   - **営業時間**: Mo-Su 11:00-17:00\n   - **料理ジャンル**: bagel\n   - **競合点**: マルヤマベーグルLOOP渋谷店は既存のベーカリーとして位置づけられており、主にベーグルを提供しています。新規出店者は、異なる製品ラインナップやサービスを提供することで差別化を図るべきです。例えば、クロワッサンやパンケーキなどの他のパン製品を追加することで、マルヤマベーグルLOOPとの差別化を図ることができます。\n\n2. **青山壹番館**\n   - **位置**: 緯度 35.657113, 経度 139.707798 (渋谷駅周辺)\n   - **営業時間**: 平日は8時から19時まで 土曜日は10時から18時まで\n   - **料理ジャンル**: coffee_shop\n   - **競合点**: 青山壹番館は主にトーストとコーヒーを提供しています。新規出店者は、ベーグルやパンだけでなく、コーヒーなどのドリンクメニューも提供することで、多様性を強調できます。また、朝食メニューの提供も検討すると良いでしょう。\n\n3. **The local coffee stand**\n   - **位置**: 緯度 35.660389, 経度 139.706744 (渋谷駅周辺)\n   - **営業時間**: Mo-Fr 08:09-19:00, Sa-Su 11:00-19:00\n   - **料理ジャンル**: coffee\n   - **競合点**:",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 40.360127449035645
+      },
+      {
+        "id": "L4-09",
+        "category": "decision_business",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺で深夜営業のバーを出店する場合、適切なエリアは「渋谷スクランブル交差点」周辺と「代々木上原」周辺です。これらのエリアは、以下のような特徴があります：\n\n1. **渋谷スクランブル交差点周辺**：\n   - **競合状況**: このエリアには多くのバー・カフェがあり、特に「SHIBUYA 109」や「SHIBUYA 109ビル」の周辺には多くの飲食店が集中しています。競合はありますが、多種多様な選択肢があるため、独自性を出すことができます。\n   - **アクセス**: 渋谷駅から徒歩約5分で到着できます。渋谷駅の南口から出て、渋谷通りを北に向かって進み、スクランブル交差点を左折するとすぐに到着します。\n   - **客層**: 主に20代から30代の若者を中心に、幅広い年齢層が訪れる傾向があります。\n\n2. **代々木上原周辺**：\n   - **競合状況**: このエリアには比較的少ないバーが存在します。競合は少ないため、独自性を出しやすい環境です。\n   - **アクセス**: 渋谷駅から徒歩約15分で到着できます。渋谷駅の西口から出て、渋谷通りを北に向かって進み、代々木公園方面に向かいます。約15分後に到着します。\n   - **客層**: 主に20代後半から30代の若者を中心に、文化的な活動を求める人々が訪れる傾向があります。\n\nこれらのエリアは、渋谷駅からのアクセスが良好であり、深夜営業のバーとしての競合も考慮しつつ、独自性を発揮できる場所となっています。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "営業時間クエリ (+11.1%)",
+        "total_time": 34.37613248825073
+      },
+      {
+        "id": "L4-10",
+        "category": "decision_business",
+        "source": "structured",
+        "score": 83.33333333333334,
+        "response": "渋谷駅周辺の薬局出店を検討する際、既存の薬局との競合と医療施設との近接性を考慮すると、以下の点が重要となります：\n\n1. **競合薬局の位置**:\n   - 渋谷友好薬局: 座標 (35.658352, 139.696699)\n   - 渋谷みどり薬局: 座標 (35.655506, 139.703862)\n   - ディアファーマシー: 座標 (35.660852, 139.702107)\n   - けやき薬局: 座標 (35.663412, 139.695836)\n   - ウイング薬局渋谷道玄坂店: 座標 (35.659973, 139.695680)\n\nこれらの薬局は比較的密接に配置されており、渋谷駅周辺には既存の薬局が複数存在しています。特に、渋谷駅から北西方向に位置する薬局が多く、競合が予想されます。\n\n2. **医療施設との近接性**:\n   - 渋谷駅周辺には多くの病院やクリニックがあります。例えば、渋谷病院（座標: 35.657222, 139.700278）、渋谷中央病院（座標: 35.656750, 139.701389）などが近接しています。\n\nこれらの医療施設は薬局にとって重要な顧客源であり、出店計画において重要な要素となります。\n\n3. **具体的な出店地点の選定**:\n   - 薬局の出店地点は、競合薬局からの距離、周辺の人口密度、交通アクセス性、そして医療施設との距離を考慮に入れる必要があります。\n   - 例えば、渋谷駅から南側や東",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 40.45165157318115
+      },
+      {
+        "id": "L5-01",
+        "category": "advanced_sensitivity",
+        "source": "structured",
+        "score": 80.0,
+        "response": "情報がありません。具体的なカフェ数や位置情報を提供していませんので、500mと300mの検索範囲でのカフェ数を比較することはできません。具体的なデータを提供いただければ、より正確な回答ができるかと思います。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "東西/方向比較クエリ (+25%)、集計クエリ (+8.3%)",
+        "total_time": 4.661123514175415
+      },
+      {
+        "id": "L5-02",
+        "category": "advanced_sensitivity",
+        "source": "structured",
+        "score": 100.0,
+        "response": "「渋谷駅周辺は飲食店が充実している」という評価は、カフェを除外した場合でも成立する可能性がありますが、具体的な数値や種類の飲食店についての情報がないため、確定的な結論を出すことはできません。\n\nカフェの件数については、半径300mで37件、半径500mで86件と示されていますが、これはカフェに限定した情報であり、他の飲食店の数については言及されていません。\n\nカフェ以外の飲食店の分布状況については、提供された情報には触れていません。したがって、カフェを除いた場合の飲食店の数や種類についての評価は行えません。\n\nしたがって、「渋谷駅周辺は飲食店が充実している」という評価は、カフェを含む全体的な飲食店の数や種類を考慮した上で成立すると解釈できますが、カフェを除外した場合の飲食店の充実度については具体的な情報が不足しています。\n\n提供された情報に基づくと、カフェの分布は半径を広げるほど増加し、郊外に多く分布していますが、他の飲食店の分布状況については不明です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 22.065306901931763
+      },
+      {
+        "id": "L5-03",
+        "category": "advanced_sensitivity",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺のコンビニ密度について、「十分に多い」と言える最小半径は約100メートルです。\n\n理由：\n- セブン-イレブンがarea:west_midにあり、渋谷駅から約100メートル圏内に位置しています。\n- 一方、啓文堂書店もarea:west_midにあり、渋谷駅から約200メートル圏内に位置しています。\n\nこれらの情報から、渋谷駅から100メートル圏内にコンビニが存在するため、「十分に多い」と言える最小半径は約100メートルとなります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "集計クエリ (+8.3%)",
+        "total_time": 12.664315462112427
+      },
+      {
+        "id": "L5-04",
+        "category": "advanced_comparison",
+        "source": "structured",
+        "score": 85.71428571428571,
+        "response": "情報がありません。\n\n上記の提供された情報には、渋谷駅周辺や恵比寿駅周辺の医療施設の数、薬局の数、公共施設（郵便局、交番）の有無についての具体的なデータが含まれていません。したがって、これらの地域を比較するための評価軸に関する回答を提供することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "東西/方向比較クエリ (+25%)、集計クエリ (+8.3%)",
+        "total_time": 7.913795471191406
+      },
+      {
+        "id": "L5-05",
+        "category": "advanced_comparison",
+        "source": "structured",
+        "score": 57.14285714285714,
+        "response": "情報がありません。\n\n具体的には、公園、保育施設、医療施設、スーパーなどの詳細情報が提供されていないため、これらの観点からの評価はできません。例えば、近くにある公園や保育園、病院、スーパーマーケットの名前や距離などが必要です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 5.293737173080444
+      },
+      {
+        "id": "L5-06",
+        "category": "advanced_comparison",
+        "source": "structured",
+        "score": 100.0,
+        "response": "渋谷駅周辺はビジネスパーソンにとって理想的な立地と言えるでしょう。以下、カフェ（作業場所）、コンビニ（利便性）、金融機関（銀行、ATM）の観点から評価します。\n\n### カフェ（作業場所）\n- **CAFE &LOUNGE RYUKODO**: 緯度 35.660590, 経度 139.705230\n- **Kitasando Coffee Lab**: 緯度 35.661328, 経度 139.700081\n- **The local coffee stand**: 緯度 35.660389, 経度 139.706744\n- **347 cafe**: 緯度 35.661998, 経度 139.702837\n\nこれらのカフェは全て渋谷駅周辺に位置しており、ビジネスパーソンが作業を行うのに適した場所として利用できます。特に「The local coffee stand」は営業時間が長い（月曜日から土曜日まで朝8時から夜9時まで、日曜日と祝日は朝11時から夜9時まで）ため、長時間作業が必要な場合にも便利です。\n\n### コンビニ（利便性）\n情報がありません。近くのコンビニの情報がないため、具体的な評価はできません。\n\n### 金融機関（銀行、ATM）\n- **八千代銀行渋谷支店**: 緯度 35.658690, 経度 139.697052\n\n八千代銀行渋谷支店は渋谷駅周辺に位置しています。これはビジネスパーソンにとって重要な金融サービスが近いという利点があります。ただし、他の銀行やATMの情報が提供されていないため、より広範な金融サービスの利用可能性については不明です。\n\n### 総合評価\n- **カフェ**: 渋谷駅周辺には複数のカフェがあり、特に「The local coffee stand」は長",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 40.49519443511963
+      },
+      {
+        "id": "L5-07",
+        "category": "advanced_comparison",
+        "source": "structured",
+        "score": 83.33333333333334,
+        "response": "渋谷駅周辺は東京の中心部に位置し、多くの観光客にとって魅力的なエリアです。以下に観光スポット、飲食店、宿泊施設の観点から強みと弱みを評価します。\n\n### 観光スポット\n**強み:**\n- **渋谷スクランブル交差点:** 日本最大のスクランブル交差点で、多くの観光客が訪れる人気スポットです。\n- **渋谷ヒカリエ:** 美術館やショップ、レストランなどが入る複合施設で、文化的な観光地としても人気があります。\n- **原宿・表参道:** ファッションやカルチャーの中心地として知られており、多くのショップやカフェが点在しています。\n\n**弱み:**\n- **観光情報の提供:** 提供されている観光案内所の情報が不足しており、観光客が詳細な情報を得にくい状況があります。\n\n### 飲食店\n**強み:**\n- **多様な飲食店:** タイ、韓国、中国など、様々な国の料理が楽しめる飲食店が多く存在します。\n- **カフェ:** 表参道には多くのカフェがあり、休憩やショッピングの合間に利用できます。\n\n**弱み:**\n- **定着した観光客向けの飲食店:** 定着した観光客向けの飲食店が多く、地元の雰囲気を味わう機会が限られている可能性があります。\n\n### 宿泊施設\n**強み:**\n- **アクセス:** 渋谷駅周辺は電車やバスの交通網が整っており、国内外からのアクセスが容易です。\n- **多様な宿泊施設:** ホテル、旅館、アパートメントなど、様々なタイプの宿泊施設が揃っています。\n\n**弱み:**\n- **宿泊施設の情報:** 提供されている観光案内所では宿泊施設に関する情報が不足している可能性があります。\n\n### 総括\n渋谷駅周辺は多様な観光資源を有しており、特にファッションや文化面での魅力が際立っています。しかし、観光案内所の情報提供が不足している点",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 40.428025007247925
+      },
+      {
+        "id": "L5-08",
+        "category": "advanced_uncertainty",
+        "source": "structured",
+        "score": 80.0,
+        "response": "渋谷駅周辺で「雰囲気の良い」カフェを探している場合、以下の情報を基に推奨します：\n\n1. **SUZU CAFE**\n   - 座標：緯度 35.662514, 経度 139.698740\n   - バリアフリー：不明\n\n2. **347 cafe**\n   - 座標：緯度 35.661998, 経度 139.702837\n   - バリアフリー：可能\n\n3. **渋谷珈琲研究所**\n   - 座標：緯度 35.655483, 経度 139.703804\n   - バリアフリー：制限あり\n\n4. **Kitasando Coffee Lab**\n   - 座標：緯度 35.661328, 経度 139.700081\n   - バリアフリー：不可\n\n5. **FRIEND**\n   - 座標：緯度 35.659045, 経度 139.696265\n   - バリアフリー：不明\n\n**推奨カフェ：347 cafe**\n\n理由：\n- **バリアフリーフィー**：可能と評価されており、障がい者にとって利用しやすい環境が整っている可能性が高いです。\n- **位置**：渋谷駅周辺に位置しており、アクセスが良好です。\n\n**判断の限界**：\n- **雰囲気の良さ**：情報には「雰囲気の良い」という具体的な評価がありません。そのため、実際に訪れるか、オンラインレビューを確認することで、より具体的な雰囲気についての情報を得ることができます。\n- **営業時間**：営業時間情報がありませんので、営業時間内に訪れることが重要です。\n- **料理ジャンル**：特定の料理ジャンルが指定されていないため、コーヒーを中心にしたカフェである可能性が高いですが、詳細はウェブサイトや直接問い合わせることをお勧めします。\n- **住所**：",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 40.6334445476532
+      },
+      {
+        "id": "L5-09",
+        "category": "advanced_uncertainty",
+        "source": "structured",
+        "score": 100.0,
+        "response": "推測できる情報：\n- WHO'S FOOD'S（緯度 35.661290, 経度 139.701032）は渋谷駅周辺にある飲食店ですが、料理ジャンルやバリアフリーサービスの情報がありません。静かな雰囲気を持つ可能性はありますが、確実性はありません。\n- カツ吉（緯度 35.657120, 経度 139.704589）はとんかつ専門店で、バリアフリーサービスが提供されていないことが示されています。この店舗は比較的静かである可能性がありますが、具体的な評価はできません。\n- nikuyano daidokoro（緯度 35.659704, 経度 139.701500）は肉屋のレストランで、静かな雰囲気を持つ可能性がありますが、具体的な評価はできません。\n\n推測できない情報：\n- 各店舗の営業時間や料理ジャンル、電話番号、ウェブサイト、Wi-Fiの利用可能状況などの詳細情報が提供されていません。\n- 住所情報が提供されていないため、各店舗の具体的な場所や立地条件についての推測はできません。\n- バリアフリーサービスの有無についても不明な点が多く、どの店舗でも静かな環境を保証することができません。\n\nしたがって、これらの情報だけでは「静かな」レストランを特定することは難しいです。より詳細な情報を得るために、オンラインでのレビューや直接店舗に問い合わせる必要があります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 31.151020288467407
+      },
+      {
+        "id": "L5-10",
+        "category": "advanced_uncertainty",
+        "source": "structured",
+        "score": 80.0,
+        "response": "渋谷駅周辺には3つの警察関連施設があります：\n1. 道玄坂上交番（緯度 35.657380, 経度 139.695894）\n2. 宇田川交番（緯度 35.661051, 経度 139.698103）\n3. 渋谷警察署渋谷駅前交番（緯度 35.659316, 経度 139.701036）\n\nこれらの交番の存在は、この地域が治安上の重要性が高いことを示しています。特に、渋谷駅周辺は多くの観光客や通勤者が集まる場所であり、治安管理が必要とされる可能性が高い地域です。\n\n推測としては、これらの交番の存在はこの地域の治安を維持する上で重要な役割を果たしていると考えられます。また、道玄坂上交番と宇田川交番はそれぞれ異なる場所に位置しているため、広範囲の地域をカバーできる可能性があります。\n\nただし、以下のような情報が不足しているため、完全な推測には至りません：\n- 各交番の営業時間\n- バリアフリーアクセスの詳細（道玄坂上交番のみ確認済み）\n- Wi-Fiの利用可能状況\n- 警察署や交番の具体的な機能や役割\n- この地域の犯罪発生率などの実際の治安データ\n\nこれらの情報が得られれば、より具体的な推測ができるでしょう。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 29.949660301208496
+      },
+      {
+        "id": "GR-01",
+        "category": "relation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。上記の検索結果からは、具体的なコンビニの情報が提供されていません。また、カフェの位置情報も限定的であり、全てのカフェが渋谷駅の東側にあるわけではありません。そのため、特定のカフェとコンビニがある場所を指定することは不可能です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 7.027730226516724
+      },
+      {
+        "id": "GR-02",
+        "category": "relation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅周辺には銀行とカフェが両方存在するエリアがあります。\n\n1. **横浜銀行**（座標: 緯度 35.658110, 経度 139.700210）\n2. **atari CAFE&DINING**（座標: 緯度 35.661714, 経度 139.700600）\n\nこれらの施設は渋谷駅周辺に位置しています。ただし、営業時間や料理ジャンルなどの詳細情報は提供されていません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 11.83169150352478
+      },
+      {
+        "id": "GR-03",
+        "category": "relation",
+        "source": "graphrag",
+        "score": 0.0,
+        "response": "情報がありません。提供的的搜索结果中，没有酒店附近的餐厅信息。所有列出的餐厅都没有提供酒店位置的具体信息。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 3.1901514530181885
+      },
+      {
+        "id": "GR-04",
+        "category": "relation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。提供された情報には、渋谷駅周辺の薬局の位置情報やコンビニの情報はありません。そのため、駅周辺で薬局とコンビニが同じ場所にある場所について確認することができません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 5.29464316368103
+      },
+      {
+        "id": "GR-05",
+        "category": "relation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。検索結果には映画館の近くにあるカフェに関する情報が含まれていません。 Caféやコーヒー関連の情報は提供されていますが、映画館の近くという特定の条件に合致するカフェについては記載されていません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 5.741847038269043
+      },
+      {
+        "id": "GR-06",
+        "category": "multi_hop",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。検索結果に含まれるカフェからは50m以内に書店が存在しない情報が見つかりませんでした。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 3.1874544620513916
+      },
+      {
+        "id": "GR-07",
+        "category": "multi_hop",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。上記の検索結果には、渋谷駅から100m以内のコンビニやカフェに関する情報が含まれていません。最寄りのコンビニやカフェについては、より詳細な地図情報や近隣の施設情報を提供していただければと思います。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 6.255298852920532
+      },
+      {
+        "id": "GR-08",
+        "category": "multi_hop",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "ホテルから徒歩で行ける範囲にあるレストランとカフェは以下の通りです：\n\n1. **青山壹番館**\n   - **座標**: 緯度 35.657113, 経度 139.707798\n   - **住所**: 渋谷区東1-4-27\n   - **営業時間**: 平日は8時から19時まで、土曜日は10時から18時まで\n   - **料理ジャンル**: coffee_shop\n   - **バリアフリー**: unknown\n   - **Wi-Fi**: unknown\n\n2. **カフェ・ベローチェ (CAFE VELOCE)**\n   - **座標**: 緯度 35.659921, 経度 139.706066\n   - **住所**: 東京都渋谷区18\n   - **営業時間**: Mo-Su 07:00-22:00\n   - **料理ジャンル**: coffee_shop\n   - **バリアフリー**: no\n   - **Wi-Fi**: unknown\n   - **ウェブサイト**: [公式ウェブサイト](https://chatnoir-company.com/chatnoir/html/brand/brand_veloce.html)\n\n3. **atari CAFE&DINING**\n   - **座標**: 緯度 35.661714, 経度 139.700600\n   - **住所**: 東京都渋谷区3\n   - **バリアフリー**: yes\n   - **Wi-Fi**: unknown\n\nこれらのカフェは渋谷駅周辺に位置しており、徒歩でアクセス可能範囲内にあります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "複数ステップ推論 (+22.2%)",
+        "total_time": 32.467955112457275
+      },
+      {
+        "id": "GR-09",
+        "category": "aggregation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。上記の集計結果からは、飲食店の総数は830件ですが、飲食店が最も多い具体的なエリアについては記載されていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "集計クエリ (+8.3%)",
+        "total_time": 3.261791229248047
+      },
+      {
+        "id": "GR-10",
+        "category": "aggregation",
+        "source": "graphrag",
+        "score": 75.0,
+        "response": "情報がありません。北側と南側のPOI（興味地点）の数についての具体的な数値や詳細な位置情報が提供されていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "東西/方向比較クエリ (+25%)、集計クエリ (+8.3%)",
+        "total_time": 2.906550884246826
+      },
+      {
+        "id": "GR-11",
+        "category": "aggregation",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷で最も多いカテゴリのPOIは飲食店です。上位3つのカテゴリは以下の通りです：\n\n1. 飲食店 (830件)\n2. 商店 (82件)\n3. 医療 (36件)",
+        "selected_system": "GraphRAG",
+        "selection_reason": "集計クエリ (+8.3%)",
+        "total_time": 5.316343545913696
+      },
+      {
+        "id": "GR-12",
+        "category": "comparison",
+        "source": "graphrag",
+        "score": 50.0,
+        "response": "情報がありません。飲食店のカテゴリ多様性に関する具体的な情報が提供されていません。飲食店の数だけではカテゴリ多様性を判断することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "東西/方向比較クエリ (+25%)",
+        "total_time": 3.030682325363159
+      },
+      {
+        "id": "GR-13",
+        "category": "comparison",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "駅の近く（200m以内）と遠く（500m以上）で比較すると、駅の近くには3つのホテルがあります。一方、遠く（500m以上）には2つのホテルがあります。\n\n駅の近く（200m以内）：\n1. 渋谷エクセルホテル東急 (200m)\n2. GRANDBEL HOTEL (211m)\n3. Tokyu Inn (235m)\n\n遠く（500m以上）：\n1. セルリアンタワー (280m)\n2. ホテルメッツ渋谷 (323m)\n\nしたがって、駅の近く（200m以内）の方がホテルが多いです。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "東西/方向比較クエリ (+25%)、集計クエリ (+8.3%)",
+        "total_time": 13.43870997428894
+      },
+      {
+        "id": "GR-14",
+        "category": "proximity",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅に最も近いホテルは渋谷エクセルホテル東急です。これは渋谷駅から西へ188mの場所にあります。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "近接性検索クエリ (+16.6%)、集計クエリ (+8.3%)",
+        "total_time": 3.3741142749786377
+      },
+      {
+        "id": "GR-15",
+        "category": "proximity",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅から300m以内にある映画館を距離順に並べると以下の通りです：\n\n1. **Cinema Vera Shibuya**\n   - 距離: 280m (北西方向)\n   - 座標: 緯度 35.659351, 経度 139.695385\n\n2. **ヒューマントラストシネマ渋谷**\n   - 距離: 約300m (北西方向)\n   - 座標: 緯度 35.661973, 経度 139.702723\n\n3. **Cinemarise**\n   - 距離: 約320m (北西方向)\n   - 座標: 緯度 35.661570, 経度 139.698772\n\n4. **東宝シネマ**\n   - 距離: 約280m (北西方向)\n   - 座標: 緯度 35.659186, 経度 139.698883\n\n5. **シアター・イメージフォーラム**\n   - 距離: 約330m (北西方向)\n   - 座標: 緯度 35.660303, 経度 139.707022\n\nこれらの映画館はすべて渋谷駅から300m以内に位置しています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 30.790850162506104
+      },
+      {
+        "id": "GR-16",
+        "category": "brand",
+        "source": "graphrag",
+        "score": 66.66666666666666,
+        "response": "渋谷駅周辺には5つのスターバックスがあります。\n\n1. 座標：緯度 35.660553, 絏度 139.707032 (住所：東京都渋谷区8)\n2. 座標：緯度 35.658298, 絏度 139.702308 (住所：東京都渋谷区12)\n3. 座標：緯度 35.658743, 絏度 139.705234 (住所：東京都渋谷区1)\n4. 座標：緯度 35.659792, 絏度 139.700411 (住所：東京都渋谷区6)\n5. 座標：緯度 35.657125, 絏度 139.701265 (住所：東京都渋谷区4)\n\nこれらの情報から、渋谷駅周辺には5店舗のスターバックスがあります。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "ブランド検索 (+20%)",
+        "total_time": 21.79974341392517
+      },
+      {
+        "id": "GR-17",
+        "category": "brand",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。\n\n上記の集計結果という文言だけあり、ファミリーマートとローソンの具体的な店舗数や場所に関する情報が提供されていません。そのため、どちらのチェーンストアが多いかを比較することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "東西/方向比較クエリ (+25%)、集計クエリ (+8.3%)",
+        "total_time": 5.418860673904419
+      },
+      {
+        "id": "GR-18",
+        "category": "brand",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅の東側にあるドトールコーヒーショップは以下の場所があります：\n\n1. 座標：緯度 35.660295, 経度 139.705663\n   住所：東京都渋谷区3\n   営業時間：Mo-Fr 07:00-21:00; Sa-Su,PH 08:00-20:00\n   電話番号：+81 3-3486-0881\n   メニュー：coffee_shop\n   バリアフリーアクセス：不明\n   Wi-Fi：あり\n\n2. 座標：緯度 35.660254, 経度 139.698380\n   住所：東京都渋谷区2\n   営業時間：Mo-Su 07:00-22:00\n   電話番号：+81 3-3461-2775\n   メニュー：coffee_shop\n   バリアフリーアクセス：不明\n   Wi-Fi：あり\n\n3. 座標：緯度 35.660186, 経度 139.702624\n   住所：東京都渋谷区15\n   営業時間：Mo-Fr 07:00-22:00; Sa,Su,PH 07:30-22:00\n   電話番号：+81 3-3407-7745\n   メニュー：coffee_shop\n   バリアフリーアクセス：否\n   Wi-Fi：否\n\n4. 座標：緯度 35.662841, 経度 139.701042\n   住所：東京都渋谷区1\n   営業時間：Mo-Sa 07:30-22:00; Su,PH 08:00-21:",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 40.961315393447876
+      },
+      {
+        "id": "GR-19",
+        "category": "brand",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。マクドナルドの具体的な位置を確認しましたが、スターバックスの情報は含まれておりません。近くにスターバックスがあるかどうかは不明です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 3.92830753326416
+      },
+      {
+        "id": "GR-20",
+        "category": "brand",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。上記の集計結果にはコンビニチェーンの情報が含まれていません。具体的なコンビニチェーンの店舗数や位置情報は提供されていませんので、最も店舗数が多いコンビニチェーンを特定することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "集計クエリ (+8.3%)",
+        "total_time": 5.047441244125366
+      },
+      {
+        "id": "GR-21",
+        "category": "complementary",
+        "source": "graphrag",
+        "score": 33.33333333333333,
+        "response": "渋谷駅周辺にはいくつかの飲食店があります。以下に近隣のレストランを紹介します。\n\n1. **道玄坂バルクツHANARE**\n   - **住所**: 東京都渋谷区18\n   - **座標**: 緯度 35.657206, 経度 139.695743\n   - **営業時間**: 18:00-03:00\n   - **料理ジャンル**: chicken; wine; italian; spanish; tapas\n   - **特徴**: 渋谷最大級の50種類以上の国産ワインと20種類以上のタパスメニューを提供しています。また、「パリパリ！27時間チキン」が名物です。\n\n2. **はるいち**\n   - **住所**: 住所情報なし\n   - **座標**: 緯度 35.660774, 経度 139.707317\n   - **営業時間**: 営業時間情報なし\n   - **料理ジャンル**: noodle\n\n3. **Reg-On-Diner**\n   - **住所**: 東京都８－１\n   - **座標**: 緯度 35.655548, 経度 139.709875\n   - **営業時間**: 11:00-22:00\n   - **料理ジャンル**: burger\n\n4. **いんでぃら**\n   - **住所**: 道玄坂2-29-8\n   - **座標**: 緯度 35.659237, 経度 139.697900\n   - **営業時間**: Mo-Su 10:00-22:00\n   - **料理ジャンル**: curry\n\nこれらのレストランの中から、営業時間が適しているか、料理ジャンルが好みに合うかを選んでご利用ください。特に「道玄坂バルクツHANARE」は豊富なワインとタパスメニューが魅力的です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 39.23113512992859
+      },
+      {
+        "id": "GR-22",
+        "category": "complementary",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅周辺にはいくつかのカフェがありますが、映画館から直接行けるカフェについては具体的な情報がありません。ただし、近くにあるカフェをご紹介します。\n\n1. **FabCafe**\n   - 座標：緯度 35.655994, 経度 139.695458\n   - 住所：東京都渋谷区7\n   - 営業時間：Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00\n   - バリアフリーアクセスあり\n   - Wi-Fiあり\n   - レーザーカッターが利用可能\n\n2. **Uplight Coffee**\n   - 座標：緯度 35.659206, 経度 139.702005\n   - 住所情報なし\n   - 営業時間情報なし\n   - バリアフリーアクセスあり\n   - Wi-Fiの有無不明\n\n3. **The local coffee stand**\n   - 座標：緯度 35.660389, 経度 139.706744\n   - 住所：2-10-15\n   - 営業時間：Mo-Fr 08:09-19:00, Sa-Su 11:00-19:00\n   - バリアフリーアクセス制限あり\n   - Wi-Fiあり\n\n4. **Café Kitsuné Shibuya**\n   - 座標：緯度 35.662335, 経度 139.701830\n   - 住所：東京都MIYASHITA PARK 2F\n   - 営業時間：Mo-Su 11:00-21:00\n   - バリアフリーアクセスあり\n   - Wi-Fiの有無不明\n\n5. **Urth Caffé**\n   - 座標：緯度 35.658412,",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 41.162699460983276
+      },
+      {
+        "id": "GR-23",
+        "category": "complementary",
+        "source": "graphrag",
+        "score": 66.66666666666666,
+        "response": "情報がありません。\n\n上記の検索結果からは、渋谷駅周辺の飲食店についての詳細な情報が提供されていません。特に、渋谷駅を出てすぐの場所にある軽食を提供している飲食店の情報はありません。座標情報も提供されている飲食店はすべて、具体的な住所や営業時間、料理ジャンルなどの詳細情報が不足しています。そのため、渋谷駅を出てすぐの場所で軽食を取れる場所については具体的な回答を提供することができません。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 10.023424863815308
+      },
+      {
+        "id": "GR-24",
+        "category": "complementary",
+        "source": "graphrag",
+        "score": 75.0,
+        "response": "近くのカフェについて、以下の情報を元に回答します。\n\n1. **珈琲館 (Kohikan)**\n   - 座標：緯度 35.661182, 経度 139.701001\n   - 説明：営業時間や住所、電話番号などの詳細情報がありません。ただし、カフェとして機能している可能性があります。\n\n2. **The local coffee stand**\n   - 座標：緯度 35.660389, 経度 139.706744\n   - 説明：営業時間は平日 08:09-19:00、土日祝日 11:00-19:00。住所は2-10-15。バリアフリーサービスは制限があり、Wi-Fiは利用可能。\n\n3. **タリーズコーヒー**\n   - 座標：緯度 35.662910, 経度 139.700650\n   - 説明：営業時間は月曜日から金曜日 07:30-22:00、土曜日 08:00-22:00。住所は東京都渋谷区14。バリアフリーサービスは利用可能。\n\n4. **タリーズコーヒー**\n   - 座標：緯度 35.656536, 経度 139.696817\n   - 説明：営業時間情報がありません。住所は玉川通り。他の詳細情報が不足しています。\n\nこれらのカフェの中から、本屋から近いカフェは **The local coffee stand** と **タリーズコーヒー（東京都渋谷区14）** です。特に **The local coffee stand** はより近似した位置にあり、営業時間も比較的広いため、本を買った後すぐにコーヒーを楽しむことができます。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 37.73293375968933
+      },
+      {
+        "id": "GR-25",
+        "category": "complementary",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅周辺にはいくつかの飲食店がありますが、観光名所の近くで食事ができる場所としておすすめしたいのは「道玄坂バル克ツHANARE」です。\n\n【道玄坂バル克ツHANARE】\n- 座標：緯度 35.657206, 経度 139.695743\n- 住所：東京都渋谷区18\n- 営業時間：18:00-03:00\n- 料理ジャンル：chicken;wine;italian;spanish;tapas\n\n道玄坂バル克ツHANAREは、渋谷駅から徒歩約5分の場所にあり、観光客にも人気のスポットです。店内では50種類以上の国産ワインを楽しむことができます。また、本場スペインバルの様な雰囲気の中で、20種類以上のタパスメニューを200円から楽しむことができます。特に「パリパリ！27時間チキン」は名物として人気があります。\n\nただし、営業時間やウェブサイト、電話番号などの詳細情報は提供されていませんので、最新の情報をご確認ください。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 23.939745903015137
+      },
+      {
+        "id": "GR-26",
+        "category": "competitor",
+        "source": "graphrag",
+        "score": 33.33333333333333,
+        "response": "渋谷駅周辺には複数のカフェがあります。混雑している場合の代替として、以下のカフェをおすすめします：\n\n1. **ザ クリーム オブ ザ クロップ コーヒー**\n   - 座標：緯度 35.658813, 経度 139.703229\n   - 営業時間：Mo-Su 8:00-21:00\n\n2. **Pells coffee stand**\n   - 座標：緯度 35.658645, 経度 139.708742\n   - 営業時間：11:30-16:00\n\n3. **Uplight Coffee**\n   - 座標：緯度 35.659206, 経度 139.702005\n\nこれらのカフェはすべて渋谷駅周辺に位置していますので、混雑している場合の代替として利用可能です。特にUplight Coffeeはバリアフリーサービスがあるため、その点でも安心です。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 22.16750431060791
+      },
+      {
+        "id": "GR-27",
+        "category": "competitor",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷駅周辺でラーメン屋が密集しているエリアは、道玄坂周辺とセンター街周辺です。\n\n1. **ラーメン王 後楽本舗**\n   - 座標：緯度 35.658657, 経度 139.698546\n   - 調理ジャンル：ラーメン、中華料理\n\n2. **桂花ラーメン 渋谷センター街店**\n   - 座標：緯度 35.660233, 経度 139.698697\n   - 調理ジャンル：ラーメン\n\nこれらの店舗はどちらも渋谷駅周辺に位置しています。ただし、具体的な住所は「道玄坂2-7-4」（ラーメン王 後楽本舗）と「東京都渋谷区1」（桂花ラーメン 渋谷センター街店）となっています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 19.185242414474487
+      },
+      {
+        "id": "GR-28",
+        "category": "competitor",
+        "source": "graphrag",
+        "score": 66.66666666666666,
+        "response": "渋谷駅周辺の他の飲食店/バーの選択肢として、以下の場所があります：\n\n1. **TASUICHI**\n   - **住所**: 東京都渋谷区14\n   - **座標**: 緯度 35.660952, 経度 139.697018\n   - **営業時間**: Su-Th 17:00-02:00; Fr-Sa 17:00-03:00\n   - **特徴**: 活気ある立ち飲みバーで、観光客に人気。地元の人々や他の旅行者との交流が可能。手頃な価格のドリンクとフレンドリーなスタッフが魅力。\n\n2. **Nonbei yokocho alley**\n   - **座標**: 緯度 35.659789, 経度 139.702458\n   - **特徴**: 詳細な情報がありませんが、立地は渋谷駅周辺です。\n\n3. **日本酒バル**\n   - **座標**: 緯度 35.659054, 経度 139.696259\n   - **特徴**: 日本酒を楽しむことができるバーです。\n\n4. **ずくなし**\n   - **座標**: 緯度 35.657877, 経度 139.698966\n   - **特徴**: スナックスタイルのバーで、居心地の良さが特徴。\n\n5. **居酒屋　すみれ**\n   - **座標**: 緯度 35.657478, 経度 139.695106\n   - **バリアフリーフィーチャー**: no\n   - **特徴**: 居酒屋で、詳細な営業時間や料理ジャンルは不明です。\n\nこれらの選択肢はすべて渋谷駅周辺に位置しており、異なるスタイルや雰囲気の飲",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 41.05807328224182
+      },
+      {
+        "id": "GR-29",
+        "category": "cuisine",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "渋谷でイタリアン料理を食べられるお店として、以下の2つをおすすめします：\n\n1. **道玄坂バルクツHANARE**\n   - 座標：緯度 35.657206, 経度 139.695743\n   - 营业时间：18:00-03:00\n   - 地理位置：位于道玄坂，靠近渋谷站。\n   - 特点：提供50种以上的国産葡萄酒，以及20种以上的西班牙风格tapas菜单。还有27小时慢烤的“帕莉帕莉鸡”作为特色菜品。\n\n2. **トゥッタイタリア**\n   - 座标：緯度 35.660769, 絏度 139.707355\n   - 虽然没有提供具体营业时间和详细地址，但根据名称可以推测这是一家意大利餐厅。\n   - 地理位置：位于渋谷站周边区域。\n\n这两家餐厅都提供正宗的意大利料理，您可以根据自己的喜好和位置选择合适的餐厅。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "料理ジャンル検索 (+8.3%)",
+        "total_time": 21.09606099128723
+      },
+      {
+        "id": "GR-30",
+        "category": "cuisine",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。\n\n集計結果という部分が示されていませんので、和食と洋食の店舗数を比較するための具体的なデータが提供されていないため、どちらの店が多いかを判断することができません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "東西/方向比較クエリ (+25%)、集計クエリ (+8.3%)",
+        "total_time": 3.8424203395843506
+      },
+      {
+        "id": "GR-31",
+        "category": "cuisine",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "ラーメン屋が集まっているエリアは渋谷駅周辺です。特に以下のラーメン屋が該当します：\n\n1. ラーメン王 後楽本舗 (緯度 35.658657, 経度 139.698546)\n2. ラーメン 凪 煮干王 (緯度 35.657899, 経度 139.704621)\n3. 野郎ラーメン (緯度 35.660278, 経度 139.699153)\n4. ラーメン凪 (緯度 35.657632, 経度 139.708159)\n5. 超俺流塩ラーメン (緯度 35.659971, 経度 139.700077)\n\nこれらのラーメン屋はすべて渋谷駅周辺に位置しています。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "デフォルト選択（安定した性能）",
+        "total_time": 21.854608058929443
+      },
+      {
+        "id": "GR-32",
+        "category": "cuisine",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "和泉鮨（Izumi Sushi）と和幸は寿司屋で、両店とも渋谷駅周辺に位置しています。\n\n- 和泉鮨（Izumi Sushi）\n  - 座標：緯度 35.656360, 経度 139.701709\n  - カテゴリ：飲食店/レストラン\n  - 料理ジャンル：寿司\n\n- 和幸（Wako）\n  - 座標：緯度 35.661330, 経度 139.702510\n  - カテゴリ：飲食店/レストラン\n  - 料理ジャンル：日本料理\n\nこれらの店舗はどちらも寿司屋の近くにあり、和食店としておすすめできます。",
+        "selected_system": "StructuredRAG",
+        "selection_reason": "料理ジャンル検索 (+8.3%)",
+        "total_time": 16.354838848114014
+      },
+      {
+        "id": "GR-33",
+        "category": "hours",
+        "source": "graphrag",
+        "score": 50.0,
+        "response": "情報がありません。上記の検索結果からは、どのお店も営業時間に関する情報が示されていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "営業時間クエリ (+11.1%)",
+        "total_time": 2.420168399810791
+      },
+      {
+        "id": "GR-34",
+        "category": "hours",
+        "source": "graphrag",
+        "score": 66.66666666666666,
+        "response": "情報がありません。上記のリストには深夜営業しているレストランの情報が含まれていません。具体的な営業時間については確認できませんでした。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "営業時間クエリ (+11.1%)",
+        "total_time": 3.2908244132995605
+      },
+      {
+        "id": "GR-35",
+        "category": "hours",
+        "source": "graphrag",
+        "score": 100.0,
+        "response": "情報がありません。\n\n説明：早朝から営業しているカフェの具体的な場所や名称について、提供された情報には該当するデータが含まれていません。",
+        "selected_system": "GraphRAG",
+        "selection_reason": "営業時間クエリ (+11.1%)",
+        "total_time": 3.009758710861206
+      }
+    ]
+  }
+}

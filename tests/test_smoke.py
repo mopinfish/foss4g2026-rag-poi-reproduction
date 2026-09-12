@@ -1,14 +1,19 @@
 """Smoke tests covering everything that can be verified without a GPU/LLM.
 
-The notebook itself (loading and running inference with Qwen2.5-7B-Instruct)
-requires a GPU, so this suite instead verifies that the code and data the
-notebook depends on are not broken:
+The notebooks themselves (loading and running inference with Qwen2.5-7B-Instruct)
+require a GPU, so this suite instead verifies that the code and data the
+notebooks depend on are not broken:
 
+Phase 2 (4-area, 130-case):
 - The 130 test cases load and match the expected count
 - The 4 per-area POI JSON files parse and concatenate to the combined set
 - geo_utils / aggregator spatial calculations work
 - GraphRAGSystem (no LLM required) builds a POI graph and answers a real query
 - evaluators_multi_area.MultiAreaEvaluator runs to completion with a dummy system_fn
+
+Phase 1 (Shibuya-only, 90-case):
+- The 55 Structured-RAG-oriented and 35 GraphRAG-oriented test cases load
+  and match the expected counts, with no duplicate IDs
 """
 import json
 import sys
@@ -108,3 +113,14 @@ def test_multi_area_evaluator_runs_with_dummy_system(flat_pois):
 
     summary = evaluator.generate_summary(results)
     assert "overall" in summary
+
+
+def test_phase1_test_cases_load():
+    from test_cases_v2 import TEST_CASES_V2
+    from test_cases_graphrag import GRAPHRAG_TEST_CASES
+
+    assert len(TEST_CASES_V2) == 55
+    assert len(GRAPHRAG_TEST_CASES) == 35
+
+    all_ids = [tc.id for tc in TEST_CASES_V2] + [tc.id for tc in GRAPHRAG_TEST_CASES]
+    assert len(all_ids) == len(set(all_ids)), "duplicate test case ids across Phase 1 sets"
