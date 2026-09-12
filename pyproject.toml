@@ -1,0 +1,32 @@
+[project]
+name = "foss4g2026-rag-poi-reproduction"
+version = "0.1.0"
+description = "FOSS4G 2026 Phase 2 (multi-area RAG comparison) reproduction package"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "chromadb>=1.4.1",
+    "langchain[all]>=1.2.4",
+    "langchain-community>=0.4.1",
+    "langchain-core>=1.2.7",
+    "langchain-text-splitters>=1.1.0",
+    "langchain-chroma>=1.1.0",
+    "networkx>=3.6.1",
+    "langgraph>=0.2.0",
+    "transformers>=4.36.0",
+    "torch>=2.1.0",
+    "bitsandbytes>=0.41.0",
+    "accelerate>=0.25.0",
+    "sentencepiece>=0.1.99",
+    "sentence-transformers>=3.0.0",
+    "matplotlib>=3.10.9",
+    "seaborn>=0.13.0",
+    "pandas>=2.2.0",
+    "numpy>=1.26.0",
+    "tqdm>=4.66.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]

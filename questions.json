@@ -1,0 +1,2449 @@
+[
+  {
+    "id": "MA-SBY-L1-01",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "basic_location",
+    "prompt": "渋谷駅の場所を教えてください",
+    "expected_keywords": [
+      "渋谷",
+      "駅",
+      "35.",
+      "139."
+    ],
+    "difficulty": "easy",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅の位置検索"
+  },
+  {
+    "id": "MA-SBY-L1-02",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "basic_location",
+    "prompt": "渋谷駅周辺のコンビニを教えてください",
+    "expected_keywords": [
+      "コンビニ",
+      "ローソン",
+      "ファミリーマート",
+      "セブン"
+    ],
+    "difficulty": "easy",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅周辺のコンビニ検索"
+  },
+  {
+    "id": "MA-SBY-L1-03",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "brand",
+    "prompt": "渋谷駅周辺のスターバックスはありますか？",
+    "expected_keywords": [
+      "スターバックス",
+      "渋谷"
+    ],
+    "difficulty": "easy",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅周辺のスターバックス検索"
+  },
+  {
+    "id": "MA-SBY-L1-04",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "area_detection",
+    "prompt": "渋谷駅近くのカフェはありますか？",
+    "expected_keywords": [
+      "カフェ",
+      "渋谷"
+    ],
+    "difficulty": "easy",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷エリア検出+カフェ検索"
+  },
+  {
+    "id": "MA-SBY-L2-01",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "proximity",
+    "prompt": "渋谷駅に最も近いコンビニはどれですか？距離も推定してください",
+    "expected_keywords": [
+      "コンビニ",
+      "近い",
+      "距離",
+      "m"
+    ],
+    "difficulty": "medium",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅最近傍コンビニの検索と距離推定"
+  },
+  {
+    "id": "MA-SBY-L2-02",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "aggregation",
+    "prompt": "渋谷駅周辺のカフェとバー、どちらが多いですか？",
+    "expected_keywords": [
+      "カフェ",
+      "バー",
+      "多い",
+      "数"
+    ],
+    "difficulty": "medium",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅周辺のカフェ・バー件数比較"
+  },
+  {
+    "id": "MA-SBY-L2-03",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "comparison",
+    "prompt": "渋谷駅の東側と西側、どちらにカフェが多いですか？",
+    "expected_keywords": [
+      "カフェ",
+      "東",
+      "西",
+      "多い"
+    ],
+    "difficulty": "medium",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅の東西カフェ比較"
+  },
+  {
+    "id": "MA-SBY-L2-04",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "landmark_origin",
+    "prompt": "渋谷ヒカリエから最も近いカフェはどこですか？",
+    "expected_keywords": [
+      "カフェ",
+      "ヒカリエ",
+      "近い"
+    ],
+    "difficulty": "medium",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷ヒカリエ起点の最近傍カフェ検索"
+  },
+  {
+    "id": "MA-SBY-L3-01",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "constraint_single",
+    "prompt": "渋谷駅周辺で24時間営業のコンビニはありますか？",
+    "expected_keywords": [
+      "コンビニ",
+      "24時間",
+      "営業"
+    ],
+    "difficulty": "medium",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅周辺の24時間営業コンビニ検索"
+  },
+  {
+    "id": "MA-SBY-L3-02",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "constraint_multi",
+    "prompt": "渋谷駅から500m以内で、電話番号がわかるカフェを教えてください",
+    "expected_keywords": [
+      "カフェ",
+      "500m",
+      "電話"
+    ],
+    "difficulty": "hard",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅周辺の距離+属性制約付きカフェ検索"
+  },
+  {
+    "id": "MA-SBY-L3-03",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "brand",
+    "prompt": "渋谷駅周辺のドトールを全て教えてください",
+    "expected_keywords": [
+      "ドトール",
+      "渋谷"
+    ],
+    "difficulty": "medium",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅周辺のドトール全店舗検索"
+  },
+  {
+    "id": "MA-SBY-L3-04",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "landmark_origin",
+    "prompt": "渋谷109の近くでランチができるレストランは？",
+    "expected_keywords": [
+      "109",
+      "レストラン",
+      "ランチ"
+    ],
+    "difficulty": "medium",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷109起点のランチレストラン検索"
+  },
+  {
+    "id": "MA-SBY-L4-01",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "decision_support",
+    "prompt": "渋谷駅から近い順にカフェを3つ教えてください",
+    "expected_keywords": [
+      "カフェ",
+      "近い",
+      "順",
+      "3"
+    ],
+    "difficulty": "hard",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅からのカフェ距離順ランキング"
+  },
+  {
+    "id": "MA-SBY-L4-02",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "relation",
+    "prompt": "渋谷駅周辺でカフェとコンビニが両方近い場所は？",
+    "expected_keywords": [
+      "カフェ",
+      "コンビニ",
+      "近い"
+    ],
+    "difficulty": "hard",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅周辺のカフェ・コンビニ共近接エリア"
+  },
+  {
+    "id": "MA-SBY-L4-03",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "landmark_origin",
+    "prompt": "ハチ公像の周辺300mにある飲食店を教えてください",
+    "expected_keywords": [
+      "ハチ公",
+      "300m",
+      "飲食店"
+    ],
+    "difficulty": "hard",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "ハチ公像起点の飲食店検索（半径指定）"
+  },
+  {
+    "id": "MA-SBY-L4-04",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "sensitivity",
+    "prompt": "渋谷駅500m圏と1km圏でカフェの件数はどう変わりますか？",
+    "expected_keywords": [
+      "カフェ",
+      "500m",
+      "1km",
+      "件数"
+    ],
+    "difficulty": "hard",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅のカフェ半径別件数の感度分析"
+  },
+  {
+    "id": "MA-SBY-L5-01",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "multi_hop",
+    "prompt": "渋谷駅から最も近いカフェと、そこから300m以内の他カフェ数は？",
+    "expected_keywords": [
+      "カフェ",
+      "近い",
+      "300m",
+      "数"
+    ],
+    "difficulty": "expert",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅のマルチホップ推論（最近傍+周辺カウント）"
+  },
+  {
+    "id": "MA-SBY-L5-02",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "competitor",
+    "prompt": "渋谷駅周辺でコンビニの競合状況を分析してください",
+    "expected_keywords": [
+      "コンビニ",
+      "競合",
+      "セブン",
+      "ファミリーマート",
+      "ローソン"
+    ],
+    "difficulty": "expert",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅周辺のコンビニ競合分析"
+  },
+  {
+    "id": "MA-SBY-L5-03",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "complementary",
+    "prompt": "渋谷駅周辺でカフェの近くにある書店を教えてください",
+    "expected_keywords": [
+      "カフェ",
+      "書店",
+      "近く"
+    ],
+    "difficulty": "expert",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅周辺のカフェ・書店の補完関係分析"
+  },
+  {
+    "id": "MA-SBY-L5-04",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "sensitivity",
+    "prompt": "渋谷駅周辺のカフェの平均距離と最寄り・最遠の距離差は？",
+    "expected_keywords": [
+      "カフェ",
+      "平均",
+      "距離",
+      "最寄り",
+      "最遠"
+    ],
+    "difficulty": "expert",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷駅周辺カフェの距離統計分析"
+  },
+  {
+    "id": "MA-SJK-L1-01",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "basic_location",
+    "prompt": "新宿駅の場所を教えてください",
+    "expected_keywords": [
+      "新宿",
+      "駅",
+      "35.",
+      "139."
+    ],
+    "difficulty": "easy",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅の位置検索"
+  },
+  {
+    "id": "MA-SJK-L1-02",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "basic_location",
+    "prompt": "新宿駅周辺のコンビニを教えてください",
+    "expected_keywords": [
+      "コンビニ",
+      "ファミリーマート",
+      "セブン"
+    ],
+    "difficulty": "easy",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅周辺のコンビニ検索"
+  },
+  {
+    "id": "MA-SJK-L1-03",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "brand",
+    "prompt": "新宿駅周辺のスターバックスはありますか？",
+    "expected_keywords": [
+      "スターバックス",
+      "新宿"
+    ],
+    "difficulty": "easy",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅周辺のスターバックス検索"
+  },
+  {
+    "id": "MA-SJK-L1-04",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "area_detection",
+    "prompt": "新宿駅近くのカフェはありますか？",
+    "expected_keywords": [
+      "カフェ",
+      "新宿"
+    ],
+    "difficulty": "easy",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿エリア検出+カフェ検索"
+  },
+  {
+    "id": "MA-SJK-L2-01",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "proximity",
+    "prompt": "新宿駅に最も近いコンビニはどれですか？",
+    "expected_keywords": [
+      "コンビニ",
+      "近い",
+      "距離"
+    ],
+    "difficulty": "medium",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅最近傍コンビニの検索"
+  },
+  {
+    "id": "MA-SJK-L2-02",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "aggregation",
+    "prompt": "新宿駅から500m以内にカフェは何件ありますか？",
+    "expected_keywords": [
+      "カフェ",
+      "500m",
+      "件"
+    ],
+    "difficulty": "medium",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅500m圏内のカフェ件数"
+  },
+  {
+    "id": "MA-SJK-L2-03",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "comparison",
+    "prompt": "新宿駅の東側と西側、どちらに飲食店が多いですか？",
+    "expected_keywords": [
+      "飲食店",
+      "東",
+      "西",
+      "多い"
+    ],
+    "difficulty": "medium",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅の東西飲食店比較"
+  },
+  {
+    "id": "MA-SJK-L2-04",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "landmark_origin",
+    "prompt": "新宿御苑から最も近いカフェはどこですか？",
+    "expected_keywords": [
+      "カフェ",
+      "新宿御苑",
+      "近い"
+    ],
+    "difficulty": "medium",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿御苑起点の最近傍カフェ検索"
+  },
+  {
+    "id": "MA-SJK-L3-01",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "constraint_single",
+    "prompt": "新宿駅周辺で24時間営業のコンビニは？",
+    "expected_keywords": [
+      "コンビニ",
+      "24時間",
+      "営業"
+    ],
+    "difficulty": "medium",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅周辺の24時間営業コンビニ検索"
+  },
+  {
+    "id": "MA-SJK-L3-02",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "constraint_multi",
+    "prompt": "新宿駅から300m以内でWi-Fiが使えるカフェは？",
+    "expected_keywords": [
+      "カフェ",
+      "300m",
+      "Wi-Fi"
+    ],
+    "difficulty": "hard",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅周辺の距離+Wi-Fi制約付きカフェ検索"
+  },
+  {
+    "id": "MA-SJK-L3-03",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "brand",
+    "prompt": "新宿駅周辺のドトールを全て教えてください",
+    "expected_keywords": [
+      "ドトール",
+      "新宿"
+    ],
+    "difficulty": "medium",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅周辺のドトール全店舗検索"
+  },
+  {
+    "id": "MA-SJK-L3-04",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "landmark_origin",
+    "prompt": "東京都庁の近くでランチができるレストランは？",
+    "expected_keywords": [
+      "都庁",
+      "レストラン",
+      "ランチ"
+    ],
+    "difficulty": "medium",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京都庁起点のランチレストラン検索"
+  },
+  {
+    "id": "MA-SJK-L4-01",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "decision_support",
+    "prompt": "新宿駅から近い順にカフェを3つ教えてください",
+    "expected_keywords": [
+      "カフェ",
+      "近い",
+      "順",
+      "3"
+    ],
+    "difficulty": "hard",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅からのカフェ距離順ランキング"
+  },
+  {
+    "id": "MA-SJK-L4-02",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "relation",
+    "prompt": "新宿駅周辺でカフェとコンビニが両方近い場所は？",
+    "expected_keywords": [
+      "カフェ",
+      "コンビニ",
+      "近い"
+    ],
+    "difficulty": "hard",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅周辺のカフェ・コンビニ共近接エリア"
+  },
+  {
+    "id": "MA-SJK-L4-03",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "landmark_origin",
+    "prompt": "歌舞伎町の周辺300mにある飲食店を教えてください",
+    "expected_keywords": [
+      "歌舞伎町",
+      "300m",
+      "飲食店"
+    ],
+    "difficulty": "hard",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "歌舞伎町起点の飲食店検索（半径指定）"
+  },
+  {
+    "id": "MA-SJK-L4-04",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "sensitivity",
+    "prompt": "新宿駅500m圏と1km圏でカフェの件数はどう変わりますか？",
+    "expected_keywords": [
+      "カフェ",
+      "500m",
+      "1km",
+      "件数"
+    ],
+    "difficulty": "hard",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅のカフェ半径別件数の感度分析"
+  },
+  {
+    "id": "MA-SJK-L5-01",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "multi_hop",
+    "prompt": "新宿駅から最も近いカフェと、そこから300m以内の他カフェ数は？",
+    "expected_keywords": [
+      "カフェ",
+      "近い",
+      "300m",
+      "数"
+    ],
+    "difficulty": "expert",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅のマルチホップ推論（最近傍+周辺カウント）"
+  },
+  {
+    "id": "MA-SJK-L5-02",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "competitor",
+    "prompt": "新宿駅周辺でコンビニの競合状況を分析してください",
+    "expected_keywords": [
+      "コンビニ",
+      "競合",
+      "セブン",
+      "ファミリーマート"
+    ],
+    "difficulty": "expert",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅周辺のコンビニ競合分析"
+  },
+  {
+    "id": "MA-SJK-L5-03",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "complementary",
+    "prompt": "新宿駅周辺でカフェの近くにある書店を教えてください",
+    "expected_keywords": [
+      "カフェ",
+      "書店",
+      "近く",
+      "紀伊國屋"
+    ],
+    "difficulty": "expert",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅周辺のカフェ・書店の補完関係分析"
+  },
+  {
+    "id": "MA-SJK-L5-04",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "sensitivity",
+    "prompt": "新宿駅周辺のカフェの平均距離と最寄り・最遠の距離差は？",
+    "expected_keywords": [
+      "カフェ",
+      "平均",
+      "距離",
+      "最寄り",
+      "最遠"
+    ],
+    "difficulty": "expert",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿駅周辺カフェの距離統計分析"
+  },
+  {
+    "id": "MA-IKB-L1-01",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "basic_location",
+    "prompt": "池袋駅の場所を教えてください",
+    "expected_keywords": [
+      "池袋",
+      "駅",
+      "35.",
+      "139."
+    ],
+    "difficulty": "easy",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅の位置検索"
+  },
+  {
+    "id": "MA-IKB-L1-02",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "basic_location",
+    "prompt": "池袋駅周辺のコンビニを教えてください",
+    "expected_keywords": [
+      "コンビニ",
+      "ファミリーマート",
+      "セブン"
+    ],
+    "difficulty": "easy",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅周辺のコンビニ検索"
+  },
+  {
+    "id": "MA-IKB-L1-03",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "brand",
+    "prompt": "池袋駅周辺のスターバックスはありますか？",
+    "expected_keywords": [
+      "スターバックス",
+      "池袋"
+    ],
+    "difficulty": "easy",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅周辺のスターバックス検索"
+  },
+  {
+    "id": "MA-IKB-L1-04",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "area_detection",
+    "prompt": "池袋駅近くのカフェはありますか？",
+    "expected_keywords": [
+      "カフェ",
+      "池袋"
+    ],
+    "difficulty": "easy",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋エリア検出+カフェ検索"
+  },
+  {
+    "id": "MA-IKB-L2-01",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "proximity",
+    "prompt": "池袋駅に最も近いコンビニはどれですか？",
+    "expected_keywords": [
+      "コンビニ",
+      "近い",
+      "距離"
+    ],
+    "difficulty": "medium",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅最近傍コンビニの検索"
+  },
+  {
+    "id": "MA-IKB-L2-02",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "aggregation",
+    "prompt": "池袋駅から500m以内にカフェは何件ありますか？",
+    "expected_keywords": [
+      "カフェ",
+      "500m",
+      "件"
+    ],
+    "difficulty": "medium",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅500m圏内のカフェ件数"
+  },
+  {
+    "id": "MA-IKB-L2-03",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "comparison",
+    "prompt": "池袋駅の東側と西側、どちらに飲食店が多いですか？",
+    "expected_keywords": [
+      "飲食店",
+      "東",
+      "西",
+      "多い"
+    ],
+    "difficulty": "medium",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅の東西飲食店比較"
+  },
+  {
+    "id": "MA-IKB-L2-04",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "landmark_origin",
+    "prompt": "サンシャインシティから最も近いカフェはどこですか？",
+    "expected_keywords": [
+      "カフェ",
+      "サンシャイン",
+      "近い"
+    ],
+    "difficulty": "medium",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "サンシャインシティ起点の最近傍カフェ検索"
+  },
+  {
+    "id": "MA-IKB-L3-01",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "constraint_single",
+    "prompt": "池袋駅周辺で24時間営業のコンビニは？",
+    "expected_keywords": [
+      "コンビニ",
+      "24時間",
+      "営業"
+    ],
+    "difficulty": "medium",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅周辺の24時間営業コンビニ検索"
+  },
+  {
+    "id": "MA-IKB-L3-02",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "constraint_multi",
+    "prompt": "池袋駅から300m以内でWi-Fiが使えるカフェは？",
+    "expected_keywords": [
+      "カフェ",
+      "300m",
+      "Wi-Fi"
+    ],
+    "difficulty": "hard",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅周辺の距離+Wi-Fi制約付きカフェ検索"
+  },
+  {
+    "id": "MA-IKB-L3-03",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "brand",
+    "prompt": "池袋駅周辺のマツモトキヨシを全て教えてください",
+    "expected_keywords": [
+      "マツモトキヨシ",
+      "池袋"
+    ],
+    "difficulty": "medium",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅周辺のマツモトキヨシ全店舗検索"
+  },
+  {
+    "id": "MA-IKB-L3-04",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "landmark_origin",
+    "prompt": "池袋西口公園の近くでランチができるレストランは？",
+    "expected_keywords": [
+      "西口公園",
+      "レストラン",
+      "ランチ"
+    ],
+    "difficulty": "medium",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋西口公園起点のランチレストラン検索"
+  },
+  {
+    "id": "MA-IKB-L4-01",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "decision_support",
+    "prompt": "池袋駅から近い順にカフェを3つ教えてください",
+    "expected_keywords": [
+      "カフェ",
+      "近い",
+      "順",
+      "3"
+    ],
+    "difficulty": "hard",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅からのカフェ距離順ランキング"
+  },
+  {
+    "id": "MA-IKB-L4-02",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "relation",
+    "prompt": "池袋駅周辺でカフェとコンビニが両方近い場所は？",
+    "expected_keywords": [
+      "カフェ",
+      "コンビニ",
+      "近い"
+    ],
+    "difficulty": "hard",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅周辺のカフェ・コンビニ共近接エリア"
+  },
+  {
+    "id": "MA-IKB-L4-03",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "landmark_origin",
+    "prompt": "東武百貨店池袋店の周辺300mにある飲食店を教えてください",
+    "expected_keywords": [
+      "東武百貨店",
+      "300m",
+      "飲食店"
+    ],
+    "difficulty": "hard",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東武百貨店池袋店起点の飲食店検索（半径指定）"
+  },
+  {
+    "id": "MA-IKB-L4-04",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "sensitivity",
+    "prompt": "池袋駅500m圏と1km圏でカフェの件数はどう変わりますか？",
+    "expected_keywords": [
+      "カフェ",
+      "500m",
+      "1km",
+      "件数"
+    ],
+    "difficulty": "hard",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅のカフェ半径別件数の感度分析"
+  },
+  {
+    "id": "MA-IKB-L5-01",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "multi_hop",
+    "prompt": "池袋駅から最も近いカフェと、そこから300m以内の他カフェ数は？",
+    "expected_keywords": [
+      "カフェ",
+      "近い",
+      "300m",
+      "数"
+    ],
+    "difficulty": "expert",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅のマルチホップ推論（最近傍+周辺カウント）"
+  },
+  {
+    "id": "MA-IKB-L5-02",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "competitor",
+    "prompt": "池袋駅周辺でコンビニの競合状況を分析してください",
+    "expected_keywords": [
+      "コンビニ",
+      "競合",
+      "セブン",
+      "ファミリーマート"
+    ],
+    "difficulty": "expert",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅周辺のコンビニ競合分析"
+  },
+  {
+    "id": "MA-IKB-L5-03",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "complementary",
+    "prompt": "池袋駅周辺でカフェの近くにある書店を教えてください",
+    "expected_keywords": [
+      "カフェ",
+      "書店",
+      "近く",
+      "ジュンク堂"
+    ],
+    "difficulty": "expert",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅周辺のカフェ・書店の補完関係分析"
+  },
+  {
+    "id": "MA-IKB-L5-04",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "sensitivity",
+    "prompt": "池袋駅周辺のカフェの平均距離と最寄り・最遠の距離差は？",
+    "expected_keywords": [
+      "カフェ",
+      "平均",
+      "距離",
+      "最寄り",
+      "最遠"
+    ],
+    "difficulty": "expert",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋駅周辺カフェの距離統計分析"
+  },
+  {
+    "id": "MA-TKY-L1-01",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "basic_location",
+    "prompt": "東京駅の場所を教えてください",
+    "expected_keywords": [
+      "東京駅",
+      "35.",
+      "139."
+    ],
+    "difficulty": "easy",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅の位置検索"
+  },
+  {
+    "id": "MA-TKY-L1-02",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "basic_location",
+    "prompt": "東京駅周辺のコンビニを教えてください",
+    "expected_keywords": [
+      "コンビニ",
+      "ファミリーマート",
+      "セブン"
+    ],
+    "difficulty": "easy",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅周辺のコンビニ検索"
+  },
+  {
+    "id": "MA-TKY-L1-03",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "brand",
+    "prompt": "東京駅周辺のスターバックスはありますか？",
+    "expected_keywords": [
+      "スターバックス",
+      "東京駅"
+    ],
+    "difficulty": "easy",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅周辺のスターバックス検索"
+  },
+  {
+    "id": "MA-TKY-L1-04",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "basic_retrieval",
+    "subcategory": "area_detection",
+    "prompt": "東京駅近くのカフェはありますか？",
+    "expected_keywords": [
+      "カフェ",
+      "東京駅"
+    ],
+    "difficulty": "easy",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅エリア検出+カフェ検索"
+  },
+  {
+    "id": "MA-TKY-L2-01",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "proximity",
+    "prompt": "東京駅に最も近いコンビニはどれですか？",
+    "expected_keywords": [
+      "コンビニ",
+      "近い",
+      "距離"
+    ],
+    "difficulty": "medium",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅最近傍コンビニの検索"
+  },
+  {
+    "id": "MA-TKY-L2-02",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "aggregation",
+    "prompt": "東京駅から500m以内にカフェは何件ありますか？",
+    "expected_keywords": [
+      "カフェ",
+      "500m",
+      "件"
+    ],
+    "difficulty": "medium",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅500m圏内のカフェ件数"
+  },
+  {
+    "id": "MA-TKY-L2-03",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "comparison",
+    "prompt": "東京駅の東側と西側、どちらに飲食店が多いですか？",
+    "expected_keywords": [
+      "飲食店",
+      "東",
+      "西",
+      "多い"
+    ],
+    "difficulty": "medium",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅の東西飲食店比較"
+  },
+  {
+    "id": "MA-TKY-L2-04",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "spatial_reasoning",
+    "subcategory": "landmark_origin",
+    "prompt": "KITTEから最も近いカフェはどこですか？",
+    "expected_keywords": [
+      "カフェ",
+      "KITTE",
+      "近い"
+    ],
+    "difficulty": "medium",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "KITTE起点の最近傍カフェ検索"
+  },
+  {
+    "id": "MA-TKY-L3-01",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "constraint_single",
+    "prompt": "東京駅周辺で24時間営業のコンビニは？",
+    "expected_keywords": [
+      "コンビニ",
+      "24時間",
+      "営業"
+    ],
+    "difficulty": "medium",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅周辺の24時間営業コンビニ検索"
+  },
+  {
+    "id": "MA-TKY-L3-02",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "constraint_multi",
+    "prompt": "東京駅から300m以内でWi-Fiが使えるカフェは？",
+    "expected_keywords": [
+      "カフェ",
+      "300m",
+      "Wi-Fi"
+    ],
+    "difficulty": "hard",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅周辺の距離+Wi-Fi制約付きカフェ検索"
+  },
+  {
+    "id": "MA-TKY-L3-03",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "brand",
+    "prompt": "東京駅周辺のタリーズコーヒーを全て教えてください",
+    "expected_keywords": [
+      "タリーズ",
+      "東京駅"
+    ],
+    "difficulty": "medium",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅周辺のタリーズコーヒー全店舗検索"
+  },
+  {
+    "id": "MA-TKY-L3-04",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "constraint_satisfaction",
+    "subcategory": "landmark_origin",
+    "prompt": "東京国際フォーラムの近くでランチができるレストランは？",
+    "expected_keywords": [
+      "国際フォーラム",
+      "レストラン",
+      "ランチ"
+    ],
+    "difficulty": "medium",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京国際フォーラム起点のランチレストラン検索"
+  },
+  {
+    "id": "MA-TKY-L4-01",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "decision_support",
+    "prompt": "東京駅から近い順にカフェを3つ教えてください",
+    "expected_keywords": [
+      "カフェ",
+      "近い",
+      "順",
+      "3"
+    ],
+    "difficulty": "hard",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅からのカフェ距離順ランキング"
+  },
+  {
+    "id": "MA-TKY-L4-02",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "relation",
+    "prompt": "東京駅周辺でカフェとコンビニが両方近い場所は？",
+    "expected_keywords": [
+      "カフェ",
+      "コンビニ",
+      "近い"
+    ],
+    "difficulty": "hard",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅周辺のカフェ・コンビニ共近接エリア"
+  },
+  {
+    "id": "MA-TKY-L4-03",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "landmark_origin",
+    "prompt": "丸ビルの周辺300mにある飲食店を教えてください",
+    "expected_keywords": [
+      "丸ビル",
+      "300m",
+      "飲食店"
+    ],
+    "difficulty": "hard",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "丸ビル起点の飲食店検索（半径指定）"
+  },
+  {
+    "id": "MA-TKY-L4-04",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "decision_support",
+    "subcategory": "sensitivity",
+    "prompt": "東京駅500m圏と1km圏でカフェの件数はどう変わりますか？",
+    "expected_keywords": [
+      "カフェ",
+      "500m",
+      "1km",
+      "件数"
+    ],
+    "difficulty": "hard",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅のカフェ半径別件数の感度分析"
+  },
+  {
+    "id": "MA-TKY-L5-01",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "multi_hop",
+    "prompt": "東京駅から最も近いカフェと、そこから300m以内の他カフェ数は？",
+    "expected_keywords": [
+      "カフェ",
+      "近い",
+      "300m",
+      "数"
+    ],
+    "difficulty": "expert",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅のマルチホップ推論（最近傍+周辺カウント）"
+  },
+  {
+    "id": "MA-TKY-L5-02",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "competitor",
+    "prompt": "東京駅周辺でコンビニの競合状況を分析してください",
+    "expected_keywords": [
+      "コンビニ",
+      "競合",
+      "セブン",
+      "ファミリーマート"
+    ],
+    "difficulty": "expert",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅周辺のコンビニ競合分析"
+  },
+  {
+    "id": "MA-TKY-L5-03",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "complementary",
+    "prompt": "東京駅周辺でカフェの近くにある書店を教えてください",
+    "expected_keywords": [
+      "カフェ",
+      "書店",
+      "近く",
+      "丸善"
+    ],
+    "difficulty": "expert",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅周辺のカフェ・書店の補完関係分析"
+  },
+  {
+    "id": "MA-TKY-L5-04",
+    "level": 5,
+    "level_name": "高度推論",
+    "category": "advanced_reasoning",
+    "subcategory": "sensitivity",
+    "prompt": "東京駅周辺のカフェの平均距離と最寄り・最遠の距離差は？",
+    "expected_keywords": [
+      "カフェ",
+      "平均",
+      "距離",
+      "最寄り",
+      "最遠"
+    ],
+    "difficulty": "expert",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅周辺カフェの距離統計分析"
+  },
+  {
+    "id": "MA-CROSS-01",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "渋谷駅と新宿駅の周辺、カフェが多いのはどちらですか？",
+    "expected_keywords": [
+      "カフェ",
+      "渋谷",
+      "新宿",
+      "多い"
+    ],
+    "difficulty": "medium",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "shinjuku"
+    ],
+    "query_type": "cross_area",
+    "description": "渋谷・新宿のカフェ件数比較"
+  },
+  {
+    "id": "MA-CROSS-02",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "池袋と渋谷で、コンビニの密度が高いのはどちらですか？",
+    "expected_keywords": [
+      "コンビニ",
+      "池袋",
+      "渋谷",
+      "密度"
+    ],
+    "difficulty": "medium",
+    "target_area": null,
+    "target_areas": [
+      "ikebukuro",
+      "shibuya"
+    ],
+    "query_type": "cross_area",
+    "description": "池袋・渋谷のコンビニ密度比較"
+  },
+  {
+    "id": "MA-CROSS-03",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "東京駅と新宿駅の周辺で、飲食店の種類が豊富なのはどちらですか？",
+    "expected_keywords": [
+      "飲食店",
+      "東京駅",
+      "新宿",
+      "種類"
+    ],
+    "difficulty": "medium",
+    "target_area": null,
+    "target_areas": [
+      "tokyo",
+      "shinjuku"
+    ],
+    "query_type": "cross_area",
+    "description": "東京・新宿の飲食店多様性比較"
+  },
+  {
+    "id": "MA-CROSS-04",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "4エリアの中で最もカフェが多い駅はどこですか？",
+    "expected_keywords": [
+      "カフェ",
+      "多い",
+      "駅"
+    ],
+    "difficulty": "medium",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "shinjuku",
+      "ikebukuro",
+      "tokyo"
+    ],
+    "query_type": "cross_area",
+    "description": "4エリアのカフェ件数ランキング"
+  },
+  {
+    "id": "MA-CROSS-05",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "渋谷と池袋、24時間営業の店舗が多いのはどちらですか？",
+    "expected_keywords": [
+      "24時間",
+      "渋谷",
+      "池袋",
+      "多い"
+    ],
+    "difficulty": "medium",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "ikebukuro"
+    ],
+    "query_type": "cross_area",
+    "description": "渋谷・池袋の24時間営業店舗比較"
+  },
+  {
+    "id": "MA-CROSS-06",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "スターバックスが最も多いエリアはどこですか？",
+    "expected_keywords": [
+      "スターバックス",
+      "多い",
+      "エリア"
+    ],
+    "difficulty": "medium",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "shinjuku",
+      "ikebukuro",
+      "tokyo"
+    ],
+    "query_type": "cross_area",
+    "description": "4エリアのスターバックス件数ランキング"
+  },
+  {
+    "id": "MA-CROSS-07",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "各エリアで最もPOI密度が高いカテゴリは同じですか？",
+    "expected_keywords": [
+      "カテゴリ",
+      "密度",
+      "エリア"
+    ],
+    "difficulty": "medium",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "shinjuku",
+      "ikebukuro",
+      "tokyo"
+    ],
+    "query_type": "cross_area",
+    "description": "4エリアの主要カテゴリ比較"
+  },
+  {
+    "id": "MA-CROSS-08",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "4エリアの中で駅から最も近いカフェがあるのはどこですか？",
+    "expected_keywords": [
+      "カフェ",
+      "近い",
+      "駅"
+    ],
+    "difficulty": "medium",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "shinjuku",
+      "ikebukuro",
+      "tokyo"
+    ],
+    "query_type": "cross_area",
+    "description": "4エリアの最近傍カフェ比較"
+  },
+  {
+    "id": "MA-CROSS-09",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "渋谷駅周辺にあるスターバックスは、新宿駅周辺と比べて何店舗差がありますか？",
+    "expected_keywords": [
+      "スターバックス",
+      "渋谷",
+      "新宿",
+      "店舗"
+    ],
+    "difficulty": "hard",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "shinjuku"
+    ],
+    "query_type": "cross_area",
+    "description": "渋谷・新宿のスターバックス店舗数差"
+  },
+  {
+    "id": "MA-CROSS-10",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "東京駅の最寄りカフェと渋谷駅の最寄りカフェ、駅からの距離が近いのはどちらですか？",
+    "expected_keywords": [
+      "カフェ",
+      "東京駅",
+      "渋谷",
+      "距離"
+    ],
+    "difficulty": "hard",
+    "target_area": null,
+    "target_areas": [
+      "tokyo",
+      "shibuya"
+    ],
+    "query_type": "cross_area",
+    "description": "東京・渋谷の最寄りカフェ距離比較"
+  },
+  {
+    "id": "MA-CROSS-11",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "新宿と池袋でマクドナルドの店舗数を比較してください",
+    "expected_keywords": [
+      "マクドナルド",
+      "新宿",
+      "池袋",
+      "店舗"
+    ],
+    "difficulty": "hard",
+    "target_area": null,
+    "target_areas": [
+      "shinjuku",
+      "ikebukuro"
+    ],
+    "query_type": "cross_area",
+    "description": "新宿・池袋のマクドナルド店舗数比較"
+  },
+  {
+    "id": "MA-CROSS-12",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "渋谷駅500m圏のコンビニ数と東京駅500m圏のコンビニ数、どちらが多い？",
+    "expected_keywords": [
+      "コンビニ",
+      "渋谷",
+      "東京駅",
+      "500m"
+    ],
+    "difficulty": "hard",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "tokyo"
+    ],
+    "query_type": "cross_area",
+    "description": "渋谷・東京の500m圏コンビニ数比較"
+  },
+  {
+    "id": "MA-CROSS-13",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "各エリアの最寄りコンビニの距離を比較してください",
+    "expected_keywords": [
+      "コンビニ",
+      "最寄り",
+      "距離",
+      "比較"
+    ],
+    "difficulty": "hard",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "shinjuku",
+      "ikebukuro",
+      "tokyo"
+    ],
+    "query_type": "cross_area",
+    "description": "4エリアの最寄りコンビニ距離比較"
+  },
+  {
+    "id": "MA-CROSS-14",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "4エリア全体でコンビニは合計何件ありますか？",
+    "expected_keywords": [
+      "コンビニ",
+      "合計",
+      "件"
+    ],
+    "difficulty": "medium",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "shinjuku",
+      "ikebukuro",
+      "tokyo"
+    ],
+    "query_type": "cross_area",
+    "description": "4エリア全体のコンビニ合計件数"
+  },
+  {
+    "id": "MA-CROSS-15",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "全エリアで最も多いPOIカテゴリは何ですか？",
+    "expected_keywords": [
+      "カテゴリ",
+      "多い"
+    ],
+    "difficulty": "medium",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "shinjuku",
+      "ikebukuro",
+      "tokyo"
+    ],
+    "query_type": "cross_area",
+    "description": "4エリア全体の最多カテゴリ特定"
+  },
+  {
+    "id": "MA-CROSS-16",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "4エリアの総POI数を教えてください",
+    "expected_keywords": [
+      "POI",
+      "総数"
+    ],
+    "difficulty": "medium",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "shinjuku",
+      "ikebukuro",
+      "tokyo"
+    ],
+    "query_type": "cross_area",
+    "description": "4エリア全体の総POI数"
+  },
+  {
+    "id": "MA-CROSS-17",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "全エリアのカフェを合計すると何件ですか？",
+    "expected_keywords": [
+      "カフェ",
+      "合計",
+      "件"
+    ],
+    "difficulty": "medium",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "shinjuku",
+      "ikebukuro",
+      "tokyo"
+    ],
+    "query_type": "cross_area",
+    "description": "4エリア全体のカフェ合計件数"
+  },
+  {
+    "id": "MA-CROSS-18",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "ラーメン店が3件以上ある駅はどこですか？",
+    "expected_keywords": [
+      "ラーメン",
+      "3件",
+      "駅"
+    ],
+    "difficulty": "hard",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "shinjuku",
+      "ikebukuro",
+      "tokyo"
+    ],
+    "query_type": "cross_area",
+    "description": "条件付きエリアフィルタリング（ラーメン3件以上）"
+  },
+  {
+    "id": "MA-CROSS-19",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "駅から200m以内にカフェが最も多いエリアはどこですか？",
+    "expected_keywords": [
+      "カフェ",
+      "200m",
+      "多い",
+      "エリア"
+    ],
+    "difficulty": "hard",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "shinjuku",
+      "ikebukuro",
+      "tokyo"
+    ],
+    "query_type": "cross_area",
+    "description": "200m圏内カフェ数でのエリアランキング"
+  },
+  {
+    "id": "MA-CROSS-20",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "cross_area",
+    "subcategory": "cross_area_comparison",
+    "prompt": "24時間営業のコンビニが10件以上あるエリアはどこですか？",
+    "expected_keywords": [
+      "24時間",
+      "コンビニ",
+      "10件",
+      "エリア"
+    ],
+    "difficulty": "hard",
+    "target_area": null,
+    "target_areas": [
+      "shibuya",
+      "shinjuku",
+      "ikebukuro",
+      "tokyo"
+    ],
+    "query_type": "cross_area",
+    "description": "条件付きエリアフィルタリング（24時間コンビニ10件以上）"
+  },
+  {
+    "id": "MA-LM-01",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "landmark_query",
+    "subcategory": "landmark_origin",
+    "prompt": "渋谷109から最も近いカフェはどこですか？",
+    "expected_keywords": [
+      "109",
+      "カフェ",
+      "近い"
+    ],
+    "difficulty": "medium",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷109起点の最近傍カフェ検索"
+  },
+  {
+    "id": "MA-LM-02",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "landmark_query",
+    "subcategory": "landmark_origin",
+    "prompt": "サンシャインシティから500m以内にコンビニは何件ありますか？",
+    "expected_keywords": [
+      "サンシャイン",
+      "コンビニ",
+      "500m",
+      "件"
+    ],
+    "difficulty": "medium",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "サンシャインシティ起点のコンビニ件数"
+  },
+  {
+    "id": "MA-LM-03",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "landmark_query",
+    "subcategory": "landmark_origin",
+    "prompt": "東京国際フォーラムの最寄りのレストランを教えてください",
+    "expected_keywords": [
+      "国際フォーラム",
+      "レストラン",
+      "最寄り"
+    ],
+    "difficulty": "medium",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京国際フォーラム起点の最寄りレストラン検索"
+  },
+  {
+    "id": "MA-LM-04",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "landmark_query",
+    "subcategory": "landmark_origin",
+    "prompt": "新宿アルタから一番近い銀行はどこですか？",
+    "expected_keywords": [
+      "アルタ",
+      "銀行",
+      "近い"
+    ],
+    "difficulty": "medium",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿アルタ起点の最近傍銀行検索"
+  },
+  {
+    "id": "MA-LM-05",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "landmark_query",
+    "subcategory": "landmark_origin",
+    "prompt": "KITTEから300m以内のカフェを教えてください",
+    "expected_keywords": [
+      "KITTE",
+      "カフェ",
+      "300m"
+    ],
+    "difficulty": "medium",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "KITTE起点のカフェ検索（半径指定）"
+  },
+  {
+    "id": "MA-LM-06",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "landmark_query",
+    "subcategory": "landmark_origin",
+    "prompt": "渋谷ヒカリエの近くで24時間営業のコンビニはありますか？",
+    "expected_keywords": [
+      "ヒカリエ",
+      "24時間",
+      "コンビニ"
+    ],
+    "difficulty": "hard",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷ヒカリエ起点の24時間コンビニ検索"
+  },
+  {
+    "id": "MA-LM-07",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "landmark_query",
+    "subcategory": "landmark_origin",
+    "prompt": "皇居前広場の近くで食事できるレストランは？",
+    "expected_keywords": [
+      "皇居",
+      "レストラン",
+      "食事"
+    ],
+    "difficulty": "hard",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "皇居前広場起点のレストラン検索"
+  },
+  {
+    "id": "MA-LM-08",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "landmark_query",
+    "subcategory": "landmark_origin",
+    "prompt": "池袋西口公園の周辺でWi-Fiが使えるカフェは？",
+    "expected_keywords": [
+      "西口公園",
+      "Wi-Fi",
+      "カフェ"
+    ],
+    "difficulty": "hard",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋西口公園起点のWi-Fi対応カフェ検索"
+  },
+  {
+    "id": "MA-LM-09",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "landmark_query",
+    "subcategory": "landmark_origin",
+    "prompt": "丸ビルの近くでスターバックスはありますか？",
+    "expected_keywords": [
+      "丸ビル",
+      "スターバックス"
+    ],
+    "difficulty": "hard",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "丸ビル起点のスターバックス検索"
+  },
+  {
+    "id": "MA-LM-10",
+    "level": 3,
+    "level_name": "制約充足",
+    "category": "landmark_query",
+    "subcategory": "landmark_origin",
+    "prompt": "歌舞伎町の近くで深夜営業しているバーは？",
+    "expected_keywords": [
+      "歌舞伎町",
+      "深夜",
+      "バー"
+    ],
+    "difficulty": "hard",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "歌舞伎町起点の深夜営業バー検索"
+  },
+  {
+    "id": "MA-LM-11",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "landmark_query",
+    "subcategory": "landmark_origin",
+    "prompt": "東京都庁から最も近いカフェと、その駅からの距離は？",
+    "expected_keywords": [
+      "都庁",
+      "カフェ",
+      "駅",
+      "距離"
+    ],
+    "difficulty": "hard",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京都庁起点の最近傍カフェ+駅距離の複合推論"
+  },
+  {
+    "id": "MA-LM-12",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "landmark_query",
+    "subcategory": "landmark_origin",
+    "prompt": "サンシャインシティの近くにあるカフェとコンビニの数は？",
+    "expected_keywords": [
+      "サンシャイン",
+      "カフェ",
+      "コンビニ",
+      "数"
+    ],
+    "difficulty": "hard",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "サンシャインシティ周辺のカフェ・コンビニ件数"
+  },
+  {
+    "id": "MA-LM-13",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "landmark_query",
+    "subcategory": "landmark_origin",
+    "prompt": "渋谷スクランブルスクエアの周辺で飲食店のカテゴリ別件数は？",
+    "expected_keywords": [
+      "スクランブルスクエア",
+      "飲食店",
+      "カテゴリ",
+      "件数"
+    ],
+    "difficulty": "hard",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷スクランブルスクエア周辺の飲食店カテゴリ分析"
+  },
+  {
+    "id": "MA-LM-14",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "landmark_query",
+    "subcategory": "landmark_origin",
+    "prompt": "新宿御苑から最寄りのカフェまでの距離と方角は？",
+    "expected_keywords": [
+      "新宿御苑",
+      "カフェ",
+      "距離",
+      "方角"
+    ],
+    "difficulty": "hard",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿御苑起点の最近傍カフェ距離・方角"
+  },
+  {
+    "id": "MA-LM-15",
+    "level": 4,
+    "level_name": "意思決定支援",
+    "category": "landmark_query",
+    "subcategory": "landmark_origin",
+    "prompt": "ハチ公像から見て東側にあるカフェを教えてください",
+    "expected_keywords": [
+      "ハチ公",
+      "東",
+      "カフェ"
+    ],
+    "difficulty": "hard",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "ハチ公像起点の東側カフェ検索"
+  },
+  {
+    "id": "MA-DET-01",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "area_detection",
+    "subcategory": "area_detection",
+    "prompt": "池袋駅周辺のホテルを教えてください",
+    "expected_keywords": [
+      "池袋",
+      "ホテル"
+    ],
+    "difficulty": "easy",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋エリアの明示的検出+ホテル検索"
+  },
+  {
+    "id": "MA-DET-02",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "area_detection",
+    "subcategory": "area_detection",
+    "prompt": "東京駅近くの銀行はありますか？",
+    "expected_keywords": [
+      "東京駅",
+      "銀行"
+    ],
+    "difficulty": "easy",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅エリアの明示的検出+銀行検索"
+  },
+  {
+    "id": "MA-DET-03",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "area_detection",
+    "subcategory": "area_detection",
+    "prompt": "渋谷109の近くのカフェを教えてください",
+    "expected_keywords": [
+      "109",
+      "カフェ"
+    ],
+    "difficulty": "easy",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷エリアのランドマーク経由検出+カフェ検索"
+  },
+  {
+    "id": "MA-DET-04",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "area_detection",
+    "subcategory": "area_detection",
+    "prompt": "新宿駅西口付近のコンビニはどこですか？",
+    "expected_keywords": [
+      "新宿",
+      "西口",
+      "コンビニ"
+    ],
+    "difficulty": "easy",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿エリアの明示的検出+コンビニ検索"
+  },
+  {
+    "id": "MA-DET-05",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "area_detection",
+    "subcategory": "area_detection",
+    "prompt": "池袋駅から最も近い薬局は？",
+    "expected_keywords": [
+      "池袋",
+      "薬局",
+      "近い"
+    ],
+    "difficulty": "easy",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋エリアの明示的検出+薬局検索"
+  },
+  {
+    "id": "MA-DET-06",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "area_detection",
+    "subcategory": "area_detection",
+    "prompt": "サンシャインシティの近くのレストランは？",
+    "expected_keywords": [
+      "サンシャイン",
+      "レストラン"
+    ],
+    "difficulty": "medium",
+    "target_area": "ikebukuro",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "池袋エリアのランドマーク暗黙検出+レストラン検索"
+  },
+  {
+    "id": "MA-DET-07",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "area_detection",
+    "subcategory": "area_detection",
+    "prompt": "歌舞伎町の近くで食事できる場所は？",
+    "expected_keywords": [
+      "歌舞伎町",
+      "食事"
+    ],
+    "difficulty": "medium",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿エリアのランドマーク暗黙検出+飲食店検索"
+  },
+  {
+    "id": "MA-DET-08",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "area_detection",
+    "subcategory": "area_detection",
+    "prompt": "丸の内で朝食が取れるカフェは？",
+    "expected_keywords": [
+      "丸の内",
+      "朝食",
+      "カフェ"
+    ],
+    "difficulty": "medium",
+    "target_area": "tokyo",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "東京駅エリアの地名暗黙検出+朝食カフェ検索"
+  },
+  {
+    "id": "MA-DET-09",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "area_detection",
+    "subcategory": "area_detection",
+    "prompt": "ハチ公像の周りにコンビニはある？",
+    "expected_keywords": [
+      "ハチ公",
+      "コンビニ"
+    ],
+    "difficulty": "medium",
+    "target_area": "shibuya",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "渋谷エリアのランドマーク暗黙検出+コンビニ検索"
+  },
+  {
+    "id": "MA-DET-10",
+    "level": 2,
+    "level_name": "空間推論",
+    "category": "area_detection",
+    "subcategory": "area_detection",
+    "prompt": "都庁前でランチができる場所は？",
+    "expected_keywords": [
+      "都庁",
+      "ランチ"
+    ],
+    "difficulty": "medium",
+    "target_area": "shinjuku",
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "新宿エリアのランドマーク暗黙検出+ランチ検索"
+  },
+  {
+    "id": "MA-DET-11",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "area_detection",
+    "subcategory": "area_detection",
+    "prompt": "おすすめのカフェを教えてください",
+    "expected_keywords": [
+      "カフェ"
+    ],
+    "difficulty": "easy",
+    "target_area": null,
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "エリア不明のカフェ検索"
+  },
+  {
+    "id": "MA-DET-12",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "area_detection",
+    "subcategory": "area_detection",
+    "prompt": "24時間営業のコンビニはどこにありますか？",
+    "expected_keywords": [
+      "24時間",
+      "コンビニ"
+    ],
+    "difficulty": "easy",
+    "target_area": null,
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "エリア不明の24時間コンビニ検索"
+  },
+  {
+    "id": "MA-DET-13",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "area_detection",
+    "subcategory": "area_detection",
+    "prompt": "美味しいラーメン屋を探しています",
+    "expected_keywords": [
+      "ラーメン"
+    ],
+    "difficulty": "easy",
+    "target_area": null,
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "エリア不明のラーメン検索"
+  },
+  {
+    "id": "MA-DET-14",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "area_detection",
+    "subcategory": "area_detection",
+    "prompt": "Wi-Fiが使える場所を教えてください",
+    "expected_keywords": [
+      "Wi-Fi"
+    ],
+    "difficulty": "easy",
+    "target_area": null,
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "エリア不明のWi-Fiスポット検索"
+  },
+  {
+    "id": "MA-DET-15",
+    "level": 1,
+    "level_name": "基礎検索",
+    "category": "area_detection",
+    "subcategory": "area_detection",
+    "prompt": "近くに薬局はありますか？",
+    "expected_keywords": [
+      "薬局"
+    ],
+    "difficulty": "easy",
+    "target_area": null,
+    "target_areas": null,
+    "query_type": "single_area",
+    "description": "エリア不明の薬局検索"
+  }
+]
